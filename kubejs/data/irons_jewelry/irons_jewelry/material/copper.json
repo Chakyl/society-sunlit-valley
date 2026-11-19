@@ -1,0 +1,32 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:apply_damage",
+        "amount": {
+          "base": 3.0,
+          "scalar": 1.0
+        },
+        "damageType": "minecraft:lightning_bolt"
+      },
+      "targetSelf": false
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.1,
+      "attribute": "minecraft:generic.attack_speed",
+      "operation": "add_multiplied_total"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:poison"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "minecraft:haste"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.copper",
+  "ingredient": {
+    "tag": "c:ingots/copper"
+  },
+  "paletteLocation": "irons_jewelry:palettes/copper",
+  "quality": 0.5
+}

@@ -1,0 +1,31 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:knockback",
+        "strength": {
+          "base": 2.0,
+          "scalar": 1.0
+        }
+      },
+      "targetSelf": false
+    },
+    "irons_jewelry:attribute": {
+      "amount": 1.0,
+      "attribute": "irons_lib:armor_pierce",
+      "operation": "add_value"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:weakness"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "minecraft:resistance"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.platinum",
+  "ingredient": {
+    "tag": "c:ingots/platinum"
+  },
+  "paletteLocation": "irons_jewelry:palettes/platinum",
+  "quality": 2.0
+}

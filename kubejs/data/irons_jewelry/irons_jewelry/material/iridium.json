@@ -1,0 +1,37 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:apply_effect",
+        "amplifier": {
+          "base": 0.0,
+          "max": 2.0,
+          "scalar": 1.0
+        },
+        "duration": {
+          "base": 60.0,
+          "scalar": 0.0
+        },
+        "effect": "minecraft:strength"
+      },
+      "targetSelf": true
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.05,
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "add_multiplied_total"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:wither"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "minecraft:strength"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.iridium",
+  "ingredient": {
+    "tag": "c:ingots/netherite"
+  },
+  "paletteLocation": "irons_jewelry:palettes/iridium",
+  "quality": 3.0
+}

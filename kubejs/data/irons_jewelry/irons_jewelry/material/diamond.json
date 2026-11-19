@@ -1,0 +1,32 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:apply_damage",
+        "amount": {
+          "base": 1.0,
+          "scalar": 1.0
+        },
+        "damageType": "minecraft:magic"
+      },
+      "targetSelf": false
+    },
+    "irons_jewelry:attribute": {
+      "amount": 2.0,
+      "attribute": "minecraft:generic.armor",
+      "operation": "add_value"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:weakness"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "minecraft:resistance"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.diamond",
+  "ingredient": {
+    "tag": "c:gems/diamond"
+  },
+  "paletteLocation": "irons_jewelry:palettes/diamond",
+  "quality": 1.75
+}

@@ -1,0 +1,45 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:explode",
+        "affect_self": false,
+        "block_interaction": "none",
+        "knockback_multiplier": {
+          "base": 2.5,
+          "scalar": 0.0
+        },
+        "large_particle": {
+          "type": "minecraft:gust_emitter_large"
+        },
+        "radius": {
+          "base": 2.0,
+          "scalar": 1.5
+        },
+        "small_particle": {
+          "type": "minecraft:gust_emitter_small"
+        },
+        "sound": "minecraft:entity.wind_charge.wind_burst",
+        "translation": "action.irons_jewelry.explode.wind_burst"
+      },
+      "targetSelf": true
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.05,
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "add_multiplied_total"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "oreganized:stunning"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "oreganized:stunning"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.lead",
+  "ingredient": {
+    "tag": "c:ingots/lead"
+  },
+  "paletteLocation": "irons_jewelry:palettes/lead",
+  "quality": 1.0
+}

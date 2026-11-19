@@ -1,0 +1,31 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:knockback",
+        "strength": {
+          "base": -2.0,
+          "scalar": -1.0
+        }
+      },
+      "targetSelf": false
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.1,
+      "attribute": "irons_lib:mining_speed",
+      "operation": "add_multiplied_total"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:poison"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "minecraft:haste"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.jade",
+  "ingredient": {
+    "tag": "c:gems/jade"
+  },
+  "paletteLocation": "irons_jewelry:palettes/jade",
+  "quality": 3.0
+}

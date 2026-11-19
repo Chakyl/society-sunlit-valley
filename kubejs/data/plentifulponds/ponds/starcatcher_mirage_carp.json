@@ -9,12 +9,16 @@
 			"population": 3,
 			"requested_items": [
 				{
-					"id": "minecraft:packed_mud",
-					"count": 32
+					"id": "starcatcher:lush_bait",
+					"count": 16
 				},
 				{
-					"id": "minecraft:mud",
-					"count": 48
+					"id": "twigs:rhyolite",
+					"count": 16
+				},
+				{
+					"id": "minecraft:torchflower",
+					"count": 4
 				}
 			]
 		},
@@ -22,12 +26,16 @@
 			"population": 5,
 			"requested_items": [
 				{
-					"id": "veggiesdelight:cauliflower",
+					"id": "twigs:tangerine_seashell",
+					"count": 2
+				},
+				{
+					"id": "minecraft:cactus",
 					"count": 16
 				},
 				{
-					"id": "society:earth_crystal",
-					"count": 2
+					"id": "twigs:pebble",
+					"count": 16
 				}
 			]
 		},
@@ -35,12 +43,8 @@
 			"population": 7,
 			"requested_items": [
 				{
-					"id": "vintagedelight:pad_thai",
-					"count": 16
-				},
-				{
-					"id": "vintagedelight:nut_mash_mason_jar",
-					"count": 5
+					"id": "society:prize_ticket",
+					"count": 4
 				}
 			]
 		}
@@ -49,26 +53,26 @@
 		{
 			"min_population": 4,
 			"drop": {
-				"id": "society:mudstone",
-				"count": 4
+				"id": "society:earth_crystal",
+				"count": 2
 			},
-			"chance": 0.22
+			"chance": 0.78
 		},
 		{
 			"min_population": 6,
 			"drop": {
-				"id": "society:earth_crystal",
-				"count": 2
+				"id": "society:geode",
+				"count": 4
 			},
-			"chance": 0.42
+			"chance": 0.33
 		},
 		{
 			"min_population": 8,
 			"drop": {
-				"id": "artisan_machines:stone_hand",
+				"id": "society:prize_ticket",
 				"count": 1
 			},
-			"chance": 0.08
+			"chance": 0.04
 		}
 	]
 }

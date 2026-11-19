@@ -1,0 +1,110 @@
+{
+	"mining_1": {
+		"definition": "mining_lvl_1",
+		"x": -256,
+		"y": 0,
+		"root": true
+	},
+	"mining_2": {
+		"definition": "mining_lvl_2",
+		"x": -192,
+		"y": 0,
+		"root": false
+	},
+	"mining_3": {
+		"definition": "mining_lvl_3",
+		"x": -128,
+		"y": 0,
+		"root": false
+	},
+	"mining_4": {
+		"definition": "mining_lvl_4",
+		"x": -64,
+		"y": 0,
+		"root": false
+	},
+	"geologist": {
+		"definition": "geologist",
+		"x": 0,
+		"y": -64,
+		"root": false
+	},
+	"metalworker": {
+		"definition": "metalworker",
+		"x": 0,
+		"y": 64,
+		"root": false
+	},
+	"mining_lvl_6_bottom": {
+		"definition": "mining_lvl_6",
+		"x": 64,
+		"y": 64,
+		"root": false
+	},
+	"silver_spoon": {
+		"definition": "silver_spoon",
+		"x": 128,
+		"y": 64,
+		"root": false
+	},
+	"mining_lvl_8_bottom": {
+		"definition": "mining_lvl_8",
+		"x": 192,
+		"y": 64,
+		"root": false
+	},
+	"mining_lvl_9_bottom": {
+		"definition": "mining_lvl_9",
+		"x": 256,
+		"y": 64,
+		"root": false
+	},
+	"iridium_inquisitor": {
+		"definition": "iridium_inquisitor",
+		"x": 320,
+		"y": 96,
+		"root": false
+	},
+	"mining_tycoon": {
+		"definition": "mining_tycoon",
+		"x": 320,
+		"y": 32,
+		"root": false
+	},
+	"mineralogist": {
+		"definition": "mineralogist",
+		"x": 128,
+		"y": -64,
+		"root": false
+	},
+	"mining_lvl_8_top": {
+		"definition": "mining_lvl_8",
+		"x": 192,
+		"y": -64,
+		"root": false
+	},
+	"mining_lvl_9_top": {
+		"definition": "mining_lvl_9",
+		"x": 256,
+		"y": -64,
+		"root": false
+	},
+	"mining_lvl_6_top": {
+		"definition": "mining_lvl_6",
+		"x": 64,
+		"y": -64,
+		"root": false
+	},
+	"excavator": {
+		"definition": "excavator",
+		"x": 320,
+		"y": -96,
+		"root": false
+	},
+	"prismatic_prospector": {
+		"definition": "prismatic_prospector",
+		"x": 320,
+		"y": -32,
+		"root": false
+	}
+}

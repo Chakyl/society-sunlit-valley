@@ -1,0 +1,31 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:ignite",
+        "tickDuration": {
+          "base": 40.0,
+          "scalar": 0.0
+        }
+      },
+      "targetSelf": false
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.1,
+      "attribute": "irons_lib:mining_speed",
+      "operation": "add_multiplied_total"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:poison"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "minecraft:fire_resistance"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.gold",
+  "ingredient": {
+    "tag": "c:ingots/gold"
+  },
+  "paletteLocation": "irons_jewelry:palettes/gold",
+  "quality": 1.5
+}

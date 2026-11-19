@@ -239,7 +239,7 @@ ServerEvents.generateData('after_mods', (e) => {
             if (crop.products.includes("preserves")) data.values[`society:${crop.item.path}_preserves`] = global.getSaleData(calculatePreservesValue(crop.value), [])
             if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(crop.value), [])
             if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(crop.value), [])
-            if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(crop.value), [])
+            if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`] = global.getSaleData(calculateDriedValue(crop.value), [])
         }
     })
     global.MUSHROOMS.forEach((crop) => {
@@ -340,7 +340,7 @@ ServerEvents.recipes((e) => {
                 basicArtisanMachineRecipe(e, "artisan_machines:wine_keg", { id: crop.item, count: 3 }, { identifier: crop.wine, count: 1 }, 144)
             }
             if (crop.products.includes("dried")) {
-                basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: crop.dried ? crop.dried : `society:dried_${crop.item.path}`, count: 1 }, 144)
+                basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`, count: 1 }, 144)
             }
             // if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
             // if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(baseCropValue), [])

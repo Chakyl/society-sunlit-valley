@@ -1,0 +1,28 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:apply_freeze",
+        "amount": {
+          "base": 40.0,
+          "scalar": 0.0
+        }
+      },
+      "targetSelf": false
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.03,
+      "attribute": "irons_lib:dodge_chance",
+      "operation": "add_value"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:slowness"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.aquamarine",
+  "ingredient": {
+    "tag": "c:gems/aquamarine"
+  },
+  "paletteLocation": "irons_jewelry:palettes/aquamarine",
+  "quality": 1.5
+}

@@ -1,0 +1,43 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:create_items",
+        "chance": {
+          "base": 0.05,
+          "max": 1.0,
+          "min": 0.01,
+          "scalar": 0.05
+        },
+        "item": "minecraft:emerald",
+        "maxCount": {
+          "base": 4.0,
+          "scalar": 2.0
+        },
+        "minCount": {
+          "base": 1.0,
+          "scalar": 0.0
+        },
+        "sound": "irons_jewelry:action.create_items.emeralds"
+      },
+      "targetSelf": false
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.05,
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "add_multiplied_total"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:infested"
+    },
+    "irons_jewelry:positive_effect": {
+      "effect": "minecraft:speed"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.emerald",
+  "ingredient": {
+    "tag": "c:gems/emerald"
+  },
+  "paletteLocation": "irons_jewelry:palettes/emerald",
+  "quality": 1.25
+}

@@ -1,0 +1,28 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:knockback",
+        "strength": {
+          "base": -2.0,
+          "scalar": -1.0
+        }
+      },
+      "targetSelf": true
+    },
+    "irons_jewelry:attribute": {
+      "amount": 2.0,
+      "attribute": "minecraft:generic.armor_toughness",
+      "operation": "add_value"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:levitation"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.topaz",
+  "ingredient": {
+    "tag": "c:gems/topaz"
+  },
+  "paletteLocation": "irons_jewelry:palettes/topaz",
+  "quality": 2.0
+}

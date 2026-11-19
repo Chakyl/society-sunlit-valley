@@ -1,0 +1,34 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:apply_effect",
+        "amplifier": {
+          "base": 0.0,
+          "max": 2.0,
+          "scalar": 1.0
+        },
+        "duration": {
+          "base": 80.0,
+          "scalar": 0.0
+        },
+        "effect": "minecraft:resistance"
+      },
+      "targetSelf": true
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.04,
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "add_multiplied_total"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:wither"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.amethyst_chunk",
+  "ingredient": {
+    "tag": "c:gems/amethyst_chunk"
+  },
+  "paletteLocation": "irons_jewelry:palettes/amethyst_chunk",
+  "quality": 1.5
+}

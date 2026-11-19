@@ -53,20 +53,20 @@ StartupEvents.registry("item", (e) => {
             e.create(item).texture(`society:item/artifacts/${item.path}`).tag("society:artifact").rarity("uncommon");
         }
     });
-    
-  e.create("society:red_wrench")
-    .texture("society:item/artifacts/red_wrench")
-    .maxStackSize(1)
-    .tag("society:artifacts")
-    .tag("forge:tools")
-    .tag("forge:tools/wrench")
-    .tag("forge:wrenches")
-    .tag("farm_and_charm:hangable")
-    .tag("create:upright_on_deployer")
-    .tag("create:chain_rideable")
-    .tag("refurbished_furniture:items")
-    .tag("furniture:trash_bag_blacklist")
-    .tag("supplementaries:statue_tools");
+
+    e.create("society:red_wrench")
+        .texture("society:item/artifacts/red_wrench")
+        .maxStackSize(1)
+        .tag("society:artifacts")
+        .tag("forge:tools")
+        .tag("forge:tools/wrench")
+        .tag("forge:wrenches")
+        .tag("farm_and_charm:hangable")
+        .tag("create:upright_on_deployer")
+        .tag("create:chain_rideable")
+        .tag("refurbished_furniture:items")
+        .tag("furniture:trash_bag_blacklist")
+        .tag("supplementaries:statue_tools");
 
     e.create("society:perfect_cherry").texture("society:item/artifacts/perfect_cherry")
         .food((food) => {
@@ -115,7 +115,7 @@ StartupEvents.registry("item", (e) => {
     e.create("society:geode").texture("society:item/geode/geode");
     e.create("society:frozen_geode").texture("society:item/frozen_geode/frozen_geode");
     e.create("society:magma_geode").texture("society:item/magma_geode/magma_geode");
-    
+
     global.MINERALS.forEach((mineral) => {
         if (!mineral.disableItemGeneration) {
             e.create(`society:${mineral.item.path}`).texture(`society:item/${mineral.geodeType != "base" ? `${mineral.geodeType}_` : ""}geode/${mineral.item.path}`).tag("society:mineral")
@@ -123,7 +123,7 @@ StartupEvents.registry("item", (e) => {
     });
 
     global.GEMS.forEach((gem) => {
-        if (gem.generateItem) e.create(`society:${gem.item.path}`).texture(`society:item/gems/${gem.item.path}`).tag("society:gem");
+        if (gem.generateItem) e.create(`society:${gem.item.path}`).texture(`society:item/gems/${gem.item.path}`).tag("society:gem").tag(`c:gems/${gem.item.path}`);
     });
     global.CROP_DEFINITIONS.forEach((crop) => {
         if (crop.products.includes("preserves")) {
@@ -152,7 +152,7 @@ StartupEvents.registry("item", (e) => {
     });
 
     global.MUSHROOMS.forEach((crop) => {
-        e.create(`society:dried_${crop.item.path}`)
+        e.create(`society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`)
             .texture(`society:item/dried/dried_${crop.item.path}`)
             .tag("society:dried_product")
             .food((food) => {

@@ -1,0 +1,323 @@
+{
+  "mining_lvl_1": {
+    "title": {"translate": "society_skills.mining.mining_lvl_1"},
+    "description": {"translate": "society_skills.mining.mining_lvl_1.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:carrot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_lvl_1",
+          "lock_command": "kubejs stages remove @s mining_lvl_1"
+        }
+      }
+    ]
+  },
+  "mining_lvl_2": {
+    "title": {"translate": "society_skills.mining.mining_lvl_2"},
+    "description": {"translate": "society_skills.mining.mining_lvl_2.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "nomansland:firebomb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_lvl_2",
+          "lock_command": "kubejs stages remove @s mining_lvl_2"
+        }
+      }
+    ]
+  },
+  "mining_lvl_3": {
+    "title": {"translate": "society_skills.mining.mining_lvl_3"},
+    "description": {"translate": "society_skills.mining.mining_lvl_3.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "opposing_force:firing_mechanism"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_lvl_3",
+          "lock_command": "kubejs stages remove @s mining_lvl_3"
+        }
+      }
+    ]
+  },
+  "mining_lvl_4": {
+    "title": {"translate": "society_skills.mining.mining_lvl_4"},
+    "description": {"translate": "society_skills.mining.mining_lvl_4.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "golden_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_lvl_4",
+          "lock_command": "kubejs stages remove @s mining_lvl_4"
+        }
+      }
+    ]
+  },
+  "geologist": {
+    "title": {"translate": "society_skills.mining.geologist"},
+    "description": {"translate": "society_skills.mining.geologist.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:ruby"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s geologist",
+          "lock_command": "kubejs stages remove @s geologist"
+        }
+      }
+    ]
+  },
+  "metalworker": {
+    "title": {"translate": "society_skills.mining.metalworker"},
+    "description": {"translate": "society_skills.mining.metalworker.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "raw_iron"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s metalworker",
+          "lock_command": "kubejs stages remove @s metalworker"
+        }
+      }
+    ]
+  },
+  "mining_lvl_6": {
+    "title": {"translate": "society_skills.mining.mining_lvl_6"},
+    "description": {"translate": "society_skills.mining.mining_lvl_6.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_jewelry:jewelcrafting_guide"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_lvl_6",
+          "lock_command": "kubejs stages remove @s mining_lvl_6"
+        }
+      }
+    ]
+  },
+  "mineralogist": {
+    "title": {"translate": "society_skills.mining.mineralogist"},
+    "description": {"translate": "society_skills.mining.mineralogist.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:earth_crystal"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mineralogist",
+          "lock_command": "kubejs stages remove @s mineralogist"
+        }
+      }
+    ]
+  },
+  "silver_spoon": {
+    "title": {"translate": "society_skills.mining.silver_spoon"},
+    "description": {"translate": "society_skills.mining.silver_spoon.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "oreganized:raw_silver"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s silver_spoon",
+          "lock_command": "kubejs stages remove @s silver_spoon"
+        }
+      }
+    ]
+  },
+  "mining_lvl_8": {
+    "title": {"translate": "society_skills.mining.mining_lvl_8"},
+    "description": {"translate": "society_skills.mining.mining_lvl_8.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "onlyhammersandexcavators:iron_hammer"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_lvl_8",
+          "lock_command": "kubejs stages remove @s mining_lvl_8"
+        }
+      }
+    ]
+  },
+  "mining_lvl_9": {
+    "title": {"translate": "society_skills.mining.mining_lvl_9"},
+    "description": {"translate": "society_skills.mining.mining_lvl_9.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "unusualfishmod:weapon_parts"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_lvl_9",
+          "lock_command": "kubejs stages remove @s mining_lvl_9"
+        }
+      }
+    ]
+  },
+  "excavator": {
+    "title": {"translate": "society_skills.mining.excavator"},
+    "description": {"translate": "society_skills.mining.excavator.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:omni_geode"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s excavator",
+          "lock_command": "kubejs stages remove @s excavator"
+        }
+      }
+    ]
+  },
+  "prismatic_prospector": {
+    "title": {"translate": "society_skills.mining.prismatic_prospector"},
+    "description": {"translate": "society_skills.mining.prismatic_prospector.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:prismatic_shard"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s prismatic_prospector",
+          "lock_command": "kubejs stages remove @s prismatic_prospector"
+        }
+      }
+    ]
+  },
+  "iridium_inquisitor": {
+    "title": {"translate": "society_skills.mining.iridium_inquisitor"},
+    "description": {"translate": "society_skills.mining.iridium_inquisitor.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_scrap"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s iridium_inquisitor",
+          "lock_command": "kubejs stages remove @s iridium_inquisitor"
+        }
+      }
+    ]
+  },
+  "mining_tycoon": {
+    "title": {"translate": "society_skills.mining.mining_tycoon"},
+    "description": {"translate": "society_skills.mining.mining_tycoon.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "etcetera:golden_golem"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mining_tycoon",
+          "lock_command": "kubejs stages remove @s mining_tycoon"
+        }
+      }
+    ]
+  }
+}

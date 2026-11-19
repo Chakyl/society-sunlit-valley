@@ -1,0 +1,28 @@
+{
+  "bonusParameters": {
+    "irons_jewelry:action": {
+      "action": {
+        "type": "irons_jewelry:heal",
+        "amount": {
+          "base": 4.0,
+          "scalar": 2.0
+        }
+      },
+      "targetSelf": true
+    },
+    "irons_jewelry:attribute": {
+      "amount": 0.15,
+      "attribute": "irons_lib:crit_damage",
+      "operation": "add_value"
+    },
+    "irons_jewelry:negative_effect": {
+      "effect": "minecraft:blindness"
+    }
+  },
+  "descriptionId": "material.irons_jewelry.spinel",
+  "ingredient": {
+    "tag": "c:gems/spinel"
+  },
+  "paletteLocation": "irons_jewelry:palettes/spinel",
+  "quality": 3.0
+}
