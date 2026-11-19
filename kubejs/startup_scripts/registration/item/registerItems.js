@@ -95,7 +95,8 @@ StartupEvents.registry("item", (e) => {
     "mint",
     "blowball",
     "juniper",
-    "snow_yam"
+    "snow_yam",
+    "cave_carrot"
   ].forEach((crop) => {
     e.create(`society:${crop}`).texture(`society:item/crops/${crop}`)
       .food((food) => {

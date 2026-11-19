@@ -91,6 +91,7 @@ global.FORAGE_CROPS = [
     { item: "atmospheric:aloe_leaves", value: 16, products: ["preserves"], classifications: ["forage_crop", "industrial"], seed: "atmospheric:aloe_kernels" },
     { item: "society:morel", value: 16, products: ["dried"], classifications: ["forage_crop", "mushroom"] },
     { item: "society:winter_root", value: 16, products: [], classifications: ["forage_crop", "vegetable"] },
+    { item: "society:cave_carrot", value: 22, products: [], classifications: ["forage_crop", "vegetable"] },
     { item: "society:wild_onion", value: 16, products: [], classifications: ["forage_crop", "vegetable"] },
     { item: "society:leek", value: 16, products: [], classifications: ["forage_crop", "vegetable"] },
     { item: "society:mint", value: 16, products: [], classifications: ["forage_crop", "herb"] },
