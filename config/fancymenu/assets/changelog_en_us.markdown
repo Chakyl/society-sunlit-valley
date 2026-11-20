@@ -1,8 +1,13 @@
 ^^^
 ## Future Forever
-### v4.2.0
+### v4.2.1
 ^^^
 --- 
+- Added Poplar Saplings to Carpenter
+- Added a bunch of customer skins to Cozy Cafe
+- Fixed Zombie Horse spawning above ground
+- Fixed Lost Bowtie missing lang string
+- Fixed Pouffe recipe conflict
 # 4.2.0
 - Added and integrated backport content from MC updates: Copper Age, Mounts of Mayhem, and Wilderness Bound
 - Added Cavern farm building set by Malcureos
