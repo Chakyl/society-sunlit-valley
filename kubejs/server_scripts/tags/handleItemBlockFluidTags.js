@@ -227,6 +227,7 @@ const rawLogs = [
   "minecraft:birch_log",
   "minecraft:jungle_log",
   "minecraft:cherry_log",
+  "minecraft:poplar_log",
   "windswept:chestnut_log",
   "windswept:holly_log",
   "windswept:pine_log",

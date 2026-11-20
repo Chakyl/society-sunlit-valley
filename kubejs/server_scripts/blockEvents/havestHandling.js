@@ -92,7 +92,8 @@ BlockEvents.rightClicked((e) => {
           "quark:glow_shroom",
           "farmersdelight:brown_mushroom_colony",
           "species:alphacene_mushroom",
-          "farmersdelight:red_mushroom_colony"
+          "farmersdelight:red_mushroom_colony",
+          "minecraft:shelf_mushroom"
         ].includes(block.id)
       ) {
         player.tell(Text.translatable("society.bone_meal.weak"));

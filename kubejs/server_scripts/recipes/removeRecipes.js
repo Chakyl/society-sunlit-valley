@@ -384,7 +384,6 @@ ServerEvents.recipes((e) => {
     "furniture:display",
     "furniture:blueprints",
     "furniture:canvas",
-    "supplementaries:clock_block",
     "furniture:gramophone",
     "furniture:telescope",
     "furniture:boat_in_a_jar",
