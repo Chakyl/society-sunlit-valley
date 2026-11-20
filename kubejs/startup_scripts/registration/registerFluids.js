@@ -104,6 +104,12 @@ StartupEvents.registry("fluid", (e) => {
     .displayName("Mana Fruit Juice")
     .tag("society:mana_fruit_juice");
 
+  e.create("society:dish_soap")
+    .thickTexture(0xcbdbfc)
+    .bucketColor(0xcbdbfc)
+    .displayName("Dish Soap")
+    .tag("society:dish_soap");
+    
   e.create("relics:relic_experience")
     .thickTexture(0xf7b23f)
     .bucketColor(0xf7b23f)

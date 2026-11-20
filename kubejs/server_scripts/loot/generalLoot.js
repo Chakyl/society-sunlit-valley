@@ -12,6 +12,9 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("rottencreatures:entities/zap")
     .randomChance(0.03)
     .addLoot("society:glitched_vhs");
+  e.addLootTableModifier("rottencreatures:entities/parched")
+    .randomChance(0.03)
+    .addLoot("society:lost_bowtie");
   e.addLootTableModifier("minecraft:entities/witch")
     .randomChance(0.1)
     .addLoot("society:holy_symbol");

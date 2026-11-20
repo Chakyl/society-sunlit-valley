@@ -1,257 +1,42 @@
 ^^^
 ## Sunlit Cobblemon
-### 1.1.4-SSV4.1.5A
+### 1.1.5-SSV4.2.1
 ^^^
 --- 
-- Updated to Society: Sunlit Valley - 4.1.5
-- Added images for Kyogre/Groudon summons to make it more obvious + improved text
-- Added SSC-Mono singles format
-- Added Sunlit Crystal as Crystal Ball recipe
-- Increased Mew-N DNA chance
-- Groudon is now cinnamon flavored
-- Fixed Magikarp Taiyaki not being obtainable without a shiny
-- Fixed Tao items consuming double of the summoning item
-- Fixed Temple of Time boss not being fightable multiple times
-- Fixed more double battle softlocks (Thanks Newbula!)
-- Fixed scroll/bell chances being too high on second spawn
-- Fixed Booster Energy consuming like berries
-- Fixed Endless Battery not working in Energy Pylon
-- Fixed performance of Crystal Ball render
-- Fixed TMs being far too common in type badge reward pools
+- Updated to Sunlit Valley 4.2.0 - Future Forever update
+- Added backported mons: Snover, Abomasnow, Burmy, Womadam, Mothim, Helioptile, Heliolisk
+- Added Shucked Shuckle and Harmonious Antimatter ranching drops
+- Added Late Winter Shiny Mystery Gifts to Poke Mart at Prismatic Tier
+- Fixed backported Pokemon sounds
+- Fixed Laurel Saplings not working on Craft Station
 
-## Sunlit Cobblemon 1.1.0 
-- Updated to Sunlit Valley's Cozy Cafe update
-- Added unique obtaining mechanics for the following legendary pokemon: Kyogre, Groudon, Rayquaza, Lugia, Ho-Oh, Dialga, Palkia, Giratina, Latias, Latios, Reshiram, Zekrom, Kyurem, Kubfu, Urshifu, Darkrai, Pecharunt, Shaymin, Shaymin Sky, Mew, Mewtwo, Deoxys.
-- Added item/blocks associated for the above, too many to list
-- Added backported mons: Pancham, Pangoro, Wurmple, Cherubi, Cherrim,  Rolycoly, Carkol, Coalossal,  Silcoon, Beautifly, Cascoon, Dustox, Audino, Alolan Sandshrew, Alolan Sandlash, Seviper, Zangoose
-- Added Sword Ball - 0.5x to 4x, increases by target's combined attack stats
-- Added Shield Ball - 0.5x to 4x, increases by target's combined defense stats
-- Added Skull Ball - 3.5x in the Skull Cavern
-- Added Mana Ball - 3.5x catch rate
-- Added Prismatic ball - 4.5× on Shiny Pokémon, 3x otherwise
-- Added Blossom Ball - 0.5x, caught Pokémon become Shiny
-- Added backported Cobblemon held Items: Grip Claw, Lagging Tail, Luminous Moss, Metronome, Protective Pads, Punching Glove, Room Service, Scope Lens, Shed Shell, Terrain Extender, Throat Spray, Utility Umbrella, Wide Lens, Zoom Lens, Psychic Seed, Electric Seed, Grassy Seed, Clear Amulet
-- Added Crystal Ball, a pokemon workstation for **Psychic** types that increases chances of nearby workstations
-- Added Energy Pylon a pokemon workstation for **Electric** increases speed of nearby workstations using batteries
-- Added use for Endless Battery
-- Added Spectral Battery
-- Added Viral Battery
-- Added Booster Energy
-- Added Soul Dew
-- Added Magikarp Taiyaki
-- Added hover to Cobblemon Farmer's workstation GUIs showing effective stats
-- Added hover to workstation GUIs showing effective stats
-- Added admin command cobblemonfarmerssetowner to override existing owner
-- Added unique spawn mechanics for Paradox Pokémon and removed paradox gachamon capsule
-- Added shiny effect for ranching station: Double chances on forage drops & double magic shear rolls.
-- Added some cobblemon specific tips
-- Added unique spawns to Snowy Scrubland, Desert Fault, Frozen Caves, and Sulfur Caves biomes
-- Added TR Tablets for crafting specific TRs
-- Added ability to declare a Gym Leader type for the Trainer Podium using badges, allowing for greater rewards.
-- Added Elite Stone for unlocking a higher level of difficulty on the Trainer Podium. Legendary/Mythical Pokémon are allowed to be used by both gym leader and trainers in this mode only
-- Reworked trainer podium yet again:
-  - Trainer podium still scales based on team level
-  - No more win streaks. Instead the podium will keep track of total wins, and League bosses will appear every 15 wins
-  - Every 10 of wins you’ll get an item from the special pool dropped. Every 100 you’ll get one from a rare pool
-  - No penalty for losing outside of the normal loss fee 
-- Reworked Gardening Station dark types: Experience dropped no longer based off of nearby Pokémon defeated. Instead, a static amount of XS candies are always dropped, and at 5+ radii it turns into S. (Old system encouraged spawning a bunch of entities around its working area)
-- Rebalanced some ranches and added new items to ranching, too many changes to list
-- Improved EMI support in Cobblemon Farmers, with hover showing effective stats
-- Increased prices of Sun Offering stat increase items
-- Fixed certain Gachamon Capusles not spawning Pokémon
-- Fixed aspects not showing up in rendered Pokémon
-- Fixed Fairy types in Gardening Stations always dropping minimums in ranges (you'll get your Slowpoke tails now you sadist)
-- Fixed Crabapple logs not being fightable
-- Fixed some issues with ghost gachamon capsules
-- Fixed Electric Canvas being a farmer product instead of artisan
-- Fixed some radar texures
-- Fixed Wailmer/Wailord crashes probably
-- Fixed more max/z-move TM/TRs existing
-
-## 1.1.1
-- Fixed interacting with mobs with an item voiding them
-- Fixed trainer reward giving removed capsule
-
-# 1.1.2
-- Added doubles VGC formats sun, moon, and stars to /showdown challenge
-- Added renewable recipe for Pale Chalice
-- Added better hinting for liquid antimatter
-- Increased chance of Pristine type gems dropping from trainer badges
-- Increased chance of the Clear/Tidal Bell ringing (2.5% -> 5%)
-- Increased Primsatic Shard fortune telling consume chance 15% -> 50%
-- Reduced cost of Blossom Ball: Replaced Blooming Ring/Cornucopia Greed with Mew-N-DNA
-- Fixed trainer podium wins not progressing
-- Fixed charging rod/brazier interactions
-- Fixed some unnecessary logging
-- Fixed issues with nightmare effect not working
-- Fixed creation trio not having same non-raid level
-- Fixed tooltips of the Tao trilogy items
-- Fixed Liquid Pale/Antimatter not dropping
-- Fixed softlock with duo challenge podium
-- Fixed pokedex and related crashes
-- Fixed backpack item render
-- Fixed various issues with the Cobblemon Farmers GUIs
-- Fixed Crystalarium not producing pristine Sunlit Cobblemon items
-- Fixed Duo Challenge Podium starting off with the hard trainers
-
-# 1.1.3
-- Legendary Bells and Bear Scroll will now store if they've spawned a legendary in the block, only spawning it if the player is close to prevent the need for babysitting
-- Added confirmation step to using Blossom Ball in fossil machine 
-- Added warning on Duo Training Pedestal
-- Updated ko_kr translation (Thanks Hexagreen!)
+## Sunlit Valley 4.2.0 - Future Forever
+- Added and integrated backport content from MC updates: Copper Age, Mounts of Mayhem, and Wilderness Bound
+- Added Cavern farm building set by Malcureos
+- Added Parched to Desert Caves/Maelstrom, reducing Mummy spawns
+- Added Lost Bowtie artifact
+- Added Dish Soap fluid that can wash Cozy Cafe dirty dishes automatically
+- Added renewable Cinnabar and Sulfur recipes
+- Added Fish Pond drops to Blackfish and Cinnabar
+- Added Sea Pickle drop to Picklefish
+- Added Sculk Catalyst to Orby Plort Ripping
+- Added Orby Slime Heart crafting recipe 
+- Added Echo Shards to Grimwood Crate pool
+- Added Dried Shelf Mushroom
+- Added Shelf Mushroom drop to Mushroom Logs
+- Added Shroomlight drop to Mushroom Log 
+- Added two worldgen structures from community sever members Hafunka and Wiz
+- Water filled cauldrons can now wash dishes
+- Supplementaries Clocks are no longer a rare furniture
+- Reduced file size of building shop images by 42k KB
+- Renamed Cluttered Poplar to Yellow Popular to remove conflict on Vanilla's new wood type
+- Updated ko_kr (Thanks Hexagreen!)
 - Updated zh_cn translation (Thanks Thirace!)
-- Fixed various lang strings being broken
-- Fixed fire and lava not counting for Groudon's hot blocks
-- Fixed water blocking Kyogre spawn ironically
-- Fixed various trainers having regional pokemon that didn't look like regional pokemon
-- Fixed trainer podium wins not progressing for real this time
-- Fixed Duo Challenge Podium bugs 
-- Fixed double battle softlocks (Thanks Newbula!)
-
-## Sunlit Valley 4.1.0 - Cozy Cafe
-- Added Cozy Cafe, a new mod made for the pack that adds a Diner Dash/Plate Up! style cafe management minigame
-- Added new villagers: Trader, Witch, and Librarian (formerly Storagesmith)
-- Added new system for Building Shop (Previously in the Quest book) using Building Supplies
-- Added Rural farmhouse and villager building set by Duy Luong
-- Added Floral farmhouse building set by SianaTheSavage
-- Added Sakura farmhouse building set by EeveeBeby
-- Added Butterfly and Moth breeding and genetics mechanics
-- Added Caterpillar Eggs and Caterpillar Box
-- Added longwings: Tropical Leafwing Butterfly and Comet Moth
-- Added sell values to Moths and Butterflies that scale off rarity and size
-- Added Skill book: The Metamorphosize
-- Added Living Gnomes that are definitely real
-- Added Fish Pond Hatchery
-- Added Fish Pond Manager (Thanks Mayhan!)
-- Added Drum of the Cornucopia
-- Added Dry Totem
-- Added Rain Totem
-- Added Thunder Totem
-- Added Fairy Dust
-- Added ability for Wand of the Forest to view custom Botania block mana levels (looks jank but it works!)
-- Added random furniture items per day for sale from Carpenter
-- Added more thorough jade support for crop growing (Thanks Hexagreen!)
-- Added filling recipe for Honey Roasted Peanut (Thanks Emma!)
-- Added ability to befriend the Mystical Wise Oak
-- Added recipe for Armadillo Spawn Egg crafting recipe
-- Added Chaos Cubed update via Vanilla Backport
-- Added back vanilla villages and added a new type
-- Added White, Pink, and Mana Energy Drinks (Not agable as the aging from normal energy drink will be removed)
-- Added offline caching for Artisan Hopper, Auto-Grabber, Fish Pond Basket (Thanks simonLeary42!)
-- Added sell values to cake slices and feast items
-- Added Charting Map to guild
-- Added support for shared accounts in the Coin Leaderboard
-- Added everycompat create windows with RP for nicer textures
-- Added Supreme Mayonnaise as a Beacon base
-- Added stack groups to EMI/JEI 
-- Reworked Mana Clock: Now works exactly like Golden Clock but with a smaller radius and mana cost
-- Reworked furniture catalogs to be shops instead of having unique items
-- Updated pt_br translation (Thanks RafaelJMBR!)
-- Updated Galaxy Sword and Meowmageddon text to be shiny
-- Increased Terracotta conversion rate 1/30s -> 1/10s
-- Increased Bountiful Fertilizer crafting output 1 -> 4
-- Increased fishing spot range tolerance
-- Re-added adv pump upgrade due to fixes
-- Reduced max mana of mana fruit crops so they don't suck up as much mana
-- Reduced Sparkstone Recyler mana consumption per recycle 10k -> 5k
-- Reduced max upgrade from Hay Golems to High Quality Fertilizer
-- Reduced effective cost of larger building shop building types
-- Reduced heat requirement for green, hibiscus, yerba mate, and rooibos tea
-- Reduced sound volume of mana sprinklers
-- Removed beachparty radio due to issues
-- Removed offshoot grape fluid types as they are now unified into red/white
-- Renamed Bookseller to Book Fair
-- Fixed certain society blocks not having pickaxe minable tags
-- Fixed Mana Sprinkler having wrong working area
-- Fixed Mana Clock not working 
-- Fixed Ripper Tooth not working
-- Fixed Diamond wand not working with destruction core
-- Fixed Husbandry Hourly not appearing in the Bookseller/Book Fair
-- Fixed Crystalarium's Black Opal upgrade not working on manual harvests
-- Fixed pelican meat not having correct tags
-- Fixed Sommelier trait not taking into account recipe output count (e.x. Artifact Shards)
-- Fixed bottom kelp blocks not being valid fish pond water blocks
-- Fixed Redstone Link using Brass Casing instead of Andesite
-- Fixed building sets having inconsistent amounts of troughs
-- Fixed Prismatic Shard/Sparkstone blocks not having minable tags
-
-## 4.1.1
-- Added one time login message about building shop change
-- Added message when a new villager can be invited
-- Added arrows for sale to Guild
-- Added no chat restrictions
-- Updated zh cn translation (Thanks Thirace!)
-- Shortened Coin Leaderboard shared account length
-- Fixed 'Constructing a Farmhouse' quest not being updated to new blueprints
-- Fixed Veronica's max gift message being wrong
-- Fixed coin leaderboard not working
-- Fixed fantasy boxes not working
-- Fixed Artisan Hoppers, Fish Pond Baskets, and Auto-grabbers not accounting for skills due to caching change
-- Fixed issue where crossbows and paintings had missing models (probably)
-- Fixed crash with Create Central Kitchen
-
-## 4.1.2
-- Added recipe to convert potato noodles into raw pasta
-- Added recipe to convert duck feather into feather
-- Added changelog translation support (Thanks Hexagreen!)
-- Added axe mineable tag to cafe menu
-- Added emoji to new npcs
-- Updated zh_cn translation (Thanks Thirace!)
-- Updated ko_kr translation (Thanks Hexagreen!)
-- Cleaned up tags for Whimsy Deco blocks
-- Fixed issues with the Wise Oak dialog
-- Fixed Fish Pond Hatchery not binding to players (will need to break and replace)
-- Fixed new villager quests accepting any invitation
-- Fixed librarian quest dependency being wrong
-- Fixed removed items being obtainable in loot
-- Fixed Fish Pond Hatchery not being upgradable
-- Fixed triple truffle not working with Auto Grabbers
-- Fixed issues with create schematics
-- Fixed Wise Oak having an invitation
-- Fixed Fish Pond Hatchery not working with magnifying glass
-- Fixed inaccurate areas of Ribbit Hut and Drum of the Cornucopia using the Magnifying Glass
-- Fixed tomatoes not crawling ropes
-- Fixed drink-only cafes causing infinite loitering
-- Fixed Slime Vac voiding largos when in offhand
-- Fixed mixed green tea block dropping green tea instead of dried green tea
-- Fixed dialogs not showing up for five gifts
-- Fixed grape stem/lattice not showing day counter in Jade
-- Fixed issue where growth fertilizer does not apply to Berry bushes, but appears to do so in jade
-
-## 4.1.3
-- Added Pineconetown villager home set by beawitched
-- Added Deep-a-Mochi
-- Added Lemon Beignets
-- Added Suspicious Milk Tea
-- Added Ancient Builders Tool artifact
-- Changed Earth Crystal trader trade from rice to cotton
-- Increased height of coin leaderboard by 1/4th of a block to make it less smudged
-- Updated quality food mod which contains various quality fixes
-- Removed ability to wicked mask certain entities due to chunkbans
-- Fixed shared accounts on Coin Leaderboard for real this time
-- Fixed certain Mushroom Logs dropping Red Mushroom Colonies instead of Brown
-- Fixed issues with the Sakura building set
-- Fixed Smallmouth Bass not being catchable at night in Autumn
-- Fixed EMI not being searchable by blocktag by downgrading version
-
-## 4.1.4
-- Added coin retexture resourcepack (Thanks Jamiscus!)
-- Fixed blocks that had random rolled quality not dropping
-- Fixed Quality Food particles never stopping
-- FIxed copycats crash
-- Fixed shift purchasing buying until inventory is full, bankrupting farmers across the valley
-
-## 4.1.5A
-- Added Sub-Accounts from Create Numismatics update
-- Added number truncation to Coin Leaderboards
-- Add tooltip for Fish Pond Manager clipboard interaction
-- Removed purchase for Overflow Tokens as the Numismatics Team fixed the overflow bug! Tokens are still usable
-- Removed Waterframes integration with the pack so it can be safely removed from the pack if it doesn't work on your system
-- Added slim skin model rendering to Cozy Cafe customers
-- Food items in Cozy Cafe will render in 3D on plates if the food item also has a block
-- Fixed crossbow/painting texture errors
-- Fixed some logging messages showing
-- Fixed certain saplings not having tags
-- Fixed Coin Leaderboards blanking in specific cases
-- Fixed bank accounts overflowing to -2 billion at 2+ billion
-- Fixed dessert only Cozy Cafe menus having dirty plates 
+- Fixed several logs not being sellable
+- Fixed save data related crash
+# 4.2.1
+- Added Poplar Saplings to Carpenter
+- Added a bunch of customer skins to Cozy Cafe
+- Fixed Zombie Horse spawning above ground
+- Fixed Lost Bowtie missing lang string
+- Fixed Pouffe recipe conflict

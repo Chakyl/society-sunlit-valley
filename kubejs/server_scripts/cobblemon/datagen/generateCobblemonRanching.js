@@ -6591,6 +6591,29 @@
 //             ],
 //         },
 //         {
+//             pokemon: "mothim",
+//             forages: [
+//                 {
+//                     item: "society:moth_pollen",
+//                     count: 4,
+//                     chance: 1,
+//                     min_hearts: 5
+//                 },
+//                 {
+//                     item: "society:moth_pollen",
+//                     count: 6,
+//                     chance: 1,
+//                     min_hearts: 7
+//                 },
+//                 {
+//                     item: "society:moth_pollen",
+//                     count: 12,
+//                     chance: 0.5,
+//                     min_hearts: 10
+//                 }
+//             ],
+//         },
+//         {
 //             pokemon: "frosmoth",
 //             forages: [
 //                 {
@@ -6753,6 +6776,36 @@
 //         {
 //             pokemon: "copperajah",
 //             milk: { sm: "sunlit_cobblemon:quicksilver" },
+//         },
+//         {
+//             pokemon: "snover",
+//             forages: [
+//                 {
+//                     item: "sunlit_cobblemon:permafrost_drop",
+//                     count: 2,
+//                     chance: 0.5,
+//                     use_quality: true,
+//                     min_hearts: 5
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "abomasnow",
+//             forages: [
+//                 {
+//                     item: "windswept:pinecone",
+//                     count: 4,
+//                     chance: 1,
+//                     min_hearts: 1
+//                 },
+//                 {
+//                     item: "sunlit_cobblemon:permafrost_drop",
+//                     count: 4,
+//                     chance: 0.75,
+//                     use_quality: true,
+//                     min_hearts: 7
+//                 }
+//             ],
 //         },
 //         {
 //             pokemon: "lapras",
@@ -8633,6 +8686,23 @@
 //                     min_hearts: 10
 //                 }
 //             ],
+//         },
+//         {
+//             pokemon: "giratina",
+//             forages: [
+//                 {
+//                     item: `sunlit_cobblemon:stabilized_antimatter`,
+//                     count: 1,
+//                     chance: 0.2,
+//                     min_hearts: 7
+//                 },
+//                 {
+//                     item: `sunlit_cobblemon:mural_stone_13`,
+//                     count: 1,
+//                     chance: 0.01,
+//                     min_hearts: 10
+//                 }
+//             ],
 //         }
 //     ]
 //     let getPledgeChance = (index) => {
@@ -8802,7 +8872,7 @@
 //         { pokemon: ["moltres", "zapdos", "articuno"] },
 //         { pokemon: ["lugia"] },
 //         { pokemon: ["solgaleo"] },
-//         { pokemon: ["giratina"] },
+//         { pokemon: null },
 //         { pokemon: ["xerneas"] },
 //         { pokemon: ["regigigas"] },
 //         { pokemon: ["chiyu", "chienpao"] }

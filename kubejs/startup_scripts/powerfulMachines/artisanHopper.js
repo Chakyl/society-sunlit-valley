@@ -429,7 +429,9 @@ global.runArtisanHopper = (artisanHopper, artisanMachinePos, player, delay) => {
 
       let abovePos = block.getPos().above();
       let aboveBlock = level.getBlock(abovePos.x, abovePos.y, abovePos.z);
-
+      if (['refinedstorage:interface'].includes(aboveBlock.id)) {
+        return;
+      }
       if (
         recipes &&
         newProperties.get("working").toLowerCase() === "false" &&

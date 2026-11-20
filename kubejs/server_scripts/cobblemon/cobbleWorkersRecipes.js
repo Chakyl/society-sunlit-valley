@@ -160,6 +160,9 @@ ServerEvents.recipes((e) => {
     { sapling: 'cluttered:willow_sapling', log: "cluttered:willow_log" },
     { sapling: 'cluttered:fluorescent_maple_sapling', log: "cluttered:fluorescent_maple_log" },
     { sapling: 'cluttered:poplar_sapling', log: "cluttered:poplar_log" },
+    { sapling: 'minecraft:poplar_sapling', log: "minecraft:poplar_log" },
+    { sapling: 'atmospheric:laurel_sapling', log: "atmospheric:laurel_log" },
+    { sapling: "atmospheric:dry_laurel_sapling", log: "atmospheric:laurel_log" },
   ].forEach((recipe) => {
     createCobbleWorkerRecipe(
       {

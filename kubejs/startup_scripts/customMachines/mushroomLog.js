@@ -24,9 +24,11 @@ global.mushroomLogRecipes = new Map([
     // Brown colony
     ["windswept:chestnut_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
     ["minecraft:pale_oak_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
-    ["cluttered:poplar_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
     ["atmospheric:aspen_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
     ["minecraft:dark_oak_log", { output: ["1x farmersdelight:brown_mushroom_colony"]}],
+    // Shelf Mushroom
+    ["minecraft:poplar_log", { output: ["4x minecraft:shelf_mushroom"]}],
+    ["cluttered:poplar_log", { output: ["4x minecraft:shelf_mushroom"]}],
     // Toadstool
     ["atmospheric:rosewood_log", { output: ["3x ribbits:toadstool"]}],
     ["atmospheric:morado_log", { output: ["3x ribbits:toadstool"]}],
@@ -49,6 +51,8 @@ global.mushroomLogRecipes = new Map([
     // Warped crimson
     ["minecraft:crimson_stem", { output: ["3x minecraft:crimson_fungus"]}], 
     ["minecraft:warped_stem", { output: ["3x minecraft:warped_fungus"]}], 
+    ["minecraft:nether_wart_block", { output: ["4x minecraft:shroomlight"]}], 
+    ["minecraft:warped_wart_block", { output: ["4x minecraft:shroomlight"]}], 
     // Alphacene
     ["betterarcheology:rotten_log", { output: ["2x species:alphacene_mushroom"]}], 
     // Cluttershroms

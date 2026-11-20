@@ -888,5 +888,256 @@
       "unlock_description": "jei.society_trading.trainer_lvl_5",
       "trade_id": "pmart_fairy_badge"
     }
+  ],
+  "random_sets": [
+    {
+      "random_style": "per_day",
+      "rolled_count": 1,
+      "seasons_required": [
+        "late_winter"
+      ],
+      "trades": [
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"litwick\", ot: \"Chakyl\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_chakyl"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"meowstic\", ot: \"MattTheMeow\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_mattthemeow"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"froslass\", ot: \"jexsam\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_jexsam"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"slowpoke\", ot: \"meepr_dib\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_meepr_dib"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"sprigatito\", ot: \"witchd\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_witchd"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"pumpkaboo\", ot: \"Mnesikos\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_mnesikos"
+        },
+        { 
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"sylveon\", ot: \"unnecessarymb\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_unnecessarymb"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"zorua\", variant: \"hisuian\", ot: \"ProvidenceDaemon\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_prov"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"morgrem\", ot: \"Jackanope\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_jackanope"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"pichu\", ot: \"Mimsy34\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_mimsy"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"larvitar\", ot: \"KingKarma\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_kingkarma"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"beldum\", ot: \"Gwenindoubt\", shiny:1}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_gwenindoubt"
+        }
+      ]
+    }
   ]
 }
