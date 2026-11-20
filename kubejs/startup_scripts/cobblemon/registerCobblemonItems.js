@@ -161,6 +161,13 @@ StartupEvents.registry("item", (e) => {
       food.saturation(4);
       food.effect("farm_and_charm:sweets", 600, 1, 1.0);
     });
+  e.create("sunlit_cobblemon:shucked_shuckle")
+    .texture("sunlit_cobblemon:item/shucked_shuckle")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(4);
+      food.effect("minecraft:speed", 1200, 3, 1.0);
+    });
   [
     "moomoo_milk",
     "large_moomoo_milk",
@@ -189,7 +196,7 @@ StartupEvents.registry("item", (e) => {
     .texture(`sunlit_cobblemon:item/moomoo_cheese`)
     .glow(true)
     .color(0, 0x28adde);
-
+  e.create("sunlit_cobblemon:stabilized_antimatter")
   e.create("sunlit_cobblemon:poke_genes")
     .texture("sunlit_cobblemon:item/poke_genes")
     .displayName("Poké Genes");

@@ -1,10 +1,14 @@
 ^^^
 ## Sunlit Cobblemon
-### 1.1.4-SSV4.1.5A
+### 1.1.5-SSV4.2.1
 ^^^
 --- 
 - Updated to Sunlit Valley 4.2.0 - Future Forever update
-- Added Late Winter Shiny Mystery Gifts to Poke Mart at Prismatic Tier 
+- Added backported mons: Snover, Abomasnow, Burmy, Womadam, Mothim, Helioptile, Heliolisk
+- Added Shucked Shuckle and Harmonious Antimatter ranching drops
+- Added Late Winter Shiny Mystery Gifts to Poke Mart at Prismatic Tier
+- Fixed backported Pokemon sounds
+- Fixed Laurel Saplings not working on Craft Station
 
 ## Sunlit Valley 4.2.0 - Future Forever
 - Added and integrated backport content from MC updates: Copper Age, Mounts of Mayhem, and Wilderness Bound
@@ -30,3 +34,9 @@
 - Updated zh_cn translation (Thanks Thirace!)
 - Fixed several logs not being sellable
 - Fixed save data related crash
+# 4.2.1
+- Added Poplar Saplings to Carpenter
+- Added a bunch of customer skins to Cozy Cafe
+- Fixed Zombie Horse spawning above ground
+- Fixed Lost Bowtie missing lang string
+- Fixed Pouffe recipe conflict

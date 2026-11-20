@@ -940,6 +940,46 @@
         {
           "offer": {
             "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"froslass\", ot: \"jexsam\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_jexsam"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"slowpoke\", ot: \"meepr_dib\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_meepr_dib"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
             "nbt": "{pokemon: \"sprigatito\", ot: \"witchd\", shiny:1b}",
             "count": 1
           },

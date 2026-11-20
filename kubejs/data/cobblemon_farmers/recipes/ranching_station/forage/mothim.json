@@ -1,0 +1,24 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "mothim",
+	"forages": [
+		{
+			"item": "society:moth_pollen",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 5
+		},
+		{
+			"item": "society:moth_pollen",
+			"count": 6,
+			"chance": 1,
+			"min_hearts": 7
+		},
+		{
+			"item": "society:moth_pollen",
+			"count": 12,
+			"chance": 0.5,
+			"min_hearts": 10
+		}
+	]
+}

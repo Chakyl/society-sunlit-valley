@@ -148,7 +148,9 @@ global.cobbleAdventuring = [
   { item: "sunlit_cobblemon:prismatic_tm_pack", value: 2048 },
   { item: "sunlit_cobblemon:sun_drops", value: 64 },
   { item: "sunlit_cobblemon:mystica_branch", value: 2048 },
-  { item: "sunlit_cobblemon:sun_essence", value: 11810 }
+  { item: "sunlit_cobblemon:sun_essence", value: 11810 },
+  { item: "sunlit_cobblemon:stabilized_antimatter", value: 16000 },
+  { item: "sunlit_cobblemon:shucked_shuckle", value: 1440 }
 ];
 
 global.cobbleTypeGems = [

@@ -1,0 +1,197 @@
+{
+    "implemented": true,
+    "nationalPokedexNumber": 213,
+    "name": "Shuckle",
+    "primaryType": "bug",
+    "secondaryType": "rock",
+    "maleRatio": 0.5,
+    "height": 6,
+    "weight": 205,
+    "pokedex": [
+        "cobblemon.species.shuckle.desc"
+    ],
+    "labels": [
+        "gen2"
+    ],
+    "aspects": [],
+    "abilities": [
+        "sturdy",
+        "gluttony",
+        "h:contrary"
+    ],
+    "eggGroups": [
+        "bug"
+    ],
+    "baseStats": {
+        "hp": 20,
+        "attack": 10,
+        "defence": 230,
+        "special_attack": 10,
+        "special_defence": 230,
+        "speed": 5
+    },
+    "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 1,
+        "special_attack": 0,
+        "special_defence": 1,
+        "speed": 0
+    },
+    "baseExperienceYield": 177,
+    "experienceGroup": "medium_slow",
+    "catchRate": 190,
+    "eggCycles": 20,
+    "baseFriendship": 50,
+    "baseScale": 0.5,
+    "hitbox": {
+        "width": 1,
+        "height": 1,
+        "fixed": false
+    },
+    "behaviour": {
+        "moving": {
+            "walk": {
+                "walkSpeed": 0.2
+            },
+            "swim": {
+                "avoidsWater": true
+            }
+        },
+        "resting": {
+            "canSleep": true,
+            "light": "0-4",
+            "willSleepOnBed": true,
+            "times": [
+                "any"
+            ],
+            "drowsyChance": 0.0014,
+            "rouseChance": 0.0042
+        },
+        "combat": {
+            "willDefendOwner": true
+        }
+    },
+    "drops": {
+        "amount": 2,
+        "entries": [
+            {
+                "item": "cobblemon:berry_juice"
+            },
+            {
+                "item": "cobblemon:luminous_moss",
+                "percentage": 5.0
+            },
+            {
+                "item": "sunlit_cobblemon:shucked_shuckle",
+                "percentage": 10.0
+            }
+        ]
+    },
+    "moves": [
+        "1:withdraw",
+        "1:constrict",
+        "1:bide",
+        "1:wrap",
+        "5:rollout",
+        "10:strugglebug",
+        "15:rockthrow",
+        "20:safeguard",
+        "25:rest",
+        "30:bugbite",
+        "35:powersplit",
+        "35:guardsplit",
+        "40:rockslide",
+        "45:gastroacid",
+        "50:stickyweb",
+        "55:powertrick",
+        "60:stoneedge",
+        "65:shellsmash",
+        "egg:acid",
+        "egg:acupressure",
+        "egg:covet",
+        "egg:defensecurl",
+        "egg:finalgambit",
+        "egg:infestation",
+        "egg:knockoff",
+        "egg:sweetscent",
+        "egg:toxic",
+        "tm:afteryou",
+        "tm:ancientpower",
+        "tm:bind",
+        "tm:bodyslam",
+        "tm:bugbite",
+        "tm:bulldoze",
+        "tm:covet",
+        "tm:dig",
+        "tm:earthpower",
+        "tm:earthquake",
+        "tm:encore",
+        "tm:endure",
+        "tm:facade",
+        "tm:flash",
+        "tm:gastroacid",
+        "tm:gyroball",
+        "tm:headbutt",
+        "tm:helpinghand",
+        "tm:infestation",
+        "tm:irondefense",
+        "tm:knockoff",
+        "tm:meteorbeam",
+        "tm:mudshot",
+        "tm:mudslap",
+        "tm:protect",
+        "tm:rest",
+        "tm:reversal",
+        "tm:rockblast",
+        "tm:rockpolish",
+        "tm:rockslide",
+        "tm:rocksmash",
+        "tm:rocktomb",
+        "tm:rollout",
+        "tm:safeguard",
+        "tm:sandstorm",
+        "tm:sandtomb",
+        "tm:skittersmack",
+        "tm:sleeptalk",
+        "tm:sludgebomb",
+        "tm:sludgewave",
+        "tm:smackdown",
+        "tm:stealthrock",
+        "tm:steelroller",
+        "tm:stoneedge",
+        "tm:strength",
+        "tm:stringshot",
+        "tm:strugglebug",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:terablast",
+        "tm:toxic",
+        "tm:venoshock",
+        "tutor:afteryou",
+        "tutor:ancientpower",
+        "tutor:bind",
+        "tutor:bugbite",
+        "tutor:bulldoze",
+        "tutor:covet",
+        "tutor:earthpower",
+        "tutor:gastroacid",
+        "tutor:helpinghand",
+        "tutor:irondefense",
+        "tutor:knockoff",
+        "tutor:meteorbeam",
+        "tutor:mudslap",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:rocksmash",
+        "tutor:rollout",
+        "tutor:skittersmack",
+        "tutor:sleeptalk",
+        "tutor:sludgebomb",
+        "tutor:stealthrock",
+        "tutor:steelroller",
+        "tutor:stoneedge",
+        "tutor:stringshot"
+    ],
+    "evolutions": []
+}

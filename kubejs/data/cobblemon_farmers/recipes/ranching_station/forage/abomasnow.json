@@ -1,0 +1,19 @@
+{
+	"type": "cobblemon_farmers:ranching_station/forage",
+	"pokemon": "abomasnow",
+	"forages": [
+		{
+			"item": "windswept:pinecone",
+			"count": 4,
+			"chance": 1,
+			"min_hearts": 1
+		},
+		{
+			"item": "sunlit_cobblemon:permafrost_drop",
+			"count": 4,
+			"chance": 0.75,
+			"use_quality": true,
+			"min_hearts": 7
+		}
+	]
+}
