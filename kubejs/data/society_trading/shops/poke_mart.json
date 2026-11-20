@@ -888,5 +888,76 @@
       "unlock_description": "jei.society_trading.trainer_lvl_5",
       "trade_id": "pmart_fairy_badge"
     }
+  ],
+  "random_sets": [
+    {
+      "random_style": "per_day",
+      "rolled_count": 1,
+      "seasons_required": [
+        "late_winter"
+      ],
+      "trades": [
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"litwick\", ot: \"Chakyl\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_chakyl"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"larvitar\", ot: \"KingKarma\", shiny:1b}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_kingkarma"
+        },
+        {
+          "offer": {
+            "item": "sunlit_cobblemon:mystery_gift",
+            "nbt": "{pokemon: \"beldum\", ot: \"Gwenindoubt\", shiny:1}",
+            "count": 1
+          },
+          "request": {
+            "item": "numismatics:prismatic_coin",
+            "count": 8
+          },
+          "second_request": {
+            "item": "society:token_of_unity",
+            "count": 1
+          },
+          "numismatics_cost": 268435456,
+          "limit": 1,
+          "stage_required": "trainer_lvl_8",
+          "unlock_description": "jei.society_trading.trainer_lvl_8",
+          "trade_id": "pmart_shiny_mystery_gift_gwenindoubt"
+        }
+      ]
+    }
   ]
 }

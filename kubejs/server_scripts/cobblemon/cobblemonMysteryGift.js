@@ -8,9 +8,10 @@ ItemEvents.rightClicked("sunlit_cobblemon:mystery_gift", (e) => {
 
   let randomGift = randomGifts[Math.floor(Math.random() * randomGifts.length)];
   let itemNbt = item.getNbt() || { pokemon: randomGift, ot: "Chakyl" };
-  let { ot, pokemon } = itemNbt;
+  let { ot, pokemon, shiny } = itemNbt;
   let resolvedPokemon = pokemon == null || pokemon == "random" ? randomGift : pokemon;
-  let resolvedOT = ot == null || ot === "Chakyl" ? "Chakyl" : Component.translatable(`dialog.npc.${ot}.name`).getString()
+  let npcIds = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "carlos", "veronica", "evelyne"];
+  let resolvedOT = ot == null || !npcIds.includes(ot) ? ot : Component.translatable(`dialog.npc.${ot}.name`).getString()
   server.runCommandSilent(
     `playsound advancementplaques:ui.toast.goal_complete block @a ${player.x} ${player.y} ${player.z}`,
   );
@@ -28,10 +29,8 @@ ItemEvents.rightClicked("sunlit_cobblemon:mystery_gift", (e) => {
     25,
     0.001
   );
-  let shiny = Math.random() < 1 / 1024;
+  let resolvedShiny = shiny ? shiny : Math.random() < 1 / 1024;
   player.tell(Component.translatable("sunlit_cobblemon.mystery_gift", Component.translatable(`cobblemon.species.${resolvedPokemon}.name`)).green())
-  server.runCommandSilent(
-    `pokegiveother ${player.username} ${resolvedPokemon} originaltrainer=${resolvedOT} ottype=Player ${shiny ? "shiny " : ""} pokeball=cherish_ball`
-  );
+  server.runCommandSilent(`pokegiveother ${player.username} ${resolvedPokemon} originaltrainer=${resolvedOT} ottype=Player ${resolvedShiny ? "shiny " : ""} pokeball=cherish_ball`);
 });
 
