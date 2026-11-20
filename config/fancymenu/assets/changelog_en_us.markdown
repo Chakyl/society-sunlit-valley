@@ -3,6 +3,7 @@
 ### 1.1.4-SSV4.1.5A
 ^^^
 --- 
+- Updated to Sunlit Valley 4.2.0 - Future Forever update
 - Added Late Winter Shiny Mystery Gifts to Poke Mart at Prismatic Tier 
 
 ## Sunlit Valley 4.2.0 - Future Forever
