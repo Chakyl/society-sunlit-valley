@@ -210,10 +210,10 @@ ServerEvents.recipes((e) => {
   //   B: "society:battery",
   //   f: "society:fire_quartz",
   // });
-  e.shaped("artisan_machines:recycling_machine", ["LIL", "fbf", "LIL"], {
+  e.shaped("artisan_machines:recycling_machine", ["LIL", "IbI", "LfL"], {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
-    f: "society:fire_quartz",
+    f: "society:small_gizmo",
     I: "minecraft:iron_block",
   });
   // e.shaped("artisan_machines:mushroom_log", ["LLL", "LML", "mPm"], {
@@ -223,12 +223,12 @@ ServerEvents.recipes((e) => {
   //   M: "farmersdelight:rich_soil",
   // });
   // Battery
-  e.shaped("artisan_machines:crystalarium", ["III", "SDS", "ibi"], {
+  e.shaped("artisan_machines:crystalarium", ["IaI", "SDS", "IbI"], {
     D: "minecraft:diamond_block",
     S: "minecraft:netherite_ingot",
     b: "society:battery",
-    I: "oreganized:lead_ingot",
-    i: "oreganized:lead_block",
+    a: "society:ancient_parts",
+    I: "oreganized:lead_block",
   });
   // e.shaped("artisan_machines:espresso_machine", ["iii", "ltl", "bib"], {
   //   t: "herbalbrews:tea_kettle",

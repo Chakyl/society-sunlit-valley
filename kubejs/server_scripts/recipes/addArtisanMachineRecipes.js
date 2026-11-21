@@ -74,9 +74,9 @@ ServerEvents.recipes((e) => {
             rank: 1,
             required_upgrades: [
                 {
-                item: "artisan_machines:black_opal"
-            }
-        ],
+                    item: "artisan_machines:black_opal"
+                }
+            ],
             chanced_results: [
                 { chance: 0.1, stack: { identifier: `society:pristine_${crystal.item.split(":")[1]}`, count: 1 } },
                 { chance: 1.0, stack: { identifier: crystal.item, count: 2 } }
@@ -85,5 +85,68 @@ ServerEvents.recipes((e) => {
             processing_hours: crystal.time * 24
         })
     });
-
+    [
+        // { input: "aquaculture:tin_can", output: ["3x numismatics:cog"] },
+        // { input: "aquaculture:driftwood", output: ["1x meadow:fire_log"] },
+        { input: "furniture:trash_bag", output: ["4x society:bouquet_bag"] },
+        { input: "society:fire_quartz", output: ["16x minecraft:quartz"] },
+        { input: 'starcatcher:oculi', output: ["8x minecraft:quartz"] },
+        { input: 'starcatcher:mossy_boot', output: ["8x starcatcher:lush_bait"] },
+        { input: 'starcatcher:boot', output: ["4x minecraft:leather"] },
+        { input: 'starcatcher:fish_bones', output: ["sunrisegardening:strong_fertilizer"] },
+        { input: 'plentifulponds:pond_scum', output: ["sunrisegardening:high_quality_fertilizer"] },
+        { input: "atmospheric:carmine_husk", output: ["2x ribbits:toadstool"] },
+        { input: "society:legendary_ink", output: ["4x supplementaries:antique_ink"] },
+        { input: "hooked:redstone_hook", output: ["hooked:diamond_hook", "society:prismatic_shard"], multExempt: true },
+        { input: "atmospheric:grimwood_leaves", output: ["4x atmospheric:grimwood_sapling"] }, 
+        { input: "society:butterfly_amber", output: ["4x society:sparkstone"] },
+        { input: "society:moth_pollen", output: ["2x vintagedelight:organic_mash"] },
+        { input: "society:maple_syrup", output: ["4x vintagedelight:organic_mash"] },
+        { input: "society:ruby", output: ["4x quark:red_corundum"] },
+        { input: "society:topaz", output: ["4x quark:orange_corundum"] },
+        { input: "society:fluorapatite", output: ["4x quark:violet_corundum"] },
+        { input: "society:geminite", output: ["4x quark:green_corundum"] },
+        { input: "society:kyanite", output: ["4x quark:indigo_corundum"] },
+        { input: "society:opal", output: ["4x quark:white_corundum"] },
+        { input: "society:lemon_stone", output: ["4x quark:yellow_corundum"] },
+        { input: "society:ghost_crystal", output: ["4x quark:blue_corundum"] },
+        { input: "society:bixbyite", output: ["4x quark:black_corundum"] },
+        { input: "society:enriched_bone_meal", output: ["1x vintagedelight:organic_mash"] }, ,
+        { input: "minecraft:raw_iron", output: ["2x create:crushed_raw_iron"] },
+        { input: "minecraft:raw_copper", output: ["2x create:crushed_raw_copper"] },
+        { input: "minecraft:raw_gold", output: ["2x create:crushed_raw_gold"] },
+        { input: "create:raw_zinc", output: ["2x create:crushed_raw_zinc"] },
+        { input: "oreganized:raw_lead", output: ["2x create:crushed_raw_lead"] },
+        { input: "oreganized:raw_silver", output: ["2x create:crushed_raw_silver"] },
+        { input: "etcetera:raw_bismuth", output: ["2x create:crushed_raw_bismuth"] },
+        { input: "society:sparkpod", output: ["6x society:sparkstone"] },
+    ].forEach((recipe) => {
+        let outputs = []
+        let doubledOutputs = []
+        recipe.output.forEach((out) => {
+            let itemStack = Item.of(out);
+            outputs.push({ chance: 1, stack: { identifier: itemStack.id, count: itemStack.count } })
+            doubledOutputs.push({ chance: 1, stack: { identifier: itemStack.id, count: itemStack.count * (recipe.multExempt ? 1 : 2) } })
+        })
+        e.custom({
+            type: "artisan_machines:recycling_machine",
+            rank: 0,
+            required_upgrades: [],
+            chanced_results: outputs,
+            ingredients: [{ item: recipe.input }],
+            processing_hours: 24
+        })
+        e.custom({
+            type: "artisan_machines:recycling_machine",
+            rank: 1,
+            required_upgrades: [
+                {
+                    item: "artisan_machines:recycled_core"
+                }
+            ],
+            chanced_results: doubledOutputs,
+            ingredients: [{ item: recipe.input }],
+            processing_hours: 24
+        })
+    });
 });

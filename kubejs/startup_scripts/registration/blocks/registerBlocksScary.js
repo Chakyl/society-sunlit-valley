@@ -19,7 +19,7 @@ StartupEvents.registry("block", (e) => {
         .tagBlock("minecraft:incorrect_for_stone_tool")
         .tagBlock("minecraft:needs_iron_tool")
         .tagBlock("minecraft:mineable/axe");
-        
+
     // Ores
     e.create("society:earth_crystal")
         .box(2, 0, 2, 14, 8, 14)
@@ -111,23 +111,16 @@ StartupEvents.registry("block", (e) => {
     createBoulder("end_stone");
 
 
-    const createSupplyCrate = (type, path) => {
+    const createSupplyCrate = (type) => {
         e.create(`society:${type}_supply_crate`)
             .soundType("wood")
             .tagBlock("minecraft:mineable/axe")
-            .parentModel(path)
+            .texture(`society:block/supply_crates/${type}`)
             .tagBlock("society:supply_crate");
     };
-    createSupplyCrate("oak", "refurbished_furniture:block/oak_crate_closed");
-    createSupplyCrate(
-        "spruce",
-        "refurbished_furniture:block/spruce_crate_closed"
-    );
-    createSupplyCrate("palm", "everycomp:block/rfm/beachparty/palm_crate_closed");
-    createSupplyCrate(
-        "grimwood",
-        "everycomp:block/rfm/atmospheric/grimwood_crate_closed"
-    );
+    ["oak", "spruce", "palm", "grimwood"].forEach((crateType) => {
+        createSupplyCrate(crateType);
+    })
     e.create("society:iridium_ore")
         .soundType("stone")
         .hardness(2.5)
@@ -607,4 +600,14 @@ StartupEvents.registry("block", (e) => {
         .requiresTool(false)
         .parentModel("society:block/kubejs/fantasy_catalog")
         .displayName("♡ §eFantasy Catalog");
+    const createFishingCrate = (type) => {
+        e.create(`society:${type}_crate`)
+            .soundType("wood")
+            .tagBlock("minecraft:mineable/axe")
+            .texture(`society:block/fishing_crates/${type}`)
+            .tagBlock("society:fishing_crate");
+    };
+    ["wooden", "mossy", "treasure", "armored"].forEach((crateType) => {
+        createFishingCrate(crateType);
+    })
 });

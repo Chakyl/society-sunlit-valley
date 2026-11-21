@@ -337,6 +337,8 @@ ServerEvents.recipes((e) => {
 
             }
             if (crop.products.includes("wine") && crop.wine) {
+                // 'kaleidoscope_tavern:sunset_glow[kaleidoscope_tavern:brew_level=1]'
+                // 'kaleidoscope_tavern:sunset_glow[kaleidoscope_tavern:brew_level=3]' // Common
                 basicArtisanMachineRecipe(e, "artisan_machines:wine_keg", { id: crop.item, count: 3 }, { identifier: crop.wine, count: 1 }, 144)
             }
             if (crop.products.includes("dried")) {

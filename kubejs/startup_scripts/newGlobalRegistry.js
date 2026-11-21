@@ -59,7 +59,7 @@ global.CROP_DEFINITIONS = [
     { blocked: true, item: "orchard:plum", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:plum_wine", classifications: ["fruit", "tree_crop"] },
     { blocked: true, item: "orchard:hazelnut", dropCount: [1, 2], growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves"], classifications: ["nut", "tree_crop"] },
     { blocked: true, item: "orchard:pawpaw", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:ice_wine", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "fruittreemod:cinnamon", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: [], classifications: ["industrial", "tree_crop"] },
+    { blocked: true, item: "orchard:cinnamon", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: [], classifications: ["industrial", "tree_crop"] },
     { blocked: true, item: "orchard:mango", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:rum", classifications: ["fruit", "tree_crop"] },
     { blocked: true, item: "orchard:starfruit", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "society:dewy_star", classifications: ["fruit", "tree_crop"] },
     { blocked: true, item: "orchard:lychee", dropCount: [1, 2], growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:red_queen", classifications: ["fruit", "tree_crop"] },

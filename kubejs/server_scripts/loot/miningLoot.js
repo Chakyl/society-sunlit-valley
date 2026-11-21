@@ -27,6 +27,13 @@ const overworldOres = [
     "minecraft:deepslate_emerald_ore",
     "minecraft:emerald_ore",
 ];
+const potsAndCrates = [
+    "society:oak_supply_crate",
+    "society:spruce_supply_crate",
+    "society:grimwood_supply_crate",
+    "society:palm_supply_crate",
+    'supplementaries:urn'
+];
 const bettherOres = [
     "minecraft:nether_gold_ore",
     "minecraft:nether_quartz_ore",
@@ -285,6 +292,16 @@ LootJS.modifiers((e) => {
             .matchDimension("society:skull_cavern")
             .matchTool(ItemFilter.hasEnchantment("minecraft:silk_touch").negate())
             .addLoot(LootEntry.of("society:pristine_star_shards").randomChance(0.06));
+    });
+    potsAndCrates.forEach((ore) => {
+        e.addBlockModifier(ore)
+            .matchTool(ItemFilter.hasEnchantment("minecraft:silk_touch").negate())
+            .hasAnyStage("mining_lvl_3")
+            .addLoot(LootEntry.of('society:small_gizmo').randomChance(0.15));
+        e.addBlockModifier(ore)
+            .matchTool(ItemFilter.hasEnchantment("minecraft:silk_touch").negate())
+            .hasAnyStage("mining_lvl_9")
+            .addLoot(LootEntry.of('society:ancient_parts').randomChance(0.1));
     });
     [
         "minecraft:deepslate_gold_ore",
