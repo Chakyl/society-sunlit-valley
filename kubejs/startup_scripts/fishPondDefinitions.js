@@ -393,6 +393,7 @@ global.fishPondDefinitions = new Map([
         requestedItems: [
           { item: "etcetera:black_sweater", count: 1 },
           { item: 'minecraft:black_cushion', count: 16 },
+          { item: 'vintagedelight:salt_lamp_black', count: 16 }
         ],
       },
       {
