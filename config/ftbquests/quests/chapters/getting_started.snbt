@@ -58,7 +58,7 @@
 					id: "minecraft:wooden_pickaxe"
 				}
 				id: "1802EEEEFC77234B"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:wooden_sword)item(minecraft:wooden_axe)item(minecraft:wooden_pickaxe)item(minecraft:wooden_shovel)item(minecraft:wooden_hoe))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -126,6 +126,7 @@
 				{
 					exclude_from_claim_all: true
 					id: "672B2E2736C0E2FA"
+					table_id: 7190105054659049175L
 					type: "choice"
 				}
 			]
@@ -294,6 +295,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "11939F7CA0472064"
+				table_id: 870364369429910623L
 				type: "choice"
 			}]
 			size: 2.0d
@@ -538,6 +540,7 @@
 				{
 					exclude_from_claim_all: true
 					id: "276A094BCA07AC23"
+					table_id: 3372592732931167740L
 					type: "choice"
 				}
 			]

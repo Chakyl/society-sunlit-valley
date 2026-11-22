@@ -1,5 +1,5 @@
 ServerEvents.recipes((e) => {
-  // e.shapeless(Item.of('society:invitation', '{type:{id:"society:carpenter"}}'), ['minecraft:crafting_table', "minecraft:wooden_axe", "minecraft:cobblestone"])
+  e.shapeless('society:invitation[society:npc_id="society:carpenter"]', ['minecraft:crafting_table', "minecraft:wooden_axe", "minecraft:cobblestone"])
   // e.shapeless(Item.of('minecraft:sugar', 8, '{quality_food:{quality:3}}'), ["society:maple_syrup"])
   // e.shapeless(Item.of('minecraft:sugar', 3, '{quality_food:{quality:2}}'), ["minecraft:honey_bottle"])
   // e.shapeless(Item.of('minecraft:sugar', 1, '{quality_food:{quality:1}}'), ["minecraft:sugar_cane"])

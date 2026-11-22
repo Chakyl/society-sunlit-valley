@@ -1,0 +1,10 @@
+{
+	id: "661A3E9221C62BFB"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ id: "28B23CC339DD10C2", item: { components: { "minecraft:custom_data": { blueprint_name: "market_basic", remaining_uses: 1b, visualizeBuild: 0b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.basic_market\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.basic_market.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+		{ id: "3A1EF4DA545D49CC", item: { components: { "minecraft:custom_data": { blueprint_name: "market_pineconetown", remaining_uses: 1b, visualizeBuild: 0b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_market\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_market.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+		{ id: "212946CF2F4974DF", item: { components: { "minecraft:custom_data": { blueprint_name: "market_rural", remaining_uses: 1b, visualizeBuild: 0b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.rural_market\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.rural_market.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+	]
+}

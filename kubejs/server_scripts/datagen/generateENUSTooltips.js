@@ -157,6 +157,5 @@ const miscTooltips = [
 generateStandardTooltips(miscTooltips)
 generateBulkStandardsTooltips(['whimsy_deco:phone', 'whimsy_deco:black_phone', 'whimsy_deco:red_phone', 'whimsy_deco:blue_phone', 'tanukidecor:antique_phone'], [PHONE_BLOCK])
 
-
 JsonIO.write(`kubejs/assets/society_tooltips/lang/en_us.json`, translationKeys);
 

@@ -6127,7 +6127,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-chunks-neoforge-2101.1.22.jar",
+                    "file_name": "ftb-chunks-neoforge-2101.1.24.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -6135,20 +6135,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8791/113/ftb-chunks-neoforge-2101.1.22.jar",
-                    "id": "8791113",
+                    "url": "https://edge.forgecdn.net/files/9594/476/ftb-chunks-neoforge-2101.1.24.jar",
+                    "id": "9594476",
                     "parent_id": "314906",
                     "hashes": {
-                        "sha1": "a53f1bb7965c6954a348d4f321f03d3971ad503f",
-                        "md5": "781396912e2df9ed74d183811cb90407"
+                        "sha1": "f0d48143cc80918cf632a4c14c3ca3e974ed0457",
+                        "md5": "1a5bd9443eeb8fc536ead0710427107c"
                     },
                     "required_dependencies": [
                         "404465",
-                        "404468",
-                        "419699"
+                        "419699",
+                        "404468"
                     ],
-                    "size": 655807,
-                    "date_published": "2026-09-02T08:43:35.807Z"
+                    "size": 671431,
+                    "date_published": "2026-11-13T16:36:20.460Z"
                 }
             ]
         },
@@ -6167,7 +6167,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftbxaerocompat-neoforge-1.1.4.jar",
+                    "file_name": "ftbxaerocompat-neoforge-1.4.0-1.21.1.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -6175,19 +6175,60 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8103/626/ftbxaerocompat-neoforge-1.1.4.jar",
-                    "id": "8103626",
+                    "url": "https://edge.forgecdn.net/files/9387/323/ftbxaerocompat-neoforge-1.4.0-1.21.1.jar",
+                    "id": "9387323",
                     "parent_id": "1357724",
                     "hashes": {
-                        "sha1": "6923ae95bdde32d8b504364ea125969cc7d6cb2e",
-                        "md5": "bdf3efa52c71bdc7f3f08961bd1339d5"
+                        "sha1": "136744611c73fd8a9cbb3827fdb76b0f854a4393",
+                        "md5": "4a2ad99b21d80705b9d60e9df009e3a8"
                     },
                     "required_dependencies": [
                         "317780",
                         "314906"
                     ],
-                    "size": 109301,
-                    "date_published": "2026-05-17T13:06:15.143Z"
+                    "size": 118615,
+                    "date_published": "2026-10-31T18:45:13.147Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "6Up6N7sKbHH8i31M",
+            "pakku_links": [
+                "kyCJow9Ps30NCQv7"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-filter-system"
+            },
+            "name": {
+                "curseforge": "FTB Filter System"
+            },
+            "id": {
+                "curseforge": "943925"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-filter-system-neoforge-21.1.5.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9698/388/ftb-filter-system-neoforge-21.1.5.jar",
+                    "id": "9698388",
+                    "parent_id": "943925",
+                    "hashes": {
+                        "sha1": "77181915b5850f6e6685f4a3145b0dce84e01f73",
+                        "md5": "259695239a755e183afcd23df32d4219"
+                    },
+                    "required_dependencies": [
+                        "419699"
+                    ],
+                    "size": 228337,
+                    "date_published": "2026-11-19T10:38:20.657Z"
                 }
             ]
         },
@@ -6206,7 +6247,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-library-neoforge-2101.1.36.jar",
+                    "file_name": "ftb-library-neoforge-2101.1.40.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -6214,18 +6255,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8858/846/ftb-library-neoforge-2101.1.36.jar",
-                    "id": "8858846",
+                    "url": "https://edge.forgecdn.net/files/9650/381/ftb-library-neoforge-2101.1.40.jar",
+                    "id": "9650381",
                     "parent_id": "404465",
                     "hashes": {
-                        "sha1": "07b5bf1c6ac5160a6cfe1b39ed8c1465dc151b00",
-                        "md5": "69ebc0ddc837a23c2ca76bd8cc490937"
+                        "sha1": "e5f24391a447754dbc6d37d866981f47d67bb664",
+                        "md5": "b0fa668c8d5fb0c7e47569ea311ae8e6"
                     },
                     "required_dependencies": [
                         "419699"
                     ],
-                    "size": 1439427,
-                    "date_published": "2026-09-11T16:17:01.723Z"
+                    "size": 1643436,
+                    "date_published": "2026-11-16T16:06:18.857Z"
                 }
             ]
         },
@@ -6248,7 +6289,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-quests-neoforge-2101.1.36.jar",
+                    "file_name": "ftb-quests-neoforge-2101.1.39.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -6256,20 +6297,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8885/17/ftb-quests-neoforge-2101.1.36.jar",
-                    "id": "8885017",
+                    "url": "https://edge.forgecdn.net/files/9650/792/ftb-quests-neoforge-2101.1.39.jar",
+                    "id": "9650792",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "b2ede29b98a3022c22065fbe9b1761e385a28683",
-                        "md5": "90798f934aec638e97c595947838f843"
+                        "sha1": "d5a0de6ad0517fd843ea830b49b06287c0686906",
+                        "md5": "c7fb0f3bd62763ae1b7371c98ac3293b"
                     },
                     "required_dependencies": [
+                        "404468",
                         "419699",
-                        "404465",
-                        "404468"
+                        "404465"
                     ],
-                    "size": 1609984,
-                    "date_published": "2026-09-15T08:30:42.930Z"
+                    "size": 1670999,
+                    "date_published": "2026-11-16T16:30:42.777Z"
                 }
             ]
         },
@@ -6291,7 +6332,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-teams-neoforge-2101.1.11.jar",
+                    "file_name": "ftb-teams-neoforge-2101.1.12.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -6299,19 +6340,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8724/782/ftb-teams-neoforge-2101.1.11.jar",
-                    "id": "8724782",
+                    "url": "https://edge.forgecdn.net/files/9434/81/ftb-teams-neoforge-2101.1.12.jar",
+                    "id": "9434081",
                     "parent_id": "404468",
                     "hashes": {
-                        "sha1": "62b65f752d0326edd13244e58d5f2aec035da4e9",
-                        "md5": "ee780bb9fe724f6d1af97547bdab8bff"
+                        "sha1": "9c831fbbbccf2178827c3ccf278b2f2a0ce57306",
+                        "md5": "9f1d725ce83ce54dc04ca49c1c3efbbf"
                     },
                     "required_dependencies": [
-                        "404465",
-                        "419699"
+                        "419699",
+                        "404465"
                     ],
-                    "size": 308236,
-                    "date_published": "2026-08-24T14:50:37.037Z"
+                    "size": 308430,
+                    "date_published": "2026-11-04T14:09:06.373Z"
                 }
             ]
         },
@@ -6333,7 +6374,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-xmod-compat-neoforge-21.1.12.jar",
+                    "file_name": "ftb-xmod-compat-neoforge-21.1.14.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -6341,18 +6382,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8909/889/ftb-xmod-compat-neoforge-21.1.12.jar",
-                    "id": "8909889",
+                    "url": "https://edge.forgecdn.net/files/9344/504/ftb-xmod-compat-neoforge-21.1.14.jar",
+                    "id": "9344504",
                     "parent_id": "889915",
                     "hashes": {
-                        "sha1": "1f68bf714cf7ea3e07b23c6b8c1ebe516b325047",
-                        "md5": "1cabb5550348a77420405737e344029a"
+                        "sha1": "8dc3db7b8aa93eabac54237c5d53bfea15f92ba5",
+                        "md5": "3b2e3d852cc241bc02a1edb6c9ae9089"
                     },
                     "required_dependencies": [
                         "404465"
                     ],
-                    "size": 148575,
-                    "date_published": "2026-09-18T08:00:25.227Z"
+                    "size": 149952,
+                    "date_published": "2026-10-27T16:37:24.247Z"
                 }
             ]
         },
@@ -11851,31 +11892,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Oreganized 1.21.1-5.3.0+mc1.21.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8910/176/Oreganized 1.21.1-5.3.0+mc1.21.1.jar",
-                    "id": "8910176",
-                    "parent_id": "769203",
-                    "hashes": {
-                        "sha1": "2618049f163ff9ad095eebaf6605cbfd40e42df7",
-                        "md5": "046dcd8b234f123df9be3f5cd82f7513"
-                    },
-                    "required_dependencies": [
-                        "382216"
-                    ],
-                    "size": 5706021,
-                    "date_published": "2026-09-18T09:04:57.913Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Oreganized 1.21.1-5.3.0+mc1.21.1.jar",
+                    "file_name": "Oreganized 5.4.5+mc1.21.1.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -11883,18 +11901,41 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/2FJutzEL/versions/4LJyawKL/Oreganized 1.21.1-5.3.0+mc1.21.1.jar",
-                    "id": "4LJyawKL",
+                    "url": "https://cdn.modrinth.com/data/2FJutzEL/versions/ZDlOH0rD/Oreganized 5.4.5+mc1.21.1.jar",
+                    "id": "ZDlOH0rD",
                     "parent_id": "2FJutzEL",
                     "hashes": {
-                        "sha512": "02c698978b93ebeaceda88c6e1cc2537e5e37c6b6e90116d57a1b56c99c5f06a836b9d5ceecb11392c98b6d52abea2d13bba046bb72b52696ed613fd4e15c7a6",
-                        "sha1": "2618049f163ff9ad095eebaf6605cbfd40e42df7"
+                        "sha512": "dbdce794fd577d70bdf231c69d071731ff234c829eebf01c2b06ec36127603eef4a77f2756a55ff1cae05858dbd6d18893ba9dc6975d845c428972bc87d4effb",
+                        "sha1": "7691fe460e3703a5a6b9b55a64e16323fb6c9662"
                     },
                     "required_dependencies": [
                         "VsM5EDoI"
                     ],
-                    "size": 5706021,
-                    "date_published": "2026-09-18T09:05:03.461930Z"
+                    "size": 11791624,
+                    "date_published": "2026-11-13T17:26:29.205811Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Oreganized-5.4.5-mc1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9595/241/Oreganized-5.4.5-mc1.21.1.jar",
+                    "id": "9595241",
+                    "parent_id": "769203",
+                    "hashes": {
+                        "sha1": "7691fe460e3703a5a6b9b55a64e16323fb6c9662",
+                        "md5": "94de0c8f3a98a3a4f1deca0abb4ab476"
+                    },
+                    "required_dependencies": [
+                        "382216"
+                    ],
+                    "size": 11791624,
+                    "date_published": "2026-11-13T17:25:57.330Z"
                 }
             ]
         },

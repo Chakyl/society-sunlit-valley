@@ -8,18 +8,6 @@ StartupEvents.registry("block", (e) => {
         .requiresTool(false)
         .tagBlock("minecraft:mineable/axe");
 
-    e.create("society:hardwood_log", "cardinal")
-        .box(0, 0, 0, 16, 13, 16)
-        .defaultCutout()
-        .soundType("wood")
-        .hardness(6.5)
-        .resistance(12.0)
-        .requiresTool(false)
-        .tagBlock("minecraft:incorrect_for_wooden_tool")
-        .tagBlock("minecraft:incorrect_for_stone_tool")
-        .tagBlock("minecraft:needs_iron_tool")
-        .tagBlock("minecraft:mineable/axe");
-
     // Ores
     e.create("society:earth_crystal")
         .box(2, 0, 2, 14, 8, 14)

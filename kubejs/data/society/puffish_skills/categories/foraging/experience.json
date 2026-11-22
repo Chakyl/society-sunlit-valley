@@ -6,28 +6,58 @@
     }
   },
   "sources": [
-    {
-      "type": "puffish_skills:craft_item",
+{
+      "type": "puffish_skills:mine_block",
       "data": {
         "variables": {
-        },
-        "experience": [
-        ]
-      }
-    },
-    {
-      "type": "puffish_skills:fish_item",
-      "data": {
-        "variables": {
-          "is_fish": {
+          "matches_tag": {
             "operations": [
               {
-                "type": "get_fished_item_stack"
+                "type": "get_mined_block_state"
               },
               {
                 "type": "puffish_skills:test",
                 "data": {
-                  "item": "#fishes"
+                  "block": "#society:forage_bush"
+                }
+              }
+            ]
+          },
+          "silk_touch": {
+            "operations": [
+              {
+                "type": "get_tool_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "nbt": "{Enchantments:[{id:\"minecraft:silk_touch\"}]}"
+                }
+              }
+            ]
+          },
+          "hardwood": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "society:hardwood_log"
+                }
+              }
+            ]
+          },
+          "silk_cocoon": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "crittersandcompanions:silk_cocoon"
                 }
               }
             ]
@@ -35,12 +65,16 @@
         },
         "experience": [
           {
-            "condition": "is_fish",
-            "expression": "100"
+            "condition": "matches_tag",
+            "expression": "20"
           },
           {
-            "condition": "!is_fish",
-            "expression": "10"
+            "condition": "!silk_touch & hardwood",
+            "expression": "200"
+          },
+          {
+            "condition": "!silk_touch & silk_cocoon",
+            "expression": "120"
           }
         ]
       }

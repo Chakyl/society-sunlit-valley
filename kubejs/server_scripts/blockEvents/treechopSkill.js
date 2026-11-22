@@ -7,12 +7,13 @@ let seasonChances = {
   winter: 0.0025,
 }
 NativeEvents.onEvent($FinishChopEvent, (e) => {
-  const { player, level } = e;
-  if (!player.stages.has('foraging_lvl_3')) return;
+  const {player, level } = e;
   const blockState = e.getChoppedBlockState()
+  if (blockState.getBlock().getId() !== "treechop:chopped_log") return;
   const blockPos = e.getChoppedBlockPos();
   const block = level.getBlock(blockPos);
-  if (blockState.getBlock().getId() !== "treechop:chopped_log") return;
+  global.giveExperience(level.server, player, "foraging", 1);
+  if (!player.stages.has('foraging_lvl_3')) return;
   let mult = player.stages.has("dendrologist") ? 2 : 1
   if (Math.random() <= (0.005 * mult) && !player.stages.has("wuthering_logs")) {
     block.popItem("society:wuthering_logs");

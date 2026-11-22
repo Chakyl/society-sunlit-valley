@@ -85,7 +85,7 @@ Icon-Settings:
   Size: 12
 Sound-Settings:
   # Enables sound effects when toasts appear and disappear
-  Enabled: true
+  Enabled: false
   # Sound mappings for toast appearance by dimension (Format: <dimension>=<sound>)
   In-Sound: [minecraft:overworld=minecraft:ui.toast.in, minecraft:the_nether=minecraft:ui.toast.in, minecraft:the_end=minecraft:ui.toast.in]
   # Sound mappings for toast disappearance by dimension (Format: <dimension>=<sound>)

@@ -13,7 +13,7 @@ global.CROP_DEFINITIONS = [
 
     { item: "farmersdelight:tomato", storageBlock: "farmersdelight:tomato_crate", dropCount: [2, 3], growDays: 6, regrowDays: 3, seasons: ["spring", "summer"], products: ["preserves"], classifications: ["vegetable"], cropBlock: "farmersdelight:tomatoes", seed: "farmersdelight:tomato_seeds" },
 
-    { item: "veggiesdelight:bellpepper", storageBlock: "veggiesdelight:bellpepper_crate", dropCount: 1, growDays: 7, regrowDays: 3, seasons: ["summer"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:bellpepper_crop", seed:"veggiesdelight:bellpepper_seeds" },
+    { item: "veggiesdelight:bellpepper", storageBlock: "veggiesdelight:bellpepper_crate", dropCount: 1, growDays: 7, regrowDays: 3, seasons: ["summer"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:bellpepper_crop", seed: "veggiesdelight:bellpepper_seeds" },
     { item: "vintagedelight:ghost_pepper", storageBlock: "vintagedelight:ghost_pepper_crate", dropCount: [1, 3], growDays: 7, regrowDays: 3, seasons: ["summer"], yearTwo: true, products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "vintagedelight:ghost_pepper_crop", seed: "vintagedelight:ghost_pepper_seeds" },
     { item: "minecraft:carrot", storageBlock: "farmersdelight:carrot_crate", dropCount: [1, 2], growDays: 7, seasons: ["summer"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "minecraft:carrots", seed: "society:carrot_seeds" },
     { item: "veggiesdelight:zucchini", storageBlock: "veggiesdelight:zucchini_crate", dropCount: 1, growDays: 7, seasons: ["summer"], lootOnly: true, products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:zucchini_crop", seed: "veggiesdelight:zucchini_seeds" },
@@ -22,7 +22,7 @@ global.CROP_DEFINITIONS = [
 
     { item: "minecraft:beetroot", storageBlock: "farmersdelight:beetroot_crate", dropCount: 1, growDays: 5, seasons: ["autumn"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "minecraft:beetroots", seed: "minecraft:beetroot_seeds" },
     { item: "veggiesdelight:sweet_potato", storageBlock: "veggiesdelight:sweet_potato_crate", dropCount: [2, 4], growDays: 12, seasons: ["autumn"], yearTwo: true, products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:sweet_potato_crop", seed: "society:sweet_potato_seeds" },
-    { item: "minecraft:pumpkin", brokenBlock: "farmersdelight:pumpkin_slice", dropCount: 1, growDays: 7, seasons: ["autumn"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "minecraft:pumpkin_stem", seed: "minecraft:pumpkin_seeds",},
+    { item: "minecraft:pumpkin", brokenBlock: "farmersdelight:pumpkin_slice", dropCount: 1, growDays: 7, seasons: ["autumn"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "minecraft:pumpkin_stem", seed: "minecraft:pumpkin_seeds", },
     { item: "culturaldelights:eggplant", storageBlock: "culturaldelights:eggplant_crate", dropCount: 1, growDays: 7, regrowDays: 5, seasons: ["autumn"], products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "culturaldelights:eggplants", seed: "culturaldelights:eggplant_seeds" },
     { item: "veggiesdelight:broccoli", storageBlock: "veggiesdelight:broccoli_crate", dropCount: [1, 2], growDays: 5, seasons: ["autumn"], lootOnly: true, products: ["preserves", "pickle"], classifications: ["vegetable"], cropBlock: "veggiesdelight:broccoli_crop" },
     { item: "vintagedelight:peanut", storageBlock: "vintagedelight:peanut_crate", dropCount: [1, 3], growDays: 7, seasons: ["autumn"], yearTwo: true, products: ["preserves"], classifications: ["nut"], cropBlock: "vintagedelight:peanut_crop", seed: "society:peanut_seeds" },
@@ -52,24 +52,24 @@ global.CROP_DEFINITIONS = [
 
     // Tree fruit
     { item: "minecraft:apple", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["autumn"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:brandy", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:cherry", dropCount: [1, 4], growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:sakura_wine", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:lemon", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:madame_shexiang", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:orange", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:sunset_glow", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:peach", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:luminous_bride", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:plum", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:plum_wine", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:hazelnut", dropCount: [1, 2], growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves"], classifications: ["nut", "tree_crop"] },
-    { blocked: true, item: "orchard:pawpaw", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:ice_wine", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:cinnamon", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: [], classifications: ["industrial", "tree_crop"] },
-    { blocked: true, item: "orchard:mango", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:rum", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:starfruit", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "society:dewy_star", classifications: ["fruit", "tree_crop"] },
-    { blocked: true, item: "orchard:lychee", dropCount: [1, 2], growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:red_queen", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:cherry", dropCount: [1, 4], growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:sakura_wine", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:lemon", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:madame_shexiang", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:orange", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:sunset_glow", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:peach", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:luminous_bride", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:plum", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:plum_wine", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:hazelnut", dropCount: [1, 2], growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves"], classifications: ["nut", "tree_crop"] },
+    { item: "orchard:pawpaw", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:ice_wine", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:cinnamon", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: [], classifications: ["industrial", "tree_crop"] },
+    { item: "orchard:mango", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:rum", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:starfruit", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "society:dewy_star", classifications: ["fruit", "tree_crop"] },
+    { item: "orchard:lychee", dropCount: [1, 2], growDays: 7, regrowDays: 0, seasons: ["spring"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:red_queen", classifications: ["fruit", "tree_crop"] },
     { blocked: true, item: "fruittreemod:banana", dropCount: [1, 2], growDays: 7, regrowDays: 0, seasons: ["summer"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:champagne", classifications: ["fruit", "tree_crop"] },
     { blocked: true, item: "fruittreemod:dragon_fruit", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["winter"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:mother_snow", classifications: ["fruit", "tree_crop"] },
     { blocked: true, item: "fruittreemod:passion_fruit", dropCount: 1, growDays: 7, regrowDays: 0, seasons: ["summer"], products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:miners_star", classifications: ["fruit", "tree_crop"] },
     // Grain/Industrial
 
     { item: "minecraft:wheat", storageBlock: "minecraft:hay_block", dropCount: 1, growDays: 5, seasons: ["summer", "autumn"], products: ["wine"], wine: "kaleidoscope_tavern:whiskey", classifications: ["grain"], cropBlock: "minecraft:wheat", seed: "minecraft:wheat_seeds" },
-    { item: "farmersdelight:rice", storageBlock: "farmersdelight:rice_bag", dropCount: 1, growDays: 6, regrowDays: 3, seasons: ["summer", "autumn"], reeseedable: true, products: [], classifications: ["grain"], cropBlock: "farmersdelight:rice", seed: "farmersdelight:rice"  },
+    { item: "farmersdelight:rice", storageBlock: "farmersdelight:rice_bag", dropCount: 1, growDays: 6, regrowDays: 3, seasons: ["summer", "autumn"], reeseedable: true, products: [], classifications: ["grain"], cropBlock: "farmersdelight:rice", seed: "farmersdelight:rice" },
 
     { item: "society:hops", storageBlock: "", dropCount: 3, growDays: 10, regrowDays: 1, seasons: ["summer", "autumn"], reeseedable: true, products: ["wine"], classifications: ["industrial"], cropBlock: "society:hops", seeds: "society:hops_seeds" },
     { item: "society:tubabacco_leaf", storageBlock: "society:tubabacco_leaf_block", dropCount: 1, growDays: 15, regrowDays: 5, seasons: ["spring", "winter"], yearTwo: true, products: [], classifications: ["industrial"], cropBlock: "society:tubabacco_leaf", seed: "society:tubabacco_leaf_seeds" },
@@ -196,7 +196,7 @@ global.MISC_ANIMAL_PRODUCTS = [
     { item: "buzzier_bees:bee_bottle", value: 16 },
     { item: "etcetera:cotton_flower", value: 24 },
     { item: "society:butterfly_amber", value: 64 },
-    { item: "society:moth_pollen", value: 128 }, 
+    { item: "society:moth_pollen", value: 128 },
     { item: "society:caterpillar_eggs", value: 132 },
     { item: "minecraft:leather", value: 8 },
     { item: "quark:bonded_leather", value: 72 },
@@ -407,87 +407,102 @@ global.ARTIFACTS = [
  * 
  */
 global.FISH = [
-  { item: "starcatcher:blue_herring", value: 16 },
-  { item: "minecraft:pufferfish", value: 16 },
-  { item: "starcatcher:driftfin", value: 16 },
-  { item: "starcatcher:bluegigi", value: 16 },
-  { item: "starcatcher:silverveil_perch", value: 16 },
-  { item: "unusualfishmod:raw_sneep_snorp", value: 16 },
-  { item: "minecraft:salmon", value: 24 },
-  { item: "starcatcher:dusktail_snapper", value: 24 },
-  { item: "unusualfishmod:raw_beaked_herring", value: 32 },
-  { item: "starcatcher:agave_bream", value: 40 },
-  { item: "starcatcher:pale_carp", value: 40 },
-  { item: "starcatcher:hollowbelly_darter", value: 48 },
-  { item: "starcatcher:petal_bass", value: 40 },
-  { item: "minecraft:cod", value: 16 },
-  { item: "unusualfishmod:raw_picklefish", value: 48 },
-  { item: "starcatcher:crystalback_boreal", value: 56 },
-  { item: "starcatcher:rose_siamese_fish", value: 64 },
-  { item: "starcatcher:pink_koi", value: 64 },
-  { item: "minecraft:tropical_fish", value: 72 },
-  { item: "starcatcher:redscaled_tuna", value: 80 },
-  { item: "starcatcher:downfall_bream", value: 88 },
-  { item: "starcatcher:carpenjoe", value: 96 },
-  { item: "unusualfishmod:raw_forkfish", value: 96 },
-  { item: "unusualfishmod:raw_frosty_fin", value: 96 },
-  { item: "starcatcher:lightning_bass", value: 112 },
-  { item: "starcatcher:dripfin", value: 112 },
-  { item: "unusualfishmod:raw_sailor_barb", value: 112 },
-  { item: "starcatcher:frostgill_chub", value: 120 },
-  { item: "starcatcher:deepjaw_herring", value: 128 },
-  { item: "unusualfishmod:raw_aero_mono", value: 128 },
-  { item: "starcatcher:shadowfin", value: 136 },
-  { item: "starcatcher:sludge_catfish", value: 144 },
-  { item: "unusualfishmod:raw_bark_angelfish", value: 144 },
-  { item: "unusualfishmod:raw_drooping_gourami", value: 176 },
-  { item: "unusualfishmod:raw_demon_herring", value: 192 },
-  { item: "starcatcher:bigeye_tuna", value: 192 },
-  { item: "unusualfishmod:raw_triple_twirl_pleco", value: 208 },
-  { item: "starcatcher:ironjaw_herring", value: 208 },
-  { item: "starcatcher:lush_pike", value: 224 },
-  { item: "unusualfishmod:raw_blind_sailfin", value: 224 },
-  { item: "starcatcher:garnet_mackerel", value: 232 },
-  { item: "starcatcher:sporefish", value: 264 },
-  { item: "starcatcher:shroomfish", value: 264 },
-  { item: "unusualfishmod:raw_amber_goby", value: 288 },
-  { item: "starcatcher:mirage_carp", value: 288 },
-  { item: "unusualfishmod:raw_copperflame_anthias", value: 320 },
-  { item: "unusualfishmod:raw_circus_fish", value: 320 },
-  { item: "crittersandcompanions:koi_fish", value: 340 },
-  { item: "unusualfishmod:raw_hatchetfish", value: 352 },
-  { item: "unusualfishmod:raw_spindlefish", value: 368 },
-  { item: "society:neptuna", value: 384 },
-  { item: "starcatcher:sandtail", value: 400 },
-  { item: "unusualfishmod:raw_eyelash", value: 480 },
-  { item: "unusualfishmod:raw_duality_damselfish", value: 448 },
-  { item: "starcatcher:gold_fan", value: 512 },
-  // Nether
-  { item: "starcatcher:pyrotrout", value: 264 },
-  { item: "starcatcher:magma_fish", value: 408 },
-  { item: "starcatcher:glowstone_pufferfish", value: 264 },
-  { item: "starcatcher:obsidian_crab", value: 512 },
-  { item: "starcatcher:scalding_pike", value: 364 },
-  { item: "starcatcher:embergill", value: 412 },
-  { item: "starcatcher:glowstone_seeker", value: 620 },
-  { item: "starcatcher:suneater", value: 448 },
-  { item: "starcatcher:scorched_bloodsucker", value: 312 }, // Soulsucker
-  { item: "starcatcher:black_eel", value: 666 },
-  { item: "starcatcher:willish", value: 408 },
+    { item: "starcatcher:blue_herring", value: 16 },
+    { item: "minecraft:pufferfish", value: 16 },
+    { item: "starcatcher:driftfin", value: 16 },
+    { item: "starcatcher:bluegigi", value: 16 },
+    { item: "starcatcher:silverveil_perch", value: 16 },
+    { item: "unusualfishmod:raw_sneep_snorp", value: 16 },
+    { item: "minecraft:salmon", value: 24 },
+    { item: "starcatcher:dusktail_snapper", value: 24 },
+    { item: "unusualfishmod:raw_beaked_herring", value: 32 },
+    { item: "starcatcher:agave_bream", value: 40 },
+    { item: "starcatcher:pale_carp", value: 40 },
+    { item: "starcatcher:hollowbelly_darter", value: 48 },
+    { item: "starcatcher:petal_bass", value: 40 },
+    { item: "minecraft:cod", value: 16 },
+    { item: "unusualfishmod:raw_picklefish", value: 48 },
+    { item: "starcatcher:crystalback_boreal", value: 56 },
+    { item: "starcatcher:rose_siamese_fish", value: 64 },
+    { item: "starcatcher:pink_koi", value: 64 },
+    { item: "minecraft:tropical_fish", value: 72 },
+    { item: "starcatcher:redscaled_tuna", value: 80 },
+    { item: "starcatcher:downfall_bream", value: 88 },
+    { item: "starcatcher:carpenjoe", value: 96 },
+    { item: "unusualfishmod:raw_forkfish", value: 96 },
+    { item: "unusualfishmod:raw_frosty_fin", value: 96 },
+    { item: "starcatcher:lightning_bass", value: 112 },
+    { item: "starcatcher:dripfin", value: 112 },
+    { item: "unusualfishmod:raw_sailor_barb", value: 112 },
+    { item: "starcatcher:frostgill_chub", value: 120 },
+    { item: "starcatcher:deepjaw_herring", value: 128 },
+    { item: "unusualfishmod:raw_aero_mono", value: 128 },
+    { item: "starcatcher:shadowfin", value: 136 },
+    { item: "starcatcher:sludge_catfish", value: 144 },
+    { item: "unusualfishmod:raw_bark_angelfish", value: 144 },
+    { item: "unusualfishmod:raw_drooping_gourami", value: 176 },
+    { item: "unusualfishmod:raw_demon_herring", value: 192 },
+    { item: "starcatcher:bigeye_tuna", value: 192 },
+    { item: "unusualfishmod:raw_triple_twirl_pleco", value: 208 },
+    { item: "starcatcher:ironjaw_herring", value: 208 },
+    { item: "starcatcher:lush_pike", value: 224 },
+    { item: "unusualfishmod:raw_blind_sailfin", value: 224 },
+    { item: "starcatcher:garnet_mackerel", value: 232 },
+    { item: "starcatcher:sporefish", value: 264 },
+    { item: "starcatcher:shroomfish", value: 264 },
+    { item: "unusualfishmod:raw_amber_goby", value: 288 },
+    { item: "starcatcher:mirage_carp", value: 288 },
+    { item: "unusualfishmod:raw_copperflame_anthias", value: 320 },
+    { item: "unusualfishmod:raw_circus_fish", value: 320 },
+    { item: "crittersandcompanions:koi_fish", value: 340 },
+    { item: "unusualfishmod:raw_hatchetfish", value: 352 },
+    { item: "unusualfishmod:raw_spindlefish", value: 368 },
+    { item: "society:neptuna", value: 384 },
+    { item: "starcatcher:sandtail", value: 400 },
+    { item: "unusualfishmod:raw_eyelash", value: 480 },
+    { item: "unusualfishmod:raw_duality_damselfish", value: 448 },
+    { item: "starcatcher:gold_fan", value: 512 },
+    // Nether
+    { item: "starcatcher:pyrotrout", value: 264 },
+    { item: "starcatcher:magma_fish", value: 408 },
+    { item: "starcatcher:glowstone_pufferfish", value: 264 },
+    { item: "starcatcher:obsidian_crab", value: 512 },
+    { item: "starcatcher:scalding_pike", value: 364 },
+    { item: "starcatcher:embergill", value: 412 },
+    { item: "starcatcher:glowstone_seeker", value: 620 },
+    { item: "starcatcher:suneater", value: 448 },
+    { item: "starcatcher:scorched_bloodsucker", value: 312 }, // Soulsucker
+    { item: "starcatcher:black_eel", value: 666 },
+    { item: "starcatcher:willish", value: 408 },
 ];
 global.getSaleData = (value, processors) => {
+    let resolvedProcessors = [
+        {
+            "type": "selling_bin:quality_foods_processor",
+            "quality_type": {
+                "quality_food:diamond": 2.0,
+                "quality_food:gold": 1.5,
+                "quality_food:iron": 1.25
+            }
+        }
+    ]
+    if (processors.includes("wine")) {
+        resolvedProcessors.push({
+            "type": "society:brew_level_processor",
+            "brew_level_multiplier": {
+                "0": 0.25,
+                "1": 0.5,
+                "2": 0.75,
+                "3": 1.0,
+                "4": 2.0,
+                "5": 3.0,
+                "6": 4.0
+            }
+        })
+    }
     return {
         "base_value": value,
-        "processors": [
-            {
-                "type": "selling_bin:quality_foods_processor",
-                "quality_type": {
-                    "quality_food:diamond": 2.0,
-                    "quality_food:gold": 1.5,
-                    "quality_food:iron": 1.25
-                }
-            }
-        ]
+        "processors": resolvedProcessors
     }
 }
 

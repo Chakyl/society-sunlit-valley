@@ -20,7 +20,8 @@
             "minecraft:bogged",
             "minecraft:slime",
             "minecraft:skeleton_horse",
-            "windswept:chilled"
+            "windswept:chilled",
+            "etcetera:weaver"
         ],
         "dimension": "minecraft:overworld",
         "minheight": 50,
@@ -54,6 +55,11 @@
     },
     {
         "mod": "opposing_force",
+        "dimension": "minecraft:overworld",
+        "result": "deny"
+    },
+    {
+        "mod": "hominid",
         "dimension": "minecraft:overworld",
         "result": "deny"
     },

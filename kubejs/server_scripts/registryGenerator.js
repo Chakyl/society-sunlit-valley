@@ -225,7 +225,7 @@ ServerEvents.generateData('after_mods', (e) => {
             if (crop.storageBlock) data.values[crop.storageBlock] = global.getSaleData(baseCropValue * 9, [])
             if (crop.brokenBlock) data.values[crop.brokenBlock] = global.getSaleData(Math.round(baseCropValue / 9), [])
             if (crop.products.includes("preserves")) data.values[`society:${crop.item.path}_preserves`] = global.getSaleData(calculatePreservesValue(baseCropValue), [])
-            if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(baseCropValue), [])
+            if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(baseCropValue), ["wine"])
             if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
             if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(baseCropValue), [])
         }
@@ -237,7 +237,7 @@ ServerEvents.generateData('after_mods', (e) => {
             if (crop.storageBlock) data.values[crop.storageBlock] = global.getSaleData(crop.value * 9, [])
             if (crop.brokenBlock) data.values[crop.brokenBlock] = global.getSaleData(Math.round(crop.value / 9), [])
             if (crop.products.includes("preserves")) data.values[`society:${crop.item.path}_preserves`] = global.getSaleData(calculatePreservesValue(crop.value), [])
-            if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(crop.value), [])
+            if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(crop.value), ["wine"])
             if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(crop.value), [])
             if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`] = global.getSaleData(calculateDriedValue(crop.value), [])
         }
@@ -303,6 +303,33 @@ let basicArtisanMachineRecipe = (e, type, input, output, hours) => {
         processing_hours: hours
     })
 }
+let wineKegMachineRecipe = (e, input) => {
+    let inputs = []
+    for (let index = 0; index < 3; index++) {
+        inputs.push({ item: input.item });
+
+    }
+    e.custom({
+        type: "artisan_machines:wine_keg",
+        rank: 0,
+        required_upgrades: [],
+        chanced_results: [
+            {
+                chance: 1.0,
+                stack: {
+                    identifier: input.wine,
+                    data_components_patch: {
+                        "kaleidoscope_tavern:brew_level": 3
+                    },
+                    count: 1
+                }
+            }
+        ],
+        ingredients: inputs,
+        processing_hours: 144
+    })
+}
+
 let preservesJarRecipe = (e, input) => {
     let output = [{ chance: 1.0, stack: { identifier: `society:${input.item.path}_preserves`, count: 1 } }];
     let inputs = []
@@ -337,9 +364,7 @@ ServerEvents.recipes((e) => {
 
             }
             if (crop.products.includes("wine") && crop.wine) {
-                // 'kaleidoscope_tavern:sunset_glow[kaleidoscope_tavern:brew_level=1]'
-                // 'kaleidoscope_tavern:sunset_glow[kaleidoscope_tavern:brew_level=3]' // Common
-                basicArtisanMachineRecipe(e, "artisan_machines:wine_keg", { id: crop.item, count: 3 }, { identifier: crop.wine, count: 1 }, 144)
+                wineKegMachineRecipe(e, crop)
             }
             if (crop.products.includes("dried")) {
                 basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`, count: 1 }, 144)

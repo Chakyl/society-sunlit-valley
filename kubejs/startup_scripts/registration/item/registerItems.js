@@ -88,14 +88,6 @@ StartupEvents.registry("item", (e) => {
       // food.fastToEat(true);
     });
   [
-    "morel",
-    "winter_root",
-    "wild_onion",
-    "leek",
-    "mint",
-    "blowball",
-    "juniper",
-    "snow_yam",
     "cave_carrot"
   ].forEach((crop) => {
     e.create(`society:${crop}`).texture(`society:item/crops/${crop}`)
@@ -203,7 +195,6 @@ StartupEvents.registry("item", (e) => {
   e.create("society:oak_resin").texture("society:item/oak_resin");
   e.create("society:maple_syrup").texture("society:item/maple_syrup");
   e.create("society:battery").texture("society:item/battery");
-  e.create("society:hardwood").texture("society:item/hardwood");
   e.create("society:small_gizmo");
   e.create("society:ancient_parts").texture("unusualfishmod:item/weapon_parts");
   e.create("numismatics:neptunium_coin").texture("society:item/neptunium_coin").tag("numismatics:coins");

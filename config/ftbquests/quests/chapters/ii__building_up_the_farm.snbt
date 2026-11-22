@@ -38,13 +38,14 @@
 				{
 					exclude_from_claim_all: true
 					id: "0059A6EC80AF7A10"
+					table_id: 7357261738615909371L
 					type: "choice"
 				}
 			]
 			tasks: [
 				{
 					id: "6898A763A52A07CB"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "society:npc_id": "society:market" }, count: 1, id: "society:invitation" }
 					match_components: "strict"
 					type: "item"
 				}
@@ -52,9 +53,9 @@
 					disable_toast: true
 					icon: {
 						components: {
-							"ftbquests:missing_item": "society:villager"
+							"society:npc_id": "society:market"
 						}
-						id: "ftbquests:missing_item"
+						id: "society:villager"
 					}
 					id: "06F99A1BA55E885E"
 					stage: "invited_market"
@@ -99,8 +100,8 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				id: "25DB1CDB57426FE9"
-				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				id: "58766B452BD86651"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:hoes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -1.5d

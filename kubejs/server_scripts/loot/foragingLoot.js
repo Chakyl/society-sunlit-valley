@@ -8,5 +8,8 @@ LootJS.modifiers((e) => {
             .hasAnyStage("foraging_lvl_1")
             .addLoot("farmersdelight:straw");
     })
-
+    e.addBlockModifier("crittersandcompanions:silk_cocoon")
+        .matchTool(ItemFilter.tag("c:tools/shear").negate())
+        .hasAnyStage("foraging_lvl_2")
+        .addLoot("crittersandcompanions:silk");
 });

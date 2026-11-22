@@ -43,6 +43,14 @@
 	# Range: 0 ~ 2147483647
 	long_range_tracker_interval: 20
 	
+	# How to act if vanilla attempts to create a nether portal for a player in a chunk that's claimed by another team
+	# no_portal: allow the player to teleport but don't create a portal structure
+	# failure: prevent teleportation completely
+	# allow: just go ahead and create the portal as normal
+	# Default: "no_portal"
+	# Valid values: "no_portal", "failure", "allow"
+	nether_portal_creation: "no_portal"
+	
 	# Requires you to claim chunks in order to edit and interact with blocks
 	# Default: false
 	no_wilderness: false
