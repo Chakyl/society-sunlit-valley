@@ -5,6 +5,7 @@
 ---
 - Fixed Copper tools/armor not being removed
 - Fixed Blackfish quest 
+- Updated zh_cn translation (Thanks Thirace!)
 
 # 4.2.0
 - Added and integrated backport content from MC updates: Copper Age, Mounts of Mayhem, and Wilderness Bound
