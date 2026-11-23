@@ -266,6 +266,15 @@ ServerEvents.generateData('after_mods', (e) => {
     global.ARTIFACTS.forEach((mineral) => {
         data.values[mineral.item] = global.getSaleData(mineral.value, [])
     })
+    let bugObj = {}
+    global.BUGS.forEach((bug) => {
+        bugObj[bug.item] = bug.value;
+    })
+    data.values["bugsnatch:bug"] = global.getSaleData(0, [], {
+        "type": "society:bugsnatch_processor",
+        "bugs": bugObj
+    })
+    console.log(data.values["bugsnatch:bug"].toString())
     // Roe: roundPrice(Math.floor(fish.value / 3) + 16),
     // Aged Roe: roundPrice((Math.floor(fish.value / 3) + 16) * 15)
     global.FISH.forEach((fish) => {
@@ -356,23 +365,27 @@ let preservesJarRecipe = (e, input) => {
         processing_hours: 72
     })
 }
-ServerEvents.recipes((e) => {
-    global.CROP_DEFINITIONS.forEach((crop) => {
-        if (!crop.blocked) {
-            if (crop.products.includes("preserves")) {
-                preservesJarRecipe(e, crop)
-
-            }
-            if (crop.products.includes("wine") && crop.wine) {
-                wineKegMachineRecipe(e, crop)
-            }
-            if (crop.products.includes("dried")) {
-                basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`, count: 1 }, 144)
-            }
-            // if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
-            // if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(baseCropValue), [])
+const artisanBulkGenerators = (e, crop) => {
+    if (!crop.blocked) {
+        if (crop.products.includes("preserves")) {
+            preservesJarRecipe(e, crop)
         }
-    })
+        if (crop.products.includes("wine") && crop.wine) {
+            wineKegMachineRecipe(e, crop)
+        }
+        if (crop.products.includes("dried")) {
+            basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: `society:dried_${crop.item.path}`, count: 1 }, 144)
+        }
+        // if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
+        // if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(baseCropValue), [])
+    }
+}
+ServerEvents.recipes((e) => {
+    global.CROP_DEFINITIONS.forEach((crop) => artisanBulkGenerators(e, crop));
+    global.FORAGE_CROPS.forEach((crop) => artisanBulkGenerators(e, crop));
+    global.MUSHROOMS.forEach((crop) => {
+        basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`, count: 1 }, 144)
+    });
     for (const { dish, ingredients, cookedCount, container, time, type } of dishes) {
         e.remove({ output: dish });
         if (type == "cooking_pot") {

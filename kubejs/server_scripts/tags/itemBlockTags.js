@@ -81,6 +81,32 @@ ServerEvents.tags('item', (e) => {
     rawLogs.forEach((log) => {
         e.add("society:raw_logs", log);
     });
+    [
+        "kaleidoscope_tavern:wine",
+        "kaleidoscope_tavern:vodka",
+        "kaleidoscope_tavern:brandy",
+        "kaleidoscope_tavern:carignan",
+        "kaleidoscope_tavern:sakura_wine",
+        "kaleidoscope_tavern:plum_wine",
+        "kaleidoscope_tavern:whiskey",
+        "kaleidoscope_tavern:ice_wine",
+        "kaleidoscope_tavern:polaris_sweet_white",
+        "kaleidoscope_tavern:honey_wine",
+        "kaleidoscope_tavern:red_queen",
+        "kaleidoscope_tavern:rum",
+        "kaleidoscope_tavern:riesling_dry_white",
+        "kaleidoscope_tavern:sunset_glow",
+        "kaleidoscope_tavern:madame_shexiang",
+        "kaleidoscope_tavern:sweet_berry_wine",
+        "kaleidoscope_tavern:sherry",
+        "kaleidoscope_tavern:luminous_bride",
+        "kaleidoscope_tavern:glowflower_brew",
+        "kaleidoscope_tavern:sauvignon_blanc_dry_white",
+        "kaleidoscope_tavern:watermelon_juice",
+        "kaleidoscope_tavern:vinegar"
+    ].forEach((ingredient) => {
+        e.add("society:keg_product", ingredient)
+    });
 })
 
 ServerEvents.tags('block', (e) => {

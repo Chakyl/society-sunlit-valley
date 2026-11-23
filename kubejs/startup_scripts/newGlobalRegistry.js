@@ -79,9 +79,9 @@ global.CROP_DEFINITIONS = [
     { item: "herbalbrews:green_tea_leaf", storageBlock: "herbalbrews:green_tea_leaf_block", dropCount: 1, growDays: 6, seasons: ["spring", "summer", "autumn"], lootOnly: true, products: [], classifications: ["industrial"], cropBlock: "herbalbrews:tea_plant" },
 ]
 global.FORAGE_CROPS = [
-    { item: "society:salmonberry", value: 16, storageBlock: "society:_crate", products: ["preserves", "wine", "dried"], classifications: ["forage_crop", "fruit", "berry"] },
-    { item: "society:boysenberry", value: 12, products: ["preserves", "wine", "dried"], classifications: ["forage_crop", "fruit", "berry"] },
-    { item: "society:crystalberry", value: 20, products: ["preserves", "wine", "dried"], classifications: ["forage_crop", "fruit", "berry"] },
+    { item: "society:salmonberry", value: 16, storageBlock: "society:_crate", products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:carignan", classifications: ["forage_crop", "fruit", "berry"] },
+    { item: "society:boysenberry", value: 12, products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:carignan", classifications: ["forage_crop", "fruit", "berry"] },
+    { item: "society:crystalberry", value: 20, products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:carignan", classifications: ["forage_crop", "fruit", "berry"] },
     { item: "society:mossberry", value: 96, products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:riesling_dry_white", classifications: ["forage_crop", "fruit", "berry"] },
     { item: "society:crabapple", value: 32, storageBlock: "society:_crate", products: [], classifications: ["forage_crop", "fruit"] },
     { item: "minecraft:glow_berries", value: 24, storageBlock: "berry_good:glow_berry_basket", products: ["preserves", "wine", "dried"], wine: "kaleidoscope_tavern:glowflower_brew", classifications: ["forage_crop", "fruit", "berry"], seed: "berry_good:glow_berry_pips" },
@@ -396,6 +396,23 @@ global.ARTIFACTS = [
     { item: "society:red_wrench", value: 233 },
 ];
 
+global.BUGS = [
+    { item: "minecraft:bee", value: 32 },
+    { item: "minecraft:cave_spider", value: 24 },
+    { item: "minecraft:endermite", value: 418 },
+    { item: "minecraft:silverfish", value: 32 },
+    { item: "minecraft:spider", value: 16 },
+    { item: "wildernature:termite", value: 10 },
+    { item: "crittersandcompanions:dragonfly", value: 80 },
+    { item: "crittersandcompanions:jumping_spider", value: 4096 },
+    { item: "crittersandcompanions:ladybug", value: 22 },
+    { item: "crittersandcompanions:leaf_insect", value: 64 },
+    { item: "crittersandcompanions:roly_poly", value: 45 },
+    { item: "crittersandcompanions:snail",  value: 256 },
+    { item: "crittersandcompanions:stag_beetle", value: 200 },
+    { item: "crittersandcompanions:stick_bug", value: 120 },
+    { item: "crittersandcompanions:weevil", value: 64 },
+];
 /**
  *   Fish
  * 
@@ -475,7 +492,7 @@ global.FISH = [
     { item: "starcatcher:black_eel", value: 666 },
     { item: "starcatcher:willish", value: 408 },
 ];
-global.getSaleData = (value, processors) => {
+global.getSaleData = (value, processors, customProcessor) => {
     let resolvedProcessors = [
         {
             "type": "selling_bin:quality_foods_processor",
@@ -498,7 +515,10 @@ global.getSaleData = (value, processors) => {
                 "5": 3.0,
                 "6": 4.0
             }
-        })
+        });
+    } 
+    if (customProcessor ) {
+        resolvedProcessors.push(customProcessor)
     }
     return {
         "base_value": value,

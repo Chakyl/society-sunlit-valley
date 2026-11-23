@@ -85,6 +85,55 @@ ServerEvents.recipes((e) => {
             processing_hours: crystal.time * 24
         })
     });
+
+    [
+        "kaleidoscope_tavern:wine",
+        "kaleidoscope_tavern:vodka",
+        "kaleidoscope_tavern:brandy",
+        "kaleidoscope_tavern:carignan",
+        "kaleidoscope_tavern:sakura_wine",
+        "kaleidoscope_tavern:plum_wine",
+        "kaleidoscope_tavern:whiskey",
+        "kaleidoscope_tavern:ice_wine",
+        "kaleidoscope_tavern:polaris_sweet_white",
+        "kaleidoscope_tavern:honey_wine",
+        "kaleidoscope_tavern:red_queen",
+        "kaleidoscope_tavern:rum",
+        "kaleidoscope_tavern:riesling_dry_white",
+        "kaleidoscope_tavern:sunset_glow",
+        "kaleidoscope_tavern:madame_shexiang",
+        "kaleidoscope_tavern:sweet_berry_wine",
+        "kaleidoscope_tavern:sherry",
+        "kaleidoscope_tavern:luminous_bride",
+        "kaleidoscope_tavern:glowflower_brew",
+        "kaleidoscope_tavern:sauvignon_blanc_dry_white",
+        "kaleidoscope_tavern:watermelon_juice",
+        "kaleidoscope_tavern:vinegar"
+    ].forEach((ingredient) => {
+        e.custom({
+            type: "artisan_machines:aging_cask",
+            rank: 0,
+            required_upgrades: [],
+            chanced_results: [
+                {
+                    chance: 1.0,
+                    stack: {
+                        identifier: ingredient,
+                        data_components_patch: {
+                            "kaleidoscope_tavern:brew_level": 6
+                        },
+                        count: 1
+                    }
+                }
+            ],
+            ingredients: [
+                {
+                    item: ingredient
+                }
+            ],
+            processing_hours: 240
+        })
+    });
     [
         // { input: "aquaculture:tin_can", output: ["3x numismatics:cog"] },
         // { input: "aquaculture:driftwood", output: ["1x meadow:fire_log"] },
@@ -98,7 +147,7 @@ ServerEvents.recipes((e) => {
         { input: "atmospheric:carmine_husk", output: ["2x ribbits:toadstool"] },
         { input: "society:legendary_ink", output: ["4x supplementaries:antique_ink"] },
         { input: "hooked:redstone_hook", output: ["hooked:diamond_hook", "society:prismatic_shard"], multExempt: true },
-        { input: "atmospheric:grimwood_leaves", output: ["4x atmospheric:grimwood_sapling"] }, 
+        { input: "atmospheric:grimwood_leaves", output: ["4x atmospheric:grimwood_sapling"] },
         { input: "society:butterfly_amber", output: ["4x society:sparkstone"] },
         { input: "society:moth_pollen", output: ["2x vintagedelight:organic_mash"] },
         { input: "society:maple_syrup", output: ["4x vintagedelight:organic_mash"] },
