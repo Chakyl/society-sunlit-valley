@@ -12,6 +12,9 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("rottencreatures:entities/zap")
     .randomChance(0.03)
     .addLoot("society:glitched_vhs");
+  e.addLootTableModifier("rottencreatures:entities/parched")
+    .randomChance(0.03)
+    .addLoot("society:lost_bowtie");
   e.addLootTableModifier("minecraft:entities/witch")
     .randomChance(0.1)
     .addLoot("society:holy_symbol");
@@ -328,4 +331,9 @@ LootJS.modifiers((e) => {
       p.randomChance(0.1).addLoot("society:plushie_capsule");
       p.randomChance(0.05).addLoot("society:animal_cracker");
     });
+
+  // Removed
+  global.removedItems.forEach((item) => {
+    e.addLootTableModifier(/.*/).removeLoot(item);
+  })
 });

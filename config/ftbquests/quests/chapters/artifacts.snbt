@@ -25,7 +25,7 @@
 				item: "society:ribbit_drum"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: -0.5d
 		}
 		{
@@ -55,7 +55,7 @@
 				item: "society:aquamagical_dust"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -0.5d
 		}
 		{
@@ -131,7 +131,7 @@
 				item: "society:mini_oni_eye"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.0d
 			y: -0.5d
 		}
 		{
@@ -141,7 +141,7 @@
 				item: "society:wheel_of_adaptation"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: -0.5d
 		}
 		{
@@ -199,6 +199,7 @@
 				"6CCF2A8697360014"
 				"54E20BA869846944"
 				"4A88F30DE9250181"
+				"0875EB7D1FB732A3"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -253,7 +254,7 @@
 				item: "society:production_science_pack"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -0.5d
 		}
 		{
@@ -293,7 +294,7 @@
 				item: "society:glitched_vhs"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.0d
 			y: -0.5d
 		}
 		{
@@ -313,7 +314,7 @@
 				item: "society:toy_train"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.5d
 			y: -0.5d
 		}
 		{
@@ -333,7 +334,7 @@
 				item: "society:green_tea_honeycomb"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: -0.5d
 		}
 		{
@@ -353,7 +354,7 @@
 				item: "society:ancient_builders_tool"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.5d
 			y: -0.5d
 		}
 		{
@@ -365,6 +366,16 @@
 			}]
 			x: 2.5d
 			y: -2.5d
+		}
+		{
+			id: "0875EB7D1FB732A3"
+			tasks: [{
+				id: "7AA2B8594EA8DF8D"
+				item: "society:lost_bowtie"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
 		}
 	]
 	title: "{ftbquests.chapter.artifacts.title}"

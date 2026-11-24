@@ -31,17 +31,13 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
     server.runCommandSilent(
       `execute in ${level.dimension} run summon lightning_bolt ${player.x} ${player.y} ${player.z}`
     );
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 60, Text.translatable("society.endless_entrana.text.0").toJson())
-    );
+    player.setStatusMessage(Text.translate("society.endless_entrana.text.0").red())
   }
   if (Math.random() < 0.01 && !item.nbt) {
     server.runCommandSilent(
       `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
     );
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.1").toJson())
-    );
+    player.setStatusMessage(Text.translate("society.endless_entrana.text.1").aqua());
     server.scheduleInTicks(1, () => {
       player.give(
         Item.of(
@@ -54,73 +50,52 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
   if (item.nbt && item.nbt.edition) {
     let giveNew = true;
     if (item.nbt.edition === 500)
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.2").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.2").aqua());
     if (item.nbt.edition === 650) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.3").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.3").aqua());
     }
     if (item.nbt.edition === 666) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.4").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.4").aqua());
       server.scheduleInTicks(100, () => {
         server.runCommandSilent(`kill ${player.username}`);
       });
     }
 
     if (item.nbt.edition === 999) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 1200, Text.translatable("society.endless_entrana.text.5").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.5").aqua());
       server.scheduleInTicks(648000, () => {
         server.runCommandSilent(`kill ${player.username}`);
       });
     }
 
     if (item.nbt.edition === 2000) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.6").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.6").aqua());
     }
 
     if (item.nbt.edition === 2100) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.7").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.7").aqua());
     }
     if (item.nbt.edition === 5000) {
       player.give("numismatics:spur");
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.8").toJson())
-      );
+
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.8").aqua());
     }
     if (item.nbt.edition > 10000 && Math.random() < 0.001) {
       player.give("numismatics:bevel");
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.9").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.9").aqua());
     }
     if (item.nbt.edition > 10000 && Math.random() < 0.001) {
       player.give("numismatics:sprocket");
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.9").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.9").aqua());
     }
     if (item.nbt.edition > 1000000000 && Math.random() < 0.0001) {
       if (player.offHandItem === "numismatics:prismatic_coin") {
         player.give("create:creative_blaze_cake");
         player.offHandItem.count--;
-        server.runCommandSilent(
-          global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.11").toJson())
-        );
+        player.setStatusMessage(Text.translate("society.endless_entrana.text.11").aqua());
         giveNew = false;
       } else {
-        server.runCommandSilent(
-          global.getEmbersTextAPICommand(player.username, endlessEntranaTemplate, 120, Text.translatable("society.endless_entrana.text.10").toJson())
-        );
+        player.setStatusMessage(Text.translate("society.endless_entrana.text.10").aqua());
       }
     }
     if (giveNew) {
@@ -137,9 +112,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
   if (Math.random() < 0.01) {
     server.scheduleInTicks(800, () => {
       server.runCommandSilent(`effect give ${player.username} minecraft:wither 40 3`);
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 60, Text.translatable("society.endless_entrana.text.0").toJson())
-      );
+      player.setStatusMessage(Text.translate("society.endless_entrana.text.0").red());
     });
   }
   global.addItemCooldown(player, item, 10);

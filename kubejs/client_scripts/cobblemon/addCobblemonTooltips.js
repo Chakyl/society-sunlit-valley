@@ -74,18 +74,18 @@ ItemEvents.tooltip((tooltip) => {
     "unimplemented_items:repel",
     Text.translatable("tooltip.society.area", `21x21x21`).green()
   );
-    tooltip.add(
+  tooltip.add(
     "sunlit_cobblemon:bifrost_stone",
     Text.translatable("tooltip.sunlit_cobblemon.bifrost_stone.description").red()
   );
-    tooltip.add(
+  tooltip.add(
     "sunlit_cobblemon:light_scale",
     Text.translatable("tooltip.sunlit_cobblemon.light_scale.description").gray()
   );
-    tooltip.add(
+  tooltip.add(
     "sunlit_cobblemon:dark_scale",
     Text.translatable("tooltip.sunlit_cobblemon.dark_scale.description").gray()
-    );
+  );
   tooltip.addAdvanced("sunlit_cobblemon:sun_mirror", (item, advanced, text) => {
     if (item.nbt && item.nbt.monData && item.nbt.monData.getString("type")) {
       let data = item.nbt.monData
@@ -132,10 +132,18 @@ ItemEvents.tooltip((tooltip) => {
         text.add(1, [
           Component.translatable(`cobblemon.species.${pokemon}.name`).green(),
         ]);
-        let resolvedOT = ot == null || ot === "Chakyl" ? "Chakyl" : Component.translatable(`dialog.npc.${ot}.name`).getString()
+
+        let npcIds = ["leon", "aiden", "ace", "caroline", "haruna", "maria", "carlos", "veronica", "evelyne"];
+        let resolvedOT = ot == null || !npcIds.includes(ot) ? ot : Component.translatable(`dialog.npc.${ot}.name`).getString()
         text.add(2, [
           Component.translatable("tooltip.sunlit_cobblemon.mystery_gift.from", resolvedOT).gray(),
         ]);
+        if (item.nbt.shiny) {
+          text.add(3, [
+            Component.literal(`Shiny!`).lightPurple(),
+          ]);
+        }
+
       }
     }
     if (item.nbt == null || item.nbt.pokemon == null) {
@@ -384,7 +392,7 @@ ItemEvents.tooltip((tooltip) => {
     "black_glasses", "charcoal_stick", "dragon_fang", "hard_stone", "magnet", "metal_coat", "miracle_seed",
     "mystic_water", "never_melt_ice", "poison_barb", "sharp_beak", "silk_scarf", "silver_powder", "soft_sand",
     "spell_tag", "fairy_feather", "twisted_spoon", "power_anklet", "power_band", "power_belt", "power_bracer",
-    "power_lens", "power_weight", 'lagging_tail', 'luminous_moss', 'grip_claw', 'electric_seed', 'psychic_seed', 
+    "power_lens", "power_weight", 'lagging_tail', 'luminous_moss', 'grip_claw', 'electric_seed', 'psychic_seed',
     'grassy_seed', 'misty_seed', 'clear_amulet'
   ].forEach((item) => {
     // tooltip.add(`cobblemon:${item}`, Text.translatable(`tooltip.sunlit_cobblemon.cobblemon.held.${item}`).gray());

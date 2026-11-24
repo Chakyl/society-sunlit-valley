@@ -43,6 +43,7 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("cobblemon:is_sandy", "atmospheric:rocky_dunes");
   e.add("cobblemon:is_desert", "atmospheric:rocky_dunes");
   e.add("cobblemon:is_peak", "atmospheric:rocky_dunes");
+  e.add("sereneseasons:infertile_biomes", "sunlit_cobblemon:moontear")
 });
 
 const cobblemonAllSeasonCrops = [

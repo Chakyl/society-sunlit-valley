@@ -386,7 +386,51 @@ global.fishPondDefinitions = new Map([
       ],
     },
   ],
-  ["aquaculture:blackfish", { quests: basicQuests }],
+  ["aquaculture:blackfish", {
+    quests: [
+      {
+        population: 3,
+        requestedItems: [
+          { item: "etcetera:black_sweater", count: 1 },
+          { item: 'minecraft:black_cushion', count: 16 },
+          { item: 'vintagedelight:salt_lamp_black', count: 16 }
+        ],
+      },
+      {
+        population: 5,
+        requestedItems: [
+          { item: "farmersdelight:apple_cider", count: 1 },
+          { item: "herbalbrews:cinnamon_coffee", count: 1 },
+        ],
+      },
+      {
+        population: 7,
+        requestedItems: [
+          { item: "society:bowl_of_soul", count: 3 },
+        ],
+      },
+    ],
+    additionalRewards: [
+      {
+        minPopulation: 2,
+        item: "society:rubber",
+        count: 4,
+        chance: 0.74,
+      },
+      {
+        minPopulation: 3,
+        item: "minecraft:cinnabar",
+        count: 32,
+        chance: 0.42,
+      },
+      {
+        minPopulation: 6,
+        item: 'pamhc2trees:cinnamonitem',
+        count: 4,
+        chance: 0.32,
+      },
+    ],
+  }],
   [
     "aquaculture:brown_trout",
     {
@@ -2923,6 +2967,18 @@ global.fishPondDefinitions = new Map([
         },
       ],
       additionalRewards: [
+        {
+          minPopulation: 2,
+          item: "minecraft:sulfur",
+          count: 32,
+          chance: 0.54,
+        },
+        {
+          minPopulation:4,
+          item: "minecraft:sea_pickle",
+          count: 4,
+          chance: 0.24,
+        },
         {
           minPopulation: 4,
           item: "vintagedelight:pickle",

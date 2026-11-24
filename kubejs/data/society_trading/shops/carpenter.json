@@ -662,6 +662,18 @@
     },
     {
       "offer": {
+        "item": "minecraft:poplar_sapling",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "market_poplar_sapling"
+    },
+    {
+      "offer": {
         "item": "minecraft:mangrove_propagule",
         "count": 1
       },
@@ -5042,18 +5054,6 @@
           },
           "numismatics_cost": 4096,
           "trade_id": "carpenter_cluttered_briefcase_blank"
-        },
-        {
-          "offer": {
-            "item": "supplementaries:clock_block",
-            "count": 1
-          },
-          "request": {
-            "item": "numismatics:crown",
-            "count": 10
-          },
-          "numismatics_cost": 5120,
-          "trade_id": "carpenter_supplementaries_clock_block"
         },
         {
           "offer": {

@@ -9,13 +9,7 @@ PlayerEvents.loggedIn((e) => {
     if (Number(chunkDay) > Number(player.persistentData.skullCavernEnterDay)) {
       player.persistentData.skullCavernEnterDay = -1;
       global.teleportHome(player, server, player.level);
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60}`,
-          200,
-          Text.translatable("society.skull_cavern.fainted").toJson()
-        )
-      );
+      player.tell(Text.translatable("society.skull_cavern.fainted"));
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);
       player.potionEffects.add("minecraft:darkness", 310, 0, true, false);
     }

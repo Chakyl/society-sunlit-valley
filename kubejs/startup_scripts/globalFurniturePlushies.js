@@ -236,7 +236,6 @@ global.lootFurniture = [
   "furniture:boat_in_a_jar",
   "furniture:copper_fish_tank",
   "furniture:terrarium",
-  "supplementaries:clock_block",
   "minecraft:painting",
   "candlelight:typewriter_copper",
   "create:cuckoo_clock",

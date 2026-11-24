@@ -421,4 +421,41 @@ ServerEvents.recipes((e) => {
     ],
     heatRequirement: "superheated",
   });
+
+  e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "supplementaries:soap",
+      },
+      {
+        fluid: "minecraft:water",
+        amount: 100,
+      }
+    ],
+    results: [
+      {
+        fluid: "society:dish_soap",
+        amount: 100,
+      },
+    ]
+  });
+  e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "supplementaries:soap_block",
+      },
+      {
+        fluid: "minecraft:water",
+        amount: 900,
+      }
+    ],
+    results: [
+      {
+        fluid: "society:dish_soap",
+        amount: 900,
+      },
+    ]
+  });
 });
