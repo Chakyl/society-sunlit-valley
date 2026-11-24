@@ -61,6 +61,64 @@ global.getNotePaperItem = (author, text, title) => {
           )
 }
 
-global.getEmbersTextAPICommand = (target, design, duration, text) => {
-    return `emberstextapi sendcustom ${target} ${design} ${duration} ${text}`
+global.priorityElementIds = [
+  "shippinBin",
+  "husbandryMessage"
+];
+const clearUiPriorityPaint = (player, ids) => {
+  let removedText = {};
+  let removedShadow = {};
+  // Spawn and clear instance of paint element to prevent warnings that they don't exist
+  ids.forEach((id) => {
+    removedText[id] = { type: "text" };
+    removedShadow[`${id}Shadow`] = { type: "text" };
+  });
+  player.paint(removedText);
+  player.paint(removedShadow);
+  ids.forEach((id) => {
+    removedText[id] = { remove: true };
+    removedShadow[`${id}Shadow`] = { remove: true };
+  });
+  player.paint(removedText);
+  player.paint(removedShadow);
+};
+
+global.renderUiPrioirtyText = (player, server, messages, clearedMessages) => {
+  server.scheduleInTicks(0, () => {
+    clearUiPriorityPaint(player, clearedMessages);
+    player.paint(messages);
+    player.persistentData.ageLastShownPriorityMessage = player.age;
+    server.scheduleInTicks(200, () => {
+      if (player.age - player.persistentData.get("ageLastShownPriorityMessage") >= 100)
+        clearUiPriorityPaint(player, clearedMessages);
+    });
+  });
+};
+global.renderHusbandryMessage = (player, server, text, color) => {
+  global.renderUiPrioirtyText(
+    player,
+    server,
+    {
+      shippingBin: {
+        type: "text",
+        x: 2,
+        y: 35,
+        text: `${text}`,
+        color: color,
+        alignX: "left",
+        alignY: "top",
+      },
+      shippingBinShadow: {
+        type: "text",
+        x: 3,
+        z: -1,
+        y: 36,
+        text: `${text}`,
+        color: "#000000",
+        alignX: "left",
+        alignY: "top",
+      }
+    },
+    global.priorityElementIds
+  );
 }

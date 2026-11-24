@@ -19,6 +19,7 @@ const debugData = (player, level, data, hearts) => {
   player.tell(`Magic Harvested: ${data.getInt("ageLastMagicHarvested")}`);
 };
 
+
 const initializeFarmAnimal = (day, target, level) => {
   const data = target.persistentData;
   if (!data.getInt("affection")) {
@@ -206,14 +207,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
       !player.isFake() &&
       !item.hasTag("society:animal_feed")
     ) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FFAA00",offsetY:20}`,
-          40,
-          Text.translatable("society.husbandry.peckish", name).toJson()
-        )
-      );
+      global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.peckish", name).toJson(), "#FFAA00");
     }
     if (hungry) {
       errorText = Text.translatable(
@@ -222,14 +216,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
       ).toJson();
     }
     if (errorText && !player.isFake()) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          global.animalMessageSettings,
-          40,
-          errorText
-        )
-      );
+      global.renderHusbandryMessage(player, server, errorText, "#FF5555");
     }
   } else if (item === "minecraft:air" || item === 'society:mood_scanner') {
     let nameColor;
@@ -296,14 +283,7 @@ const handleMilk = (name, data, day, hungry, e) => {
     ).toJson();
   }
   if (errorText && !player.isFake()) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        global.animalMessageSettings,
-        20,
-        errorText
-      )
-    );
+    global.renderHusbandryMessage(player, server, errorText, "#FF5555");
   }
 };
 
@@ -419,14 +399,7 @@ const handleMagicHarvest = (name, data, e) => {
       ).toJson();
     }
     if (!player.isFake())
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          global.animalMessageSettings,
-          40,
-          errorText
-        )
-      );
+      global.renderHusbandryMessage(player, server, errorText, "#FF5555");
     global.addItemCooldown(player, item, 10);
   }
 };
@@ -457,7 +430,7 @@ const handleSpecialItem = (
     if (plushieModifiers.processItems) {
       let processOutput = global.getProcessedItem(item, dropAmount);
       resolvedItem = processOutput.item.id;
-      dropAmount = Math.round(dropAmount / processOutput.divisor) *  processOutput.item.count;
+      dropAmount = Math.round(dropAmount / processOutput.divisor) * processOutput.item.count;
       resolvedHasQuality = processOutput.preserveQuality
     }
   } else {
@@ -604,17 +577,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       ) {
         if (player.cooldowns.isOnCooldown(item)) return;
         if (hearts < 5) {
-          server.runCommandSilent(
-            global.getEmbersTextAPICommand(
-              player.username,
-              global.animalMessageSettings,
-              40,
-              Text.translatable(
-                "society.husbandry.action.need_hearts",
-                name
-              ).toJson()
-            )
-          );
+          global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.action.need_hearts", name).toJson(), "#FF5555");
         } else {
           let heart = level.createEntity("minecraft:item");
           heart.x = player.x;
@@ -686,14 +649,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         );
         if (data.bff) {
           data.bff = false;
-          server.runCommandSilent(
-            global.getEmbersTextAPICommand(
-              player.username,
-              global.animalMessageSettings,
-              80,
-              Text.translatable("society.husbandry.mechanization").toJson()
-            )
-          );
+          global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.mechanization").toJson(), "#FF5555");
         }
       }
       if (
@@ -730,14 +686,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         );
         if (data.clockwork) {
           data.clockwork = false;
-          server.runCommandSilent(
-            global.getEmbersTextAPICommand(
-              player.username,
-              `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:20}`,
-              80,
-              Text.translatable("society.husbandry.emancipation").toJson()
-            )
-          );
+          global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.emancipation").toJson(), "#55FF55");
         }
       }
       if (
@@ -838,14 +787,7 @@ BlockEvents.rightClicked(global.plushies, (e) => {
           },
         },
       });
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          global.animalMessageSettings,
-          80,
-          Text.translatable("society.husbandry.mechanization").toJson()
-        )
-      );
+      global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.mechanization").toJson(), "#FF5555");
     }
   }
   if (
@@ -900,14 +842,7 @@ BlockEvents.rightClicked(global.plushies, (e) => {
           },
         },
       });
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#55FF55",offsetY:20}`,
-          80,
-          Text.translatable("society.husbandry.emancipation").toJson()
-        )
-      );
+      global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.emancipation").toJson(), "#55FF55");
     }
   }
   global.setBlockEntityData(block, nbt)
