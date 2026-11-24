@@ -1,30 +1,30 @@
 {
+  "diet.splendid_slimes.bear": "蜂蜜",
   "diet.splendid_slimes.bitwise": "矿物",
-  "diet.splendid_slimes.gold": "腌制品",
   "diet.splendid_slimes.bony": "牛奶",
-  "diet.splendid_slimes.luminous": "腌菜",
   "diet.splendid_slimes.dusty": "骨头",
+  "diet.splendid_slimes.gold": "腌制品",
   "diet.splendid_slimes.juicy": "红葡萄",
+  "diet.splendid_slimes.luminous": "腌菜",
+  "diet.splendid_slimes.mechanic": "金属锭",
+  "diet.splendid_slimes.minty": "怪物",
+  "diet.splendid_slimes.orby": "怪物,动物",
   "diet.splendid_slimes.slimy": "浆果",
   "diet.splendid_slimes.sparkcat": "熏鱼",
   "diet.splendid_slimes.weeping": "树果",
-  "diet.splendid_slimes.mechanic": "金属锭",
-  "diet.splendid_slimes.bear": "蜂蜜",
-  "diet.splendid_slimes.orby": "怪物,动物",
-  "diet.splendid_slimes.minty": "怪物",
-
-  "slime.splendid_slimes.dusty": "尘土",
-  "slime.splendid_slimes.juicy": "多汁",
-  "slime.splendid_slimes.sparkcat": "火花猫",
-  "slime.splendid_slimes.bear": "熊熊",
-
   "slime.splendid_slimes.all_seeing.info": "能预知你的命运，可惜说不出口。",
+  "slime.splendid_slimes.bear": "熊熊",
+  "slime.splendid_slimes.bear.info": "它的叶片可以被制成柔软的毯子，能让牧场主们安然入睡。",
   "slime.splendid_slimes.bitwise.info": "就算是生气了也不会碰你的红石装置，这点面子还是要给的。",
   "slime.splendid_slimes.blazing.info": "摸起来凉凉的，主要依靠吸收环境热量保持温暖。",
   "slime.splendid_slimes.bony.info": "喝牛奶总会连桶一块吞下去...",
   "slime.splendid_slimes.boomcat.info": "最常见的家养史莱姆，也是打碎玻璃制品的头号嫌犯。",
+  "slime.splendid_slimes.dusty": "尘土",
+  "slime.splendid_slimes.dusty.info": "常见于沙漠下的阴暗洞穴，给旅行者带来混乱与困惑。",
   "slime.splendid_slimes.ender.info": "生气时会引发空间扭曲。",
   "slime.splendid_slimes.gold.info": "这些史莱姆对矿洞有着迷之向往...",
+  "slime.splendid_slimes.juicy": "多汁",
+  "slime.splendid_slimes.juicy.info": "酿酒师在葡萄园中养它们以娱乐客人。",
   "slime.splendid_slimes.luminous.info": "千万别关灯！它们怕黑...",
   "slime.splendid_slimes.minty.info": "只吃怪物，是最难伺候的养殖品种。",
   "slime.splendid_slimes.orby.info": "没人盯着时，会按照“史莱姆十进制”给图书分类——虽然完全看不懂规律。",
@@ -34,14 +34,12 @@
   "slime.splendid_slimes.rotting.info": "经常出没在餐厅后巷的垃圾桶边，与浣熊称兄道弟。",
   "slime.splendid_slimes.shulking.info": "驯化后常被用来紧急搬运废墟残骸。",
   "slime.splendid_slimes.slimy.info": "最基础的华丽史莱姆，新手饲养员的最佳选择！",
+  "slime.splendid_slimes.sparkcat": "火花猫",
+  "slime.splendid_slimes.sparkcat.info": "爆裂猫的远亲，这些滑溜的史莱姆充满能量，也无法变成融合斯！",
   "slime.splendid_slimes.sweet.info": "它身上的薄荷糖丝带，甜食爱好者看了都想咬一口。",
   "slime.splendid_slimes.webby.info": "它的结晶被巧手的裁缝用来制作高级服装。",
   "slime.splendid_slimes.weeping.info": "爆裂猫史莱姆的祖先，因困在地域而进化出了适应能力。",
 
-  "slime.splendid_slimes.dusty.info": "常见于沙漠下的阴暗洞穴，给旅行者带来混乱与困惑。",
-  "slime.splendid_slimes.juicy.info": "酿酒师在葡萄园中养它们以娱乐客人。",
-  "slime.splendid_slimes.sparkcat.info": "爆裂猫的远亲，这些滑溜的史莱姆充满能量，也无法变成融合斯！",
-  "slime.splendid_slimes.bear.info": "它的叶片可以被制成柔软的毯子，能让牧场主们安然入睡。",
 
 
   "block.splendid_slimes.corral_block": "围栏块",
@@ -54,6 +52,8 @@
   "block.splendid_slimes.slime_spawner.breed": "品种：%s 史莱姆",
   "block.splendid_slimes.slime_spawner.breed_unset": "使用史莱姆刷怪蛋来设置史莱姆品种。",
   "block.splendid_slimes.slime_spawner.slime_count": "生成 %s 只史莱姆",
+  "block.splendid_slimes.slime_incubator.progress": "剩余时间：%s",
+  "block.splendid_slimes.slime_incubator.breed_unset": "放入史莱姆之心开始孵化",
 
   "config.jade.plugin_splendid_slimes.splendid_slime": "Jade模组-史莱姆信息",
 
@@ -88,7 +88,8 @@
 
   "info.splendid_slimes.plort": "喂养史莱姆获得",
   "info.splendid_slimes.slime_heart": "放到史莱姆培养箱培养！",
-  "info.splendid_slimes.slime_vac": "潜行使用射出副手的史莱姆/物品。",
+  "info.splendid_slimes.slime_vac.shoot": "§d右键§7发射快捷栏/副手中的史莱姆和物品",
+  "info.splendid_slimes.slime_vac.suck": "§dShift + 右键§7吸收附近的史莱姆和物品",
   "info.splendid_slimes.slime_vac.mode": "模式： %s",
   "info.splendid_slimes.slime_vac.mode_set": "切换为 %s 模式",
   "info.splendid_slimes.slime_inspector": "检查是否存在让史莱姆不开心的居住条件",
@@ -177,6 +178,14 @@
   "trait.splendid_slimes.friendly.info": "史莱姆会跟随附近的玩家。",
   "trait.splendid_slimes.diverse.name": "多样",
   "trait.splendid_slimes.diverse.info": "附近至少要有3种不同品种的史莱姆才会开心。",
+  "trait.splendid_slimes.pompous.name": "傲慢",
+  "trait.splendid_slimes.pompous.info": "史莱姆喜欢的食物不再使其掉落双倍结晶。",
+  "trait.splendid_slimes.ravenous.name": "贪吃",
+  "trait.splendid_slimes.ravenous.info": "只有饥饿值满时才会掉落结晶。其食谱中的每种食物提供的饥饿值不同。",
+  "trait.splendid_slimes.wormhole.name": "虫洞",
+  "trait.splendid_slimes.wormhole.info": "史莱姆生气时偶尔会将附近的实体传送到自己身边。",
+  "trait.splendid_slimes.necromancer.name": "死灵",
+  "trait.splendid_slimes.necromancer.info": "史莱姆攻击时会召唤黏液僵尸，并始终攻击附近的村民。",
 
   "splendid_slimes.advancement.obtain_corral.description": "使用围栏块圈养史莱姆",
   "splendid_slimes.advancement.obtain_corral.title": "史莱姆饲养员",
@@ -201,9 +210,11 @@
   "jei.splendid_slimes.category.slime_traits": "史莱姆习性",
   "jei.splendid_slimes.category.slime_traits.none": "史莱姆没有习性",
 
-  "slime.splendid_slimes.mechanic": "机械",
-  "slime.splendid_slimes.mechanic.info": "它很想为你的机器提供动力，但力气不够大，无法带动齿轮。",
+  "info.splendid_slimes.slime_vac": "潜行使用射出副手的史莱姆/物品。",
 
+  "item.splendid_slimes.slime_feeder": "史莱姆喂食器",
   "item.splendid_slimes.slime_ticket": "史莱姆奖券",
-  "item.splendid_slimes.slime_feeder": "史莱姆喂食器"
+
+  "slime.splendid_slimes.mechanic": "机械",
+  "slime.splendid_slimes.mechanic.info": "它很想为你的机器提供动力，但力气不够大，无法带动齿轮。"
 }
