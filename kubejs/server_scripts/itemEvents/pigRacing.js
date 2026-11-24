@@ -429,25 +429,11 @@ const validTicket = (e, bet) => {
   ];
 
   if (!coins.includes(bet.id)) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`,
-        80, 
-        Text.translatable("society.pig_race.need_coin").toJson()
-      )
-    );
+    player.tell(Text.translatable("society.pig_race.need_coin"));
     return false;
   }
   if (!item.nbt) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username, 
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
-        80, 
-        Text.translatable("society.pig_race.need_to_select_pig").toJson()
-      )
-    );
+    player.tell(Text.translatable("society.pig_race.need_to_select_pig"));
     return false;
   }
   return true;
@@ -485,14 +471,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
   let prizePool = 0;
 
   if (raceData.pigraceInProgress) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username, 
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
-        80, 
-        Text.translatable("society.pig_race.multiplay.in_progress").toJson()
-      )
-    );
+    player.tell(Text.translatable("society.pig_race.multiplay.in_progress"));
     return;
   }
   if (!validTicket(e, bet)) return;

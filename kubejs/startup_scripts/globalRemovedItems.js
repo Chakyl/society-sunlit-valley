@@ -719,6 +719,16 @@ global.removedItems = [
   "minecraft:waxed_exposed_copper_trapdoor",
   "minecraft:waxed_weathered_copper_trapdoor",
   "minecraft:waxed_oxidized_copper_trapdoor",
+  "minecraft:copper_spear",
+  "minecraft:copper_shovel",
+  "minecraft:copper_pickaxe",
+  "minecraft:copper_axe",
+  "minecraft:copper_hoe",
+  "minecraft:copper_sword",
+  "minecraft:copper_boots",
+  "minecraft:copper_helmet",
+  "minecraft:copper_chestplate",
+  "minecraft:copper_leggings",
   // TEMP 
   "numismatics:salepoint",
   // 2.0 TODO - rename to new item

@@ -331,4 +331,9 @@ LootJS.modifiers((e) => {
       p.randomChance(0.1).addLoot("society:plushie_capsule");
       p.randomChance(0.05).addLoot("society:animal_cracker");
     });
+
+  // Removed
+  global.removedItems.forEach((item) => {
+    e.addLootTableModifier(/.*/).removeLoot(item);
+  })
 });

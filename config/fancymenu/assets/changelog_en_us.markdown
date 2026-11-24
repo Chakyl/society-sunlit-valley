@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Cobblemon
-### 1.1.5-SSV4.2.1
+### 1.1.5-SSV4.2.2
 ^^^
 --- 
 - Updated to Sunlit Valley 4.2.0 - Future Forever update
@@ -40,3 +40,10 @@
 - Fixed Zombie Horse spawning above ground
 - Fixed Lost Bowtie missing lang string
 - Fixed Pouffe recipe conflict
+
+# 4.2.2
+- Added Spear to Guild
+- Fixed Copper tools/armor not being removed
+- Fixed spears not being upgradable
+- Fixed Blackfish quest
+- Removed Ember's Text API due to targeted removal of verison off CurseForge
