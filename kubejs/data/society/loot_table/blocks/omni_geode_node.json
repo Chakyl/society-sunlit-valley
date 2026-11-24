@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "society:omni_geode",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:prismatic_shard",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:jade",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "quark:diamond_heart",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

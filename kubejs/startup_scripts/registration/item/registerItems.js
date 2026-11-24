@@ -63,36 +63,12 @@ StartupEvents.registry("item", (e) => {
       food.effect("minecraft:haste", 2000, 2, 1.0);
       // food.fastToEat(true);
     });
-  e.create("society:salmonberry").texture("society:item/crops/salmonberry")
-    .food((food) => {
-      food.nutrition(1);
-      food.saturation(2);
-      // food.fastToEat(true);
-    });
-  e.create("society:boysenberry").texture("society:item/crops/boysenberry")
-    .food((food) => {
-      food.nutrition(1);
-      food.saturation(3);
-      // food.fastToEat(true);
-    });
-  e.create("society:cranberry").texture("society:item/crops/cranberry")
-    .food((food) => {
-      food.nutrition(1);
-      food.saturation(2);
-      // food.fastToEat(true);
-    });
-  e.create("society:crystalberry").texture("society:item/crops/crystalberry")
-    .food((food) => {
-      food.nutrition(1);
-      food.saturation(1);
-      // food.fastToEat(true);
-    });
   [
     "cave_carrot"
   ].forEach((crop) => {
     e.create(`society:${crop}`).texture(`society:item/crops/${crop}`)
       .food((food) => {
-        food.nutrition(1);
+        food.nutrition(3);
         food.saturation(1);
         // food.fastToEat(true);
       });
@@ -611,7 +587,12 @@ StartupEvents.registry("item", (e) => {
   //     .glow(true)
   //     .color(0, 0x28adde);
   // });
-  const fishTexureMapping = [
+  const fishTextureMapping = [
+    {
+      item: "unusualfishmod:raw_frosty_fin",
+      texture: "raw_frosty_fin_fish",
+      displayId: "frosty_fin",
+    },
     {
       item: "unusualfishmod:raw_bark_angelfish",
       texture: "raw_bark_angel",
@@ -774,7 +755,7 @@ StartupEvents.registry("item", (e) => {
     let baseTexturePath = `${splitFish[0]}:item/${splitFish[1]}`;
     if (fishId.includes("raw_")) {
       fishId = fishId.substring(4, fishId.length);
-      fishTexureMapping.find((e) => {
+      fishTextureMapping.find((e) => {
         if (e.item === fish.item) {
           baseTexturePath = `${splitFish[0]}:item/${e.texture}`;
           fishId = e.displayId;

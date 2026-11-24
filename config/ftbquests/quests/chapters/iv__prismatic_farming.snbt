@@ -131,28 +131,6 @@
 			y: 17.5d
 		}
 		{
-			dependencies: [
-				"0E4EA6B5E8E6361C"
-				"3C61AB99F40B709F"
-			]
-			id: "40AD1233DF08EBCC"
-			rewards: [{
-				id: "0CF9290B08560164"
-				item: {
-					count: 1
-					id: "society:jade"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "6E17BB18745E3969"
-				item: { components: { "ftbquests:missing_item": "artisan_machines:aging_cask" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 14.5d
-		}
-		{
 			id: "6412C4FB8294A6E2"
 			rewards: [{
 				count: 16
@@ -1543,10 +1521,7 @@
 			y: 18.5d
 		}
 		{
-			dependencies: [
-				"1DC8E69A916864DC"
-				"6A94BB4CB99D814E"
-			]
+			dependencies: ["6A94BB4CB99D814E"]
 			hide_dependent_lines: true
 			hide_text_until_complete: false
 			icon: {

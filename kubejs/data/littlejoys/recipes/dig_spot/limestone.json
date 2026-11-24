@@ -1,0 +1,10 @@
+{
+  "type": "littlejoys:dig_spot",
+  "eventCondition": {
+    "type": "above_state",
+    "state": {
+      "Name": "meadow:limestone"
+    }
+  },
+  "lootTable": "littlejoys:dig_spot/stone"
+}

@@ -25,11 +25,13 @@
       "cozycafe:tab",
       "sophisticatedstorage:main",
       "whimsy_deco:tab",
+      "create:base",
       "longwings:data/longwings",
       "furniture:furniture",
       "orchard:orchard.tab",
       "hooked:item_group",
       "sophisticatedcore:main",
+      "minecraft:redstone_blocks",
       "functionalstorage:main",
       "husbandry:husbandry.tab",
       "sereneseasons:main",
@@ -70,6 +72,7 @@
       "simplemagnets:simplemagnets",
       "selling_bin:selling_bin",
       "bots_lib:dewdrop_tab",
+      "kubejs:tab",
       "kaleidoscope_tavern:tavern_deco",
       "classicpipes:pipes",
       "sunrisegardening:tab",
@@ -187,7 +190,8 @@
       "artisan_machines:artisan_machines",
       "splendid_slimes:tab",
       "bugsnatch:tab",
-      "onlyhammersandexcavators:onlyhammersandexcavators"
+      "onlyhammersandexcavators:onlyhammersandexcavators",
+      "society:technology"
     ]
   },
   {
@@ -294,7 +298,11 @@
       "unusualfishmod:raw_aero_mono",
       "unusualfishmod:raw_duality_damselfish",
       "unusualfishmod:raw_frosty_fin",
-      "unusualfishmod:raw_triple_twirl_pleco"
+      "unusualfishmod:raw_triple_twirl_pleco",
+      "plentifulponds:roe",
+      "plentifulponds:aged_roe",
+      "#society:smoked_fish",
+      "#society:targeted_bait"
     ],
     "order": []
   },
@@ -350,6 +358,17 @@
       "#society:pickle",
       "#society:keg_product"
     ],
+    "order": []
+  },
+  {
+    "action": "custom_tab",
+    "tab": [
+      "society:technology"
+    ],
+    "name": "Technology",
+    "icon": "minecraft:redstone",
+    "remove_items": [],
+    "add_items": [],
     "order": []
   },
   {

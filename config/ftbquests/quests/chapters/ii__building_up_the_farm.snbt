@@ -15,7 +15,10 @@
 		{
 			dependencies: ["0A39B0C0A77E57B0"]
 			icon: {
-				id: "farmersdelight:tomato_seeds"
+				components: {
+					"society:npc_id": "society:market"
+				}
+				id: "society:invitation"
 			}
 			id: "6ADD884F3FFE5D42"
 			rewards: [
@@ -47,6 +50,7 @@
 					id: "6898A763A52A07CB"
 					item: { components: { "society:npc_id": "society:market" }, count: 1, id: "society:invitation" }
 					match_components: "strict"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -58,6 +62,7 @@
 						id: "society:villager"
 					}
 					id: "06F99A1BA55E885E"
+					optional_task: true
 					stage: "invited_market"
 					type: "gamestage"
 				}
@@ -66,7 +71,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["6ADD884F3FFE5D42"]
+			dependencies: ["195AA8CAAF252F1E"]
 			id: "54B618CF0AB9DC20"
 			rewards: [{
 				id: "05D8DB298A7C0CAD"
@@ -81,8 +86,8 @@
 				item: { count: 1, id: "sunrisegardening:iron_sprinkler" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -108,36 +113,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"6EEBD017839FF628"
-				"6ADD884F3FFE5D42"
-			]
-			hide_until_deps_complete: true
-			id: "596D2298299CCEED"
-			min_required_dependencies: 1
-			rewards: [{
-				count: 8
-				id: "7CA8E1317ECA8880"
-				item: {
-					components: {
-						"ftbquests:missing_item": "farm_and_charm:lettuce_seeds"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "77F4E1B3E81A6FD2"
-				item: { components: { "minecraft:custom_data": { "patchouli:book": "patchouli:almanac" } }, count: 1, id: "patchouli:guide_book" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["6ADD884F3FFE5D42"]
+			dependencies: ["195AA8CAAF252F1E"]
 			id: "07858B887B222BC2"
 			rewards: [{
 				id: "7400FB36CD4F9C87"
@@ -152,7 +128,7 @@
 				item: { count: 1, id: "society:earth_crystal" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 8.0d
 			y: -1.5d
 		}
 		{
@@ -178,34 +154,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["07858B887B222BC2"]
-			icon: {
-				id: "farmersdelight:cooking_pot"
-			}
-			id: "122BB9885C33C85F"
-			rewards: [{
-				count: 4
-				id: "19E73E6D7BA3D369"
-				item: {
-					components: {
-						"ftbquests:missing_item": "farm_and_charm:farmer_salad"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "574B894B37C52EBB"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: -3.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
@@ -223,7 +173,7 @@
 				item: { components: { "ftbquests:missing_item": "society:tapper" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -231,23 +181,20 @@
 			hide_until_deps_complete: true
 			id: "057A1891E5864EBF"
 			rewards: [{
-				id: "0E153FE7C3B55BC9"
+				id: "583CFC509D133F3C"
 				item: {
-					components: {
-						"ftbquests:missing_item": "artisan_machines:seed_maker"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "artisan_machines:seed_maker"
 				}
 				type: "item"
 			}]
 			tasks: [{
-				id: "3DDE2D80A0FB093E"
-				item: { components: { "ftbquests:missing_item": "artisan_machines:seed_maker" }, count: 1, id: "ftbquests:missing_item" }
+				id: "59178A269F43D99D"
+				item: { count: 1, id: "artisan_machines:seed_maker" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 1.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
@@ -266,8 +213,8 @@
 				item: { count: 1, id: "society:pine_tar" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
@@ -286,48 +233,11 @@
 				item: { count: 1, id: "society:oak_resin" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 10.5d
 			y: 1.0d
 		}
 		{
-			dependencies: ["7B2EB2B56F155E49"]
-			hide_until_deps_complete: true
-			icon: {
-				components: {
-					"ftbquests:missing_item": "brewery:beer_wheat"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "1AADE5D96B701A97"
-			rewards: [{
-				count: 4
-				id: "4900391D1DA5BD16"
-				item: {
-					components: {
-						"ftbquests:missing_item": "brewery:hop_trellis_seed"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "2A99F527ADD8E4D8"
-					item: { components: { "ftbquests:missing_item": "brewery:wooden_brewingstation" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "0B57EC5D5A42C1C1"
-					item: { components: { "ftbquests:missing_item": "farm_and_charm:silo_wood" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-			]
-			x: 8.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["2B3BEC36F6C0F6BE"]
+			dependencies: ["07858B887B222BC2"]
 			hide_until_deps_complete: true
 			icon: {
 				components: {
@@ -342,13 +252,10 @@
 			id: "2DD84A5F127B1463"
 			min_required_dependencies: 1
 			rewards: [{
-				id: "0EE0C090E1074FF2"
+				id: "310FFECC0B195602"
 				item: {
-					components: {
-						"ftbquests:missing_item": "brewery:beer_hops"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "society:turnip_preserves"
 				}
 				type: "item"
 			}]
@@ -356,8 +263,8 @@
 				id: "029277086FFC13F5"
 				type: "checkmark"
 			}]
-			x: 7.0d
-			y: -0.5d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
@@ -379,552 +286,8 @@
 				id: "46F8239D1B4C5FC4"
 				type: "checkmark"
 			}]
-			x: 10.5d
+			x: 11.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["5B6FD08D6063D6AA"]
-			id: "1DC8E69A916864DC"
-			rewards: [{
-				id: "0A63F769B6BC1D76"
-				item: {
-					count: 1
-					id: "society:magma_geode"
-				}
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "1F5747BAB613CE3A"
-				item: { count: 1, id: "minecraft:flint_and_steel" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: -1.5d
-		}
-		{
-			icon: {
-				id: "minecraft:cow_spawn_egg"
-			}
-			id: "6EEBD017839FF628"
-			rewards: [
-				{
-					count: 4
-					id: "0BB5EA86664B3439"
-					item: {
-						count: 1
-						id: "numismatics:cog"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "122E7CE7639360EB"
-					type: "choice"
-				}
-			]
-			size: 1.5d
-			tasks: [
-				{
-					id: "03517B186B1545D2"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
-					match_components: "strict"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					icon: {
-						components: {
-							"ftbquests:missing_item": "society:villager"
-						}
-						id: "ftbquests:missing_item"
-					}
-					id: "2E87112873365470"
-					stage: "invited_shepherd"
-					type: "gamestage"
-				}
-			]
-			x: -1.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6EEBD017839FF628"]
-			id: "2C3FD9E2DA520620"
-			rewards: [{
-				count: 32
-				id: "6511454F8CEE31D1"
-				item: {
-					count: 1
-					id: "society:animal_feed"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "64A0EB754F93BA1D"
-				item: { count: 1, id: "society:animal_feed" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["2C3FD9E2DA520620"]
-			icon: {
-				id: "tanukidecor:neon_heart_sign"
-			}
-			id: "3D324E99DF28D224"
-			rewards: [
-				{
-					count: 4
-					id: "252A2DDE789924B5"
-					item: {
-						count: 1
-						id: "minecraft:name_tag"
-					}
-					type: "item"
-				}
-				{
-					id: "6D01FAFFF7815F65"
-					item: {
-						count: 1
-						id: "society:candied_animal_feed"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "7F4B6A5EB91157E6"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["2C3FD9E2DA520620"]
-			hide_until_deps_complete: true
-			id: "6D534E699BF820CE"
-			rewards: [{
-				id: "5C95012391ACED7C"
-				item: {
-					components: {
-						"ftbquests:missing_item": "society:feeding_trough"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "6DA4BF699B56C1B0"
-				item: { components: { "ftbquests:missing_item": "society:feeding_trough" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["3D324E99DF28D224"]
-			icon: {
-				id: "minecraft:egg"
-			}
-			id: "45739CCE73037CBB"
-			rewards: [{
-				id: "231B8DF626FF312D"
-				item: {
-					components: {
-						"ftbquests:missing_item": "farmingforblockheads:chicken_nest"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2535B0A23A9A9D48"
-				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["3D324E99DF28D224"]
-			icon: {
-				id: "society:milk"
-			}
-			id: "5B5A764F0E02E5FF"
-			rewards: [{
-				count: 2
-				id: "561C516A119D916F"
-				item: {
-					components: {
-						"ftbquests:missing_item": "beachparty:sweetberry_milkshake"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "69F396F4D539C274"
-					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "5E7664509E4DA64D"
-					item: { count: 1, id: "society:milk_pail" }
-					type: "item"
-				}
-			]
-			x: 5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3D324E99DF28D224"]
-			id: "3719F024051F60DA"
-			rewards: [{
-				id: "5E94113982847280"
-				item: {
-					components: {
-						"ftbquests:missing_item": "bakery:chocolate_donut"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "642716CCC749F796"
-				item: { count: 1, id: "society:truffle" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["3D324E99DF28D224"]
-			id: "729467D224F25987"
-			rewards: [{
-				id: "162751152F70FD1C"
-				item: {
-					count: 1
-					id: "society:husbandry_hourly"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "3B6CEEAF76691ACF"
-				item: { count: 1, id: "society:magic_shears" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["45739CCE73037CBB"]
-			hide_dependency_lines: false
-			hide_until_deps_complete: true
-			id: "1A300B5030B2A1C1"
-			rewards: [{
-				id: "0E3433983C9A0316"
-				item: {
-					count: 1
-					id: "society:large_egg"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2F796FE56AA69911"
-				item: { components: { "ftbquests:missing_item": "artisan_machines:mayonnaise_machine" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5B5A764F0E02E5FF"]
-			hide_until_deps_complete: true
-			id: "75181B22DAF5E9A6"
-			rewards: [{
-				id: "5BC6F281781D8AF3"
-				item: {
-					count: 1
-					id: "society:large_milk"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "10B6EDC1EF4BD4DE"
-				item: { components: { "ftbquests:missing_item": "artisan_machines:cheese_press" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 6.5d
-			y: 4.0d
-		}
-		{
-			icon: {
-				id: "unusualfishmod:raw_sneep_snorp"
-			}
-			id: "429FEBEC239B975F"
-			rewards: [
-				{
-					count: 4
-					id: "2D10D4BE4AA7AEC5"
-					item: {
-						count: 1
-						id: "numismatics:cog"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "12BE226AAE452A77"
-					type: "choice"
-				}
-			]
-			size: 1.5d
-			tasks: [
-				{
-					id: "31C5F2C4CB8E33F1"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
-					match_components: "strict"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					icon: {
-						components: {
-							"ftbquests:missing_item": "society:villager"
-						}
-						id: "ftbquests:missing_item"
-					}
-					id: "06F8F48507B23D58"
-					stage: "invited_fisher"
-					type: "gamestage"
-				}
-			]
-			x: -1.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["26315E4AC203348C"]
-			icon: {
-				components: {
-					"ftbquests:missing_item": "aquaculture:iron_fishing_rod"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "21B07E7D0C412FFA"
-			rewards: [{
-				id: "3C1C43D8FAAB143C"
-				item: {
-					count: 1
-					id: "numismatics:bevel"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "69F7CACD16258B77"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["21B07E7D0C412FFA"]
-			id: "63FDC7BA6801CF64"
-			rewards: [{
-				id: "1F27D9AA4B7BA8C7"
-				item: {
-					count: 1
-					id: "numismatics:sprocket"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "06FFCAF22EA4628A"
-				item: { components: { "ftbquests:missing_item": "aquaculture:tackle_box" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["63FDC7BA6801CF64"]
-			hide_until_deps_complete: true
-			icon: {
-				components: {
-					"ftbquests:missing_item": "aquaculture:iron_hook"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "3E48E03F3F044FF2"
-			rewards: [{
-				count: 8
-				id: "14BAF0DA11FB1B7D"
-				item: {
-					count: 1
-					id: "farmersdelight:safety_net"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "03EE6EDEA6103A90"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["63FDC7BA6801CF64"]
-			hide_until_deps_complete: true
-			icon: {
-				components: {
-					"ftbquests:missing_item": "aquaculture:worm"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "28203635739BC73E"
-			rewards: [{
-				id: "04B0C53823196913"
-				item: {
-					components: {
-						"ftbquests:missing_item": "aquaculture:worm"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2DBD30282E05AB4F"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["63FDC7BA6801CF64"]
-			hide_until_deps_complete: true
-			id: "187FBE0E4FB5B7AD"
-			rewards: [{
-				count: 16
-				id: "6BFA8D02179E0A2B"
-				item: {
-					count: 1
-					id: "minecraft:poisonous_potato"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "5B8054921FFB6037"
-				item: { components: { "ftbquests:missing_item": "aquaculture:worm_farm" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 6.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["26315E4AC203348C"]
-			id: "03773C88CA88552A"
-			rewards: [{
-				id: "5BA652C925897448"
-				item: {
-					count: 1
-					id: "society:aquamarine"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "6A01E347AAE14C84"
-				item: { count: 1, id: "society:aquamarine" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["03773C88CA88552A"]
-			id: "761F68396065119B"
-			rewards: [{
-				count: 8
-				id: "3707F0BA19F418B6"
-				item: {
-					count: 1
-					id: "crabbersdelight:crab_trap_bait"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "6800EF4EBB9BB70D"
-				item: { components: { "ftbquests:missing_item": "crabbersdelight:crab_trap" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["4A48308E11476E9B"]
-			hide_until_deps_complete: true
-			id: "238D909D360FC27C"
-			rewards: [{
-				count: 8
-				id: "1C2DED146D4A907E"
-				item: {
-					count: 1
-					id: "crabbersdelight:deluxe_crab_trap_bait"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "5F82CCDC2692A5AE"
-				item: { components: { "ftbquests:missing_item": "society:deluxe_worm_farm" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["4A48308E11476E9B"]
-			hide_until_deps_complete: true
-			id: "6132A6DBE97F16BD"
-			rewards: [{
-				count: 4
-				id: "66848E2323D20334"
-				item: {
-					count: 1
-					id: "society:smoked_salmon"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2A229E46E32DFAA4"
-				item: { components: { "ftbquests:missing_item": "society:fish_smoker" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["4A48308E11476E9B"]
-			hide_until_deps_complete: true
-			id: "6FE9F992ACD90629"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "71EC645DD35338EB"
-				type: "random"
-			}]
-			tasks: [{
-				id: "45D7CACD9D012903"
-				item: { components: { "ftbquests:missing_item": "plentifulponds:fish_pond" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: -7.0d
 		}
 		{
 			dependencies: ["7B2EB2B56F155E49"]
@@ -944,40 +307,14 @@
 				item: { count: 1, id: "society:treated_log" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.0d
+			x: 10.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["761F68396065119B"]
-			hide_until_deps_complete: true
-			id: "4A48308E11476E9B"
-			rewards: [{
-				id: "4EF3F60F568B3C4C"
-				item: {
-					components: {
-						"ftbquests:missing_item": "aquaculture:neptunium_nugget"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "7D68D7142FDAC2FF"
-				item: { components: { "ftbquests:missing_item": "aquaculture:neptunium_nugget" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["5B6FD08D6063D6AA"]
+			dependencies: ["6ADD884F3FFE5D42"]
 			hide_until_deps_complete: true
 			icon: {
-				components: {
-					"ftbquests:missing_item": "pamhc2trees:starfruit_sapling"
-				}
-				id: "ftbquests:missing_item"
+				id: "orchard:lemon_sapling"
 			}
 			id: "0E68DD5DFB2DFD97"
 			rewards: [{
@@ -988,70 +325,23 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "475AAB9663458781"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: -2.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
 			hide_until_deps_complete: true
 			id: "66DEF5ED5F277804"
-			rewards: [{
-				count: 8
-				id: "56D1EE19BF4FF36C"
-				item: {
-					components: {
-						"ftbquests:missing_item": "farm_and_charm:onion"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "7E9F51B77F4DAA89"
 				item: { count: 1, id: "minecraft:bone_meal" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
-			hide_until_deps_complete: true
-			id: "5AD7C2BCDA001A53"
-			rewards: [{
-				id: "3A8D462EA4613AF7"
-				item: {
-					count: 1
-					id: "society:canvas"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "4F6728330BE86674"
-				item: { components: { "ftbquests:missing_item": "artisan_machines:loom" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 6.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["429FEBEC239B975F"]
-			id: "26315E4AC203348C"
-			tasks: [{
-				id: "5441A6041EAB94DE"
-				item: { count: 1, id: "minecraft:fishing_rod" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["5B6FD08D6063D6AA"]
+			dependencies: ["7FFED918C5367350"]
 			hide_until_deps_complete: true
 			id: "242D49A4D71EDBEA"
 			rewards: [{
@@ -1068,82 +358,18 @@
 				item: { count: 1, id: "society:frozen_geode" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -0.5d
+			x: 5.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["6ADD884F3FFE5D42"]
-			hide_until_deps_complete: true
-			id: "166D3A381C5C9A8F"
-			rewards: [{
-				id: "5D55DA5A6302279E"
-				item: {
-					count: 1
-					id: "society:sweet_berries_preserves"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "37751E3B943FC4F8"
-				item: { components: { "ftbquests:missing_item": "artisan_machines:preserves_jar" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4A48308E11476E9B"]
-			hide_until_deps_complete: true
-			id: "73E15D00539BF7CD"
-			rewards: [{
-				id: "175F4915C9565C3B"
-				item: {
-					count: 1
-					id: "society:neptuna_bait"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "5B23A61A54E4A941"
-				item: { components: { "ftbquests:missing_item": "society:bait_maker" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["2C3FD9E2DA520620"]
-			hide_until_deps_complete: true
-			id: "649860C19CAE0F17"
-			rewards: [{
-				count: 4
-				id: "4AFE198E5F10C429"
-				item: {
-					count: 1
-					id: "minecraft:name_tag"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "1ECBA096B8007E7C"
-				item: { count: 1, id: "minecraft:name_tag" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["6ADD884F3FFE5D42"]
+			dependencies: ["195AA8CAAF252F1E"]
 			id: "0EE5A175B0417403"
 			rewards: [{
 				count: 4
-				id: "27BF0222781D6112"
+				id: "6D9A25A1127D566B"
 				item: {
-					components: {
-						"ftbquests:missing_item": "bakery:vegetable_sandwich"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "farmersdelight:egg_sandwich"
 				}
 				type: "item"
 			}]
@@ -1152,104 +378,69 @@
 				item: { count: 1, id: "dew_drop_watering_cans:iron_watering_can" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["21B07E7D0C412FFA"]
-			hide_until_deps_complete: true
-			icon: {
-				components: {
-					"ftbquests:missing_item": "stardew_fishing:trap_bobber"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "77690255DF58F118"
-			rewards: [{
-				id: "6014646708F6EAAD"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "3E8C2AD5FDF6B94F"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: -10.0d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["42C8E1F0D9A5B2BD"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "refinedstorage:crafting_grid"
-				}
-				id: "ftbquests:missing_item"
+				id: "ae2:crafting_terminal"
 			}
 			id: "61501449BF31B773"
 			rewards: [{
 				count: 16
-				id: "5DC9285D66B2B4E6"
+				id: "46719840979C998F"
 				item: {
-					components: {
-						"ftbquests:missing_item": "refinedstorage:cable"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "ae2:blue_covered_cable"
 				}
 				type: "item"
 			}]
 			tasks: [
 				{
-					id: "10E465DFCFE2145D"
-					item: { components: { "ftbquests:missing_item": "refinedstorage:crafting_grid" }, count: 1, id: "ftbquests:missing_item" }
+					id: "5965BC3E48234EB8"
+					item: { count: 1, id: "ae2:controller" }
 					type: "item"
 				}
 				{
-					id: "124F45DDBD1834CC"
-					item: { components: { "ftbquests:missing_item": "refinedstorage:controller" }, count: 1, id: "ftbquests:missing_item" }
+					id: "3E916D5082E4268A"
+					item: { count: 1, id: "ae2:crafting_terminal" }
 					type: "item"
 				}
 			]
-			x: 13.5d
-			y: 0.0d
+			x: 14.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["61501449BF31B773"]
 			hide_until_deps_complete: true
 			icon: {
-				components: {
-					"ftbquests:missing_item": "refinedstorage:4k_storage_block"
-				}
-				id: "ftbquests:missing_item"
+				id: "ae2:drive"
 			}
 			id: "69C3121C90AABBF4"
 			tasks: [
 				{
-					id: "48B9D6CA4DCEE524"
-					item: { components: { "ftbquests:missing_item": "refinedstorage:external_storage" }, count: 1, id: "ftbquests:missing_item" }
+					id: "262E77AFE03191A9"
+					item: { count: 1, id: "ae2:drive" }
 					type: "item"
 				}
 				{
-					id: "1F58F668CB26451B"
-					item: { components: { "ftbquests:missing_item": "refinedstorage:4k_storage_block" }, count: 1, id: "ftbquests:missing_item" }
+					id: "384D4891DF3590AE"
+					item: { count: 1, id: "ae2:storage_bus" }
 					type: "item"
 				}
 			]
-			x: 13.5d
-			y: 1.5d
+			x: 14.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["61501449BF31B773"]
 			hide_until_deps_complete: true
 			icon: {
 				components: {
-					"ftbquests:missing_item": "refinedstorageaddons:wireless_crafting_grid"
+					"ae2:stored_energy": 1600000.0d
 				}
-				id: "ftbquests:missing_item"
+				id: "ae2:wireless_terminal"
 			}
 			id: "55D658B5939D9DEB"
 			rewards: [{
@@ -1263,23 +454,16 @@
 				}
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "2C4975F5156BCFCC"
-					item: { components: { "ftbquests:missing_item": "refinedstorageaddons:wireless_crafting_grid" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "7300B5298A729EE8"
-					item: { components: { "ftbquests:missing_item": "refinedstorage:wireless_transmitter" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-			]
-			x: 15.0d
-			y: 1.5d
+			tasks: [{
+				id: "705E9BFF0A1E45FC"
+				item: { components: { "ae2:stored_energy": 1600000.0d }, count: 1, id: "ae2:wireless_crafting_terminal" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["6ADD884F3FFE5D42"]
+			dependencies: ["195AA8CAAF252F1E"]
 			hide_until_deps_complete: true
 			id: "5FBE3685CF008A5A"
 			rewards: [{
@@ -1295,84 +479,37 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "4CB767B95CEA4E1D"
-				item: { count: 1, id: "minecraft:stone_hoe" }
+				id: "323D3E7B137E51BF"
+				item: { count: 1, id: "minecraft:iron_hoe" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.0d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
-			dependencies: [
-				"0E4EA6B5E8E6361C"
-				"3719F024051F60DA"
-			]
-			hide_until_deps_complete: true
-			id: "6971F0B3FC26D411"
-			rewards: [{
-				id: "6515152543861EE5"
-				item: {
-					count: 1
-					id: "society:oil"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "4B83A80BBA2CE38D"
-				item: { components: { "ftbquests:missing_item": "artisan_machines:oil_maker" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["3D324E99DF28D224"]
-			hide_until_deps_complete: true
-			id: "3E4F57BA2601FD6F"
-			rewards: [{
-				id: "0039C84CEA76F6E1"
-				item: {
-					count: 1
-					id: "society:candied_animal_feed"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "3E203D1F5F96B78D"
-				item: { count: 1, id: "society:mood_scanner" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["5B6FD08D6063D6AA"]
+			dependencies: ["1D5820FBDD8EB900"]
 			hide_until_deps_complete: true
 			icon: {
 				components: {
-					"minecraft:custom_data": {
-						quality_food: {
-							effects: [ ]
-							quality: 3
-						}
+					"quality_food:quality": {
+						level: 3
+						type: "quality_food:diamond"
 					}
 				}
-				id: "minecraft:apple"
+				id: "society:crabapple"
 			}
 			id: "6F3FC6227213B886"
 			rewards: [{
-				id: "718F890F60221DC4"
+				id: "28340AA6C9CFF4AC"
 				item: {
 					components: {
-						"minecraft:custom_data": {
-							quality_food: {
-								effects: [ ]
-								quality: 3
-							}
+						"quality_food:quality": {
+							level: 3
+							type: "quality_food:diamond"
 						}
 					}
 					count: 1
-					id: "minecraft:apple"
+					id: "society:crabapple"
 				}
 				type: "item"
 			}]
@@ -1380,11 +517,11 @@
 				id: "6C4037AEDF0532A8"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: -3.0d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["07858B887B222BC2"]
+			dependencies: ["195AA8CAAF252F1E"]
 			id: "7FFED918C5367350"
 			invisible: true
 			rewards: [{
@@ -1401,133 +538,151 @@
 				item: { count: 1, id: "society:geode" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["5B6FD08D6063D6AA"]
-			id: "723A5C8DB06D8C36"
-			rewards: [
-				{
-					id: "35B88FDE0AB2F86E"
-					item: {
-						count: 1
-						id: "cozycafe:cafe_sign"
-					}
-					type: "item"
-				}
-				{
-					count: 2
-					id: "2234E899812935DB"
-					item: {
-						count: 1
-						id: "cozycafe:cafe_menu"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "2C2C38F8D9DBD4C5"
-				item: { count: 1, id: "cozycafe:cafe_manager" }
-				type: "item"
-			}]
-			x: 12.0d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["723A5C8DB06D8C36"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "cozycafe:cafe_menu"
-			}
-			id: "62129A6009E60E0F"
-			rewards: [{
-				count: 2
-				id: "65E808D4AE33925C"
-				item: {
-					count: 1
-					id: "society:furniture_box"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "64723DD811BD1C1F"
-				type: "checkmark"
-			}]
-			x: 13.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["723A5C8DB06D8C36"]
-			hide_until_deps_complete: true
+			dependencies: ["5B6FD08D6063D6AA"]
 			icon: {
 				components: {
-					"minecraft:custom_data": {
-						platedFood: {
-							count: 1
-							id: "veggiesdelight:vegetables_wrap"
-						}
-					}
+					"society:npc_id": "society:librarian"
 				}
-				id: "cozycafe:serving_plate"
-			}
-			id: "7C30FC21953CF7D3"
-			rewards: [{
-				id: "4421B0B2ADC081B2"
-				item: {
-					count: 1
-					id: "cluttered:kitchen_set_brown_counter_sink"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "3254F63E9C93A786"
-					item: { count: 1, id: "cozycafe:plating_station" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "2C633234709FF8E8"
-					item: { count: 1, id: "cozycafe:serving_plate" }
-					type: "item"
-				}
-			]
-			x: 13.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5B6FD08D6063D6AA"]
-			icon: {
-				id: "minecraft:bookshelf"
+				id: "society:invitation"
 			}
 			id: "42C8E1F0D9A5B2BD"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "17367B77466C47F9"
+				id: "4A5120EC2964405A"
+				table_id: 8066249741531960190L
 				type: "choice"
 			}]
 			tasks: [
 				{
 					id: "1FA1D3740CCD0A8D"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
+					item: { components: { "society:npc_id": "society:librarian" }, count: 1, id: "society:invitation" }
 					match_components: "strict"
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					icon: {
 						components: {
-							"ftbquests:missing_item": "society:villager"
+							"society:npc_id": "society:librarian"
 						}
-						id: "ftbquests:missing_item"
+						id: "society:villager"
 					}
 					id: "62E5A962C8F9D3E3"
+					optional_task: true
 					stage: "invited_librarian"
 					type: "gamestage"
 				}
 			]
-			x: 12.0d
+			x: 13.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["6ADD884F3FFE5D42"]
+			icon: {
+				id: "minecraft:iron_ore"
+			}
+			id: "195AA8CAAF252F1E"
+			rewards: [{
+				count: 4
+				id: "243EB6EAD3FBDA5A"
+				item: {
+					count: 1
+					id: "meadow:cheese_sandwich"
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "125FA6B44AC3F0F6"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:raw_materials)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6ADD884F3FFE5D42"]
+			icon: {
+				components: {
+					"society:npc_id": "society:fisher"
+				}
+				id: "society:invitation"
+			}
+			id: "5DC5934528067300"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "381489A1ED2A193F"
+				table_id: 6686198540872159506L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "1EFE3C641B3F7A75"
+					item: { components: { "society:npc_id": "society:fisher" }, count: 1, id: "society:invitation" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: {
+						components: {
+							"society:npc_id": "society:fisher"
+						}
+						id: "society:villager"
+					}
+					id: "293163FC9F744667"
+					optional_task: true
+					stage: "invited_fisher"
+					type: "gamestage"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B6FD08D6063D6AA"]
+			icon: {
+				components: {
+					"society:npc_id": "society:shepherd"
+				}
+				id: "society:invitation"
+			}
+			id: "00FE038FD8CED942"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "463CD0841DB04743"
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "02E43E04EBEB1D7A"
+					item: { components: { "society:npc_id": "society:shepherd" }, count: 1, id: "society:invitation" }
+					match_components: "strict"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: {
+						components: {
+							"society:npc_id": "society:shepherd"
+						}
+						id: "society:villager"
+					}
+					id: "758CB1E07F9ABB8B"
+					optional_task: true
+					stage: "invited_shepherd"
+					type: "gamestage"
+				}
+			]
+			x: 13.0d
+			y: -3.0d
 		}
 	]
 }

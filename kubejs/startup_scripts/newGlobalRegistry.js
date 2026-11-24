@@ -356,7 +356,32 @@ global.GEMS = [
     { item: "society:spinel", generateItem: true, value: 1024 },
     { item: "society:prismatic_shard", storageBlock: "society:prismatic_shard_block", generateItem: true, value: 2048 },
 ]
-
+/**
+ *   Metals
+ * 
+ *  Used for: Item generation, tagging
+ * 
+ * Valid Properties:
+ * @property {string} item - Item ID
+ * @property {"base" | "frozen" | "magma" } geodeType - What type of geode it came from. All will be added to omni geode
+ * @property {boolean} disableItemGeneration - Does what it says. Mainly for mineral blocks
+ * @property {number} value - Sell value
+ * 
+ */
+global.METALS = [
+  { item: "minecraft:raw_copper", value: 4 },
+  { item: "minecraft:raw_iron", value: 8 },
+  { item: "minecraft:coal", value: 8 },
+  { item: "minecraft:raw_gold", value: 16 },
+  { item: "create:raw_zinc", value: 8 },
+  { item: "minecraft:redstone", value: 8 },
+  { item: "minecraft:quartz", value: 8 },
+  { item: "oreganized:raw_lead", value: 48 },
+  { item: "society:sparkstone", value: 16 },
+  { item: "oreganized:raw_silver", value: 64 },
+  { item: "minecraft:netherite_scrap", value: 1024 },
+  { item: "plentifulponds:oceanite", value: 2560 },
+]
 /**
  *   Artifacts
  * 

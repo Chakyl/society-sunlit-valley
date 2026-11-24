@@ -1,0 +1,10 @@
+{
+  "type": "littlejoys:gold_rush",
+  "eventCondition": {
+    "type": "is_state",
+    "state": {
+      "Name": "oreganized:silver_ore"
+    }
+  },
+  "lootTable": "oreganized:blocks/silver_ore"
+}

@@ -1,0 +1,168 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "splendid_slimes:slime_heart",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{slime:{id:\"splendid_slimes:puddle\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:bluegill_meridian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualfishmod:ripper_tooth" ,
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "aquaculture:neptunium_nugget"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:prismarine_crystals",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:aquamarine",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:scute",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:wet_weekly"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "numismatics:crown",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:artifact_trove"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "twigs:tangerine_seashell",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "twigs:roseate_seashell",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "twigs:opaline_seashell",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "twigs:bronzed_seashell",
+          "weight": 4
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "crabbersdelight:pearl",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:raw_gold",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "beachparty:seashell",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:aquamagical_dust"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "numismatics:crown"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

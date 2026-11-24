@@ -1,0 +1,10 @@
+{
+	id: "6FF113673199537E"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ id: "2E34186799B04600", item: { components: { "minecraft:custom_data": { altezza: 0, blueprint_name: "librarian_basic", buildAnyway: 0b, free_build: 1b, lunghezzaX: 0, lunghezzaZ: 0, mirrorX: 0b, mirrorY: 0b, mirrorZ: 0b, nome: "librarian_basic", owner: "worn", owner_name: "Unknown", remaining_uses: 1b, rotateValue: 0s, skipObstructionBlock: 0b, visualizeBuild: 0b, wasHolding: 0b, worn_set: 1b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.basic_librarian\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.basic_librarian.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+		{ id: "660BF1DF25528DB6", item: { components: { "minecraft:custom_data": { altezza: 0, blueprint_name: "librarian_pineconetown", buildAnyway: 0b, free_build: 1b, lunghezzaX: 0, lunghezzaZ: 0, mirrorX: 0b, mirrorY: 0b, mirrorZ: 0b, nome: "librarian_pineconetown", owner: "worn", owner_name: "Unknown", remaining_uses: 1b, rotateValue: 0s, skipObstructionBlock: 0b, visualizeBuild: 0b, wasHolding: 0b, worn_set: 1b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_librarian\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_librarian.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+		{ id: "5D7AD3C7691AF60F", item: { components: { "minecraft:custom_data": { blueprint_name: "librarian_rural", free_build: 1b, remaining_uses: 1b, visualizeBuild: 0b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.rural_librarian\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.rural_librarian.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+	]
+}

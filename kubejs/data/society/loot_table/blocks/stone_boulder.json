@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobblestone",
+          "weight": 670
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:geode",
+          "weight": 135
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:earth_crystal",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:aquamarine",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:pristine_amethyst_chunk",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:wheel_of_adaptation",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:gnome",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

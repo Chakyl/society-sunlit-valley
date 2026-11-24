@@ -7,7 +7,7 @@
 	chapter.12867D0F2D4800BE.chapter_subtitle: ["Not required for perfection"]
 	chapter.12867D0F2D4800BE.title: "Butterflies \\& Moths"
 	chapter.16656DF4FC427FB2.title: "IV.I - Mechanical Farming"
-	chapter.1F990A2A648BE4A1.title: "I - Getting Started"
+	chapter.1F990A2A648BE4A1.title: "Getting Started"
 	chapter.20D348A9B6875391.title: "Villagers"
 	chapter.24DD5AA13FB04D9B.chapter_subtitle: ["Reward: Skull Cavern Teleporter"]
 	chapter.24DD5AA13FB04D9B.title: "Vault"
@@ -19,10 +19,11 @@
 	chapter.377D458757642E97.title: "Fish"
 	chapter.38639EECD8CDEFB3.title: "Building Tools"
 	chapter.3DE5C3A5E424080B.title: "Brews"
+	chapter.3EB13E8DE75EAB26.title: "Product Types"
 	chapter.3F567CE7F8E7B185.chapter_subtitle: ["Not required for perfection"]
 	chapter.3F567CE7F8E7B185.title: "Slimes"
 	chapter.3FDDC935FECB660C.title: "Crops"
-	chapter.4603D051DD0D1099.title: "II - Farm Building"
+	chapter.4603D051DD0D1099.title: "Farm Building"
 	chapter.4AA29866E19A65A8.title: "Perfection"
 	chapter.4ACD2216D1602749.chapter_subtitle: ["Reward: Neptunium-Infused Hook"]
 	chapter.4ACD2216D1602749.title: "Fish Tank"
@@ -45,6 +46,19 @@
 		"Every time they work, they consume 1 &6Spark-Gro&r, a delicate mix of fertilizers and &6Sparkstone&r."
 	]
 	quest.003782D1F1A74349.quest_subtitle: "It's what plants crave"
+	quest.00B0CF6416E08450.quest_desc: [
+		"&6Ropes&r and &6Chains&r can be tied between two &6Fences&r, &6Walls&r, or &6Bars&r using right click! This forms what is called a 'catenary', which can improve the look of your farm. "
+		""
+		"Caternaries can be decorated with Bunting or Glow Lights. They can also be traversed like a zipline using tools such as pickaxes."
+	]
+	quest.00B0CF6416E08450.quest_subtitle: "Formally known as a 'catenary'"
+	quest.00B0CF6416E08450.title: "Fancy Chains"
+	quest.00FE038FD8CED942.quest_desc: [
+		"Unlike what you may be used to, raising farm animals requires care, money, and attention. "
+		""
+		"A &6Shepherd&r can help you out with basic supplies and farm animals."
+	]
+	quest.00FE038FD8CED942.quest_subtitle: "Welcoming Maria"
 	quest.018699F88064119B.quest_desc: ["The most important alloy for progression is &6Brass&r. It is a combination of Copper and Zinc, with Iridium Scrap used as a catalyst."]
 	quest.01B84BE72772B00B.quest_desc: [
 		"&6Lead&r is a secondary material needed for heavy machinery."
@@ -273,11 +287,9 @@
 	]
 	quest.0FF95378E683DF5E.quest_subtitle: "&6Market after first year"
 	quest.100B4D3BEEE9C433.quest_desc: [
-		"To craft special furniture using the &6Workbench&r, you may need items purchased from a catalog."
+		"Rare furniture from &6Furniture Boxes&r or &6Ace's Shop&r can be too random if you're doing a specific build! "
 		""
-		"These can be bought from a &6Witch&r, and placed in world. "
-		""
-		"Right click them with &6Coins&r to purchase the crafting items for that furniture set."
+		"Furniture catalogs can be bought from a &6Witch&r, and placed in world to purchase furniture from the set directly. "
 	]
 	quest.100B4D3BEEE9C433.title: "Furniture Catalogs"
 	quest.1030BCF34FEAE03C.quest_desc: [
@@ -310,13 +322,6 @@
 		""
 		"They can be extracted for any tier of mineral, and have a chance to drop &6Iridium Scrap&r and &dPrismatic Shards&r when extracted."
 	]
-	quest.11A36B05684D70A9.quest_desc: [
-		"In the Nether, native fish can be caught using the &6Lava Fishing Rod&r. "
-		""
-		"They will also randomly upgrade enchantments from succesful catches."
-		""
-		"Since the Nether has no season, the same fish can be caught at any time. Some fish are biome dependent though."
-	]
 	quest.122BB9885C33C85F.quest_desc: [
 		"Cooking is essential early on, for both keeping you alive in the mines and making profit."
 		""
@@ -334,14 +339,6 @@
 	quest.12716A71DB8FB7B8.quest_subtitle: "&6Market after first year"
 	quest.1280C34AE9A4EE7B.quest_desc: ["Cook all dishes from &6Let's Do: Candlelight&r."]
 	quest.1280C34AE9A4EE7B.title: "Candlelight Champion"
-	quest.12ED0E637AD47FD4.quest_desc: [
-		"The &6Workbench&r is used for crafting advanced furniture, and blocks from furniture catalogs!"
-		""
-		"It can be purchased from the &6Blacksmith&r but requires power to operate. "
-		""
-		"You can burn solid fuel in a generator and connect it to the &6Workbench&r using the &6Electric Wrench&r."
-	]
-	quest.12ED0E637AD47FD4.title: "Furniture Crafting"
 	quest.12FC0701CC742176.quest_desc: [
 		"&6Recall Potions&r are consumables found throughout the world or brewed that will take you home from anywhere."
 		""
@@ -482,6 +479,7 @@
 		"You'll need to find a &dPrismatic Shard&r deep in the Skull Cavern to craft their workstation."
 	]
 	quest.18E4EF841B0D1DC7.quest_subtitle: "&6Market after first year"
+	quest.195AA8CAAF252F1E.title: "In the Mines"
 	quest.19D2D00AC36C9049.title: "Brews Collection Complete!"
 	quest.1A1129507F643085.quest_desc: ["Another important use for &6Silver&r is &6Electron Tubes&r. These small lights help provide signaling logic for smarter devices such as &6Brass Funnels&r."]
 	quest.1A300B5030B2A1C1.quest_desc: [
@@ -513,14 +511,6 @@
 		"A &6Basket&r can be placed underneath the output face to capture coins."
 	]
 	quest.1AA78CF8A14DEE76.title: "Smarter Selling"
-	quest.1AADE5D96B701A97.quest_desc: [
-		"Brewing beer is a good way to start on producing &6Artisan Goods&r on your farm."
-		""
-		"Dried ingredients need to be processed in the &6Silo&r."
-		""
-		"The Brewing process itself requires attention and is slightly complex. You can hold &6W&r while hovering over the Brewingstation to learn how to brew beer."
-	]
-	quest.1AADE5D96B701A97.title: "Brewing Beer"
 	quest.1B614E9E38B45BD0.title: "Wood Tools"
 	quest.1B75D6174593D5E5.title: "Geode Mineral Collection Complete!"
 	quest.1BA73EA72B471270.quest_desc: [
@@ -548,12 +538,6 @@
 		"Simply right click on the farmland to gain the affects. "
 	]
 	quest.1D5820FBDD8EB900.title: "All on Fertilizers"
-	quest.1DC8E69A916864DC.quest_desc: [
-		"The next place to exploit for its resources is the &6Nether&r."
-		""
-		"It's a dangerous place, but has the important resource &6Fire Quartz&r, needed for advanced farm building."
-	]
-	quest.1DC8E69A916864DC.title: "Getting to the Nether"
 	quest.1DCBAC91CE9AAD60.quest_desc: [
 		"If you've more than a handful of &6Fish Ponds&r, you may be overflowing with &6Roe&r from fish whos produce items are more valuable than the money its worth."
 		""
@@ -597,11 +581,9 @@
 	quest.2193ACEC05CC5B07.quest_subtitle: "Mass block placement"
 	quest.2193ACEC05CC5B07.title: "Building Wands"
 	quest.21B07E7D0C412FFA.quest_desc: [
-		"Upgraded rods can be equipped with attachments using a &6Tackle Box&r."
+		"Your shoddy &6Bamboo&r isn't the best way to fish. Leveling up your fishing skill will allow you to purchase or obtain other types of rods with their own benefits."
 		""
-		"They will also have a chance to upgrade enchantments from succesful catches. The chance increases on higher upgraded rods."
-		""
-		"Higher tiers of rods will also increase the size of the minigame bobber!"
+		"Upgrade your rod as soon as you're able to."
 	]
 	quest.21B07E7D0C412FFA.title: "Upgrading Your Rod"
 	quest.21B62899C63D3C4B.title: "Gem Collection Complete!"
@@ -687,7 +669,7 @@
 	]
 	quest.25305BECA3C32315.title: "Pregenerating the Skull Cavern"
 	quest.25569C0D687E6FA5.quest_desc: [
-		"The &6Dehydrator&r can be used to dry fruits or vegetables in &61&r day. Fast, but not as profitable as other means."
+		"The &6Dehydrator&r can be used to dry fruits or mushrooms in &61&r day. It's fast, but not as profitable as other means."
 		""
 		"The first one will need to be bought from a &6Market&r, but more can be crafted using &6Raisins&r."
 	]
@@ -720,12 +702,11 @@
 	]
 	quest.262E7E71CF6AD26A.quest_subtitle: "&6Market after first year"
 	quest.26315E4AC203348C.quest_desc: [
+		"The fish you'll catch depends on a few factors: &aSeason&r, &6Location&r &aWeather&r, &6Time&r, and &6Water type&r."
 		""
-		"The fish you'll catch depends on 4 factors: &aSeason&r, &6Location&r &aWeather&r, and &6Time&r."
+		"Each of the four &aseasons&r have their own fish. Each &6location&r (Ocean, River, Lake) has its own set of fish that depends on weather or if its night and day."
 		""
-		"Each of the four &aseasons&r have their own fish. Each &6location&r (Ocean, River, or Freshwater) has its own pool."
-		""
-		"Finally, some fish can only be caught during night or day."
+		"Finally, some fish can only be caught in special places like underground. There may also be a way to upgrade your rod to do some lava fishing as well..."
 	]
 	quest.263CCA4D2EAF2629.quest_desc: [
 		"When two different Butterflies or Moths are in the same area, they might lay &6Caterpillar Eggs&r!"
@@ -831,7 +812,7 @@
 		""
 		"The category is only relevant when it comes to skills, which may increase certain categories if taken."
 	]
-	quest.2DD84A5F127B1463.title: "Artisan Goods?"
+	quest.2DD84A5F127B1463.title: "Types of products"
 	quest.2E7D98DEB5012260.title: "Slimes Collection Complete!"
 	quest.2F83B8F22344FAD7.quest_desc: [
 		"The fourth and final layer of the Skull Cavern is made up of the Umbra Barrens and Blackstone Caves. "
@@ -1086,8 +1067,6 @@
 		"Things that have a sell value are always giftable, but you can find the full list by searching &6#villager_gift&r in JEI/EMI."
 	]
 	quest.3E08F21BA8F69499.title: "Giving Gifts"
-	quest.3E48E03F3F044FF2.quest_desc: ["Baits can be added using a &6Tackle Box&r and have various effects on your rod."]
-	quest.3E48E03F3F044FF2.title: "Fishing Hooks"
 	quest.3E4F57BA2601FD6F.quest_desc: [
 		"Animals are sensitive to changes in their care or environment. They may really like you, but if you mistreat them it'll effect their produce!"
 		""
@@ -1155,6 +1134,7 @@
 		""
 		"The maximums of enchantments that are in the skill tree has been lowered!"
 	]
+	quest.4188F14D8C3E55BD.title: "Crop Processing"
 	quest.41C453E806763C4F.quest_desc: [
 		"The &6Trader&r villager sells machine upgrades for various farm goods. These upgrades add special effects when applied to the machine."
 		""
@@ -1169,11 +1149,7 @@
 		"Aim for at least &67&r of them."
 	]
 	quest.41FD632FA78AFB49.title: "Harnessing Fire"
-	quest.429FEBEC239B975F.quest_desc: [
-		"Fish are a fast and valuable way to make money early game."
-		""
-		"Your first rod will come from the &6Fisher&r villager, and they otherwise sell aquatic and fishing related supplies."
-	]
+	quest.429FEBEC239B975F.quest_desc: [""]
 	quest.429FEBEC239B975F.quest_subtitle: "Welcoming Haruna"
 	quest.429FEBEC239B975F.title: "Fishing"
 	quest.42A10CEE57513522.quest_desc: [
@@ -1197,7 +1173,7 @@
 	]
 	quest.42BBE95A6DE1DD19.title: "Shipping and Currency"
 	quest.42C8E1F0D9A5B2BD.quest_desc: [
-		"By now your storage situation may be getting dire. Thankfully the &6Librarian&r villager sells tools for sorting your base out."
+		"By now your storage situation may be getting dire. Thankfully the &6Librarian&r sells tools for sorting your base out."
 		""
 		"At the end of every season, you'll also have access to the &6Book fair&r, a special shop that sells different skill books."
 	]
@@ -1335,9 +1311,9 @@
 	]
 	quest.4A4474120CD64CBD.quest_subtitle: "The Money Sink"
 	quest.4A48308E11476E9B.quest_desc: [
-		"&3Neptunium&r is a precious material used in crafting advanced fishing gear."
+		"&3Oceanite&r is a precious material used in crafting advanced fishing gear."
 		""
-		"It can be found in &3Neptune's Bounty&r you fish up, or rarely in Crab Traps."
+		"It can be found in &3Fishing Crates&r you fish up, or rarely in Crab Traps."
 	]
 	quest.4A708E01E3A3B8D3.title: "Complete the Abandoned Farm"
 	quest.4A96DC00D7D0CAD6.quest_desc: [
@@ -1614,12 +1590,6 @@
 		""
 		"&oYou don't have to read the other Sharestone quests.&r"
 	]
-	quest.596D2298299CCEED.quest_desc: [
-		"The &6Farmer's Almanac&r has detailed information of crops and farm animals, which is essential when deciding what to focus on every season."
-		""
-		"It is sold by the &6Market&r and &6Shepherd&r"
-	]
-	quest.596D2298299CCEED.title: "All on Farming"
 	quest.597C843B42219362.quest_subtitle: "&6Copper or Reinforced Brewingstation"
 	quest.5A0AA87EA971F13F.quest_desc: [
 		"Build highways around your world lined with fields of corn, the true capitalist dream."
@@ -1696,8 +1666,23 @@
 	quest.5C9C7A5A88613109.title: "Slime Stealing"
 	quest.5D6623B36EC39685.quest_subtitle: "Not counted in Completionist Banner"
 	quest.5D95CBE19118EAD4.quest_subtitle: "Not counted in Completionist Banner"
+	quest.5DC5934528067300.quest_desc: [
+		"Fish are a fast and valuable way to make money early on while waiting for crops to grow."
+		""
+		"Your first rod will come from the &6Fisher&r, who otherwise sell saquatic and fishing related supplies."
+	]
+	quest.5DC5934528067300.quest_subtitle: "Welcoming Haruna"
 	quest.5E89F151176083E6.quest_desc: ["The &6Extendo-Grip&r uses air to extend your reach for both placing, breaking, and attacking."]
 	quest.5E89F151176083E6.quest_subtitle: "Extending Reach"
+	quest.5ED3EF9577AB5D57.quest_desc: [
+		"There are two main ways to use crops you obtain from your farm, cook them or process them into &6Artisan Goods&r."
+		""
+		"Cooking is the simplest and quickest option, and in most cases the quality of your ingredients will transfer to the finished product. "
+		""
+		"&6Artisan goods&r are significantly more valuable, and can take multiple days to make. In most cases they do not transfer quality to the finished product."
+	]
+	quest.5ED3EF9577AB5D57.quest_subtitle: "How to cook your crops"
+	quest.5ED3EF9577AB5D57.title: "Artisan Goods vs Meals"
 	quest.5FB57C45A25D41F0.quest_desc: [
 		"Sunlit Valley is a more peaceful oriented modpack! This means:"
 		""
@@ -1783,10 +1768,13 @@
 	]
 	quest.63F8C52D082BBCB3.title: "Ribbit Sun Magic"
 	quest.63FDC7BA6801CF64.quest_desc: [
-		"&6Tackle Boxes&r are used to customize your rod using the slots on the right. They also retain their inventory when broken."
+		"&6Tackle Boxes&r are used to customize your rod with Baits, Hooks, and Bobbers by placing your rod in the top-right slot."
 		""
-		"&oOnly upgraded rods can have hooks attached&r"
+		"The bottom-right slot is a bulk storage for fish, allowing your to carry many fish without filling up your inventory."
+		""
+		"Tackle Boxes retain their inventory when broken."
 	]
+	quest.63FDC7BA6801CF64.title: "Tackle Boxes"
 	quest.63FE67406861C9B5.quest_desc: [""]
 	quest.6412C4FB8294A6E2.quest_desc: [
 		"&dPrismatic Shards&r are the ultimate form of power on Sunlit Valley."
@@ -1937,7 +1925,6 @@
 		"Equipping the Calendar will show the current sub-season in the top left of your screen."
 	]
 	quest.6ADD884F3FFE5D42.quest_subtitle: "Welcoming Leon"
-	quest.6ADD884F3FFE5D42.title: "Starting Farming"
 	quest.6C1236C00210E5A7.quest_desc: [
 		"The &6Hammer&r can be used to crush stones into other forms, i.e Stone -> Cobblestone -> Gravel."
 		""
@@ -1999,11 +1986,7 @@
 	quest.6EBAA004C1A50E98.quest_desc: ["Completeting the Abandoned Farm gives you a &3Petal Apothecary&r. This is your entry point into Botania, a magical automation mod that will help with certain tasks around the farm."]
 	quest.6EBAA004C1A50E98.quest_subtitle: "Reward: Petal Apothecary (Botania)"
 	quest.6EBAA004C1A50E98.title: "Abandoned Farm Completed!"
-	quest.6EEBD017839FF628.quest_desc: [
-		"In this pack, raising farm animals requires care, money, and attention. "
-		""
-		"A &6Shepherd&r villager will be needed for basic supplies."
-	]
+	quest.6EEBD017839FF628.quest_desc: [""]
 	quest.6EEBD017839FF628.quest_subtitle: "Welcoming Maria"
 	quest.6EEBD017839FF628.title: "Raising Farm Animals"
 	quest.6F3F87DBBBE86A28.title: "Winter Bundle"
@@ -2180,11 +2163,13 @@
 	]
 	quest.7718055315817CB1.quest_subtitle: "Skip out on the mining!"
 	quest.77690255DF58F118.quest_desc: [
-		"Bobbers can be attached to any kind of fishing rod by dragging it over and right clicking on it."
+		"&6Hooks&r and &6Bobbers&r can be attached to any kind of fishing rod using the &6Tackle Box&r"
 		""
-		"They have various effects on the fishing minigame, such as revealing the fish on the line or increasing the bobber size even more!"
+		"They have various effects on the fishing minigame and the resulting catch, making them. "
+		""
+		"If you're struggling with certain fish or the minigame as a whole, experiement with what tackle you're using!"
 	]
-	quest.77690255DF58F118.title: "Minigame modifications"
+	quest.77690255DF58F118.title: "Hooks \\& Bobbers"
 	quest.77780C73C016EE60.title: "Complete the Fish Tank"
 	quest.77E2AE3656E32182.quest_desc: [
 		"Hoarding your coins in random chests isn't ideal. The &6Bank Terminal&r is an ATM, allowing you to store your coins safely. You can access your money from any other Bank Terminal, like an Ender Chest."
@@ -2292,24 +2277,24 @@
 	quest.7FFED918C5367350.title: "Eggs of the King"
 	reward_table.0C1427C85906D45F.title: "Farmhouse"
 	reward_table.2ECDDB38CA6D15FC.title: "Blacksmith Home"
+	reward_table.5CCA2625DE6B9112.title: "Fisher Home"
 	reward_table.63C86273D0B176D7.title: "Carpenter Home"
 	reward_table.661A3E9221C62BFB.title: "Market Home"
+	reward_table.6FF113673199537E.title: "Librarian Home"
 	task.0229473CF1E31A5E.title: "Complete all Collections"
 	task.029277086FFC13F5.title: "Understood!"
 	task.03CB0C77931D1C07.title: "Any Sharestone"
-	task.03EE6EDEA6103A90.title: "Any fishing hook"
 	task.0570B72A57438956.title: "Spawn in"
-	task.06F8F48507B23D58.title: "Invited the Fisher villager"
 	task.06F99A1BA55E885E.title: "Invited the Market villager"
 	task.071758A047AA8A61.title: "Understood!"
 	task.072C2039D178F97E.title: "Click to complete!"
-	task.078F96904FB1E9F6.title: "Understood!"
 	task.09B79BA0E1E2F6AA.title: "Achieve perfection"
 	task.0A12C2A9D0646C09.title: "Pantry complete"
 	task.0A266FA5E2FD2103.title: "Any Diamond tool"
 	task.0AD01E5BA4169E25.title: "Unlock Mining Mastery"
 	task.0E5D7529339C2A99.title: "Any Stone tool"
 	task.0F890C6BB5B2D327.title: "Mineral collection complete"
+	task.125FA6B44AC3F0F6.title: "Any ore"
 	task.12AF72DCF6F3A875.title: "Complete the Vault"
 	task.12B5F8FF7A12B850.title: "Get me my horse"
 	task.13169DA529D1555A.title: "Choice Item"
@@ -2324,7 +2309,6 @@
 	task.18CE25FAB2D5E7FE.title: "Any Iron tool"
 	task.18D7A7C05EC66667.title: "Bounties"
 	task.1D4B6399A99F53CB.title: "Vault complete"
-	task.1FA1D3740CCD0A8D.title: "Invited the Librarian"
 	task.1FD6880BC6E90A7E.title: "Find all Geode minerals"
 	task.21F03480B5D4F77D.title: "Understood"
 	task.22040C7E30885D07.title: "Artifact collection complete"
@@ -2340,10 +2324,10 @@
 	task.278FC13CCE8B9572.title: "Enable FTB Chunks Map"
 	task.27B7C7049FF1F53D.title: "Unknown type: questsadditions:break"
 	task.281897C014D14C4C.title: "Any Blueprint"
+	task.293163FC9F744667.title: "Invited the Fisher"
 	task.2B09ED928759E57E.title: "Brews collection complete"
 	task.2B67A83CE639308D.title: "Obtain all wines"
 	task.2C02508B4ADC5EF3.title: "Crop collection completed"
-	task.2DBD30282E05AB4F.title: "Any Bait"
 	task.2E87112873365470.title: "Invited the Shepherd villager"
 	task.2F6745B71CE2EE40.title: "Fish collection completed"
 	task.30CB90A24037FCC0.title: "Collect all artifacts"
@@ -2352,7 +2336,6 @@
 	task.3289EF10C786A325.title: "Invited the Banker villager"
 	task.33563F224C8ECB6C.title: "Obtain all Teas and Cofees"
 	task.353FE24F7CEA054C.title: "Any Holographic Rail"
-	task.37BEA915F4C1B7B2.title: "Any copycat block"
 	task.380838F0BF3B7E91.title: "I will nurture Slimes"
 	task.38A2FC9B0D264BD2.title: "Any advanced fertilizer"
 	task.38C343FDC4F440C9.title: "Collect all dishes"
@@ -2360,13 +2343,11 @@
 	task.3A37B10C5BC6FC29.title: "Gem collection complete"
 	task.3A3C41B464166327.title: "Choice Item"
 	task.3AD3A245C817EDF9.title: "Bake all Baked goods"
-	task.3C94F73EFA3C7BCD.title: "Understood!"
 	task.3CA57068C39098E2.title: "Unknown type: questsadditions:break"
 	task.3CE6113B51970AC2.title: "Any Leather or Wool Armor"
 	task.3D497F4CF396A37A.title: "Complete the Abandoned Farm"
 	task.3E0453D9C60A9B8C.title: "Any Diamond armor"
-	task.3E8C2AD5FDF6B94F.title: "Any Bobber"
-	task.3EF5A9EA750FC64D.title: "Any Furniture Catalog"
+	task.3FC3ED0587D07BE7.title: "Any Copycat"
 	task.3FE67ED6D7C3F44B.title: "Unlock Skill Mastery"
 	task.41E4A7710122FD0C.title: "Unknown type: questsadditions:break"
 	task.4239A35022824728.title: "Unknown type: questsadditions:break"
@@ -2375,7 +2356,6 @@
 	task.445CBBEAFC66083B.title: "Collect all minerals"
 	task.46B1148F60C66C53.title: "Complete the Fish Tank"
 	task.46F8239D1B4C5FC4.title: "Bundles"
-	task.475AAB9663458781.title: "Any Fruit Tree"
 	task.47A5E6018A6FB99F.title: "Invited the Witch"
 	task.487C30F04C7295E0.title: "Any Iron Armor"
 	task.48A5EF6D1BB8647A.title: "Invite the Trader"
@@ -2393,13 +2373,13 @@
 	task.526CDEE7648DACB8.title: "Butterfly Amber or Moth Pollen"
 	task.52727B8A0D17120B.title: "Visit the Umbra Barrens"
 	task.531DADCAC7BBB3D6.title: "Craft a tool"
+	task.5329408D71167BC9.title: "Any catenary connectable item"
 	task.5330CA06B1E9BEE3.title: "Understood!"
 	task.53F45DEC3FD0866C.title: "Enter the Skull Cavern"
 	task.543787D85D98DB01.title: "Choice Item"
 	task.5492353782FA1337.title: "Unlock Husbandry Mastery"
 	task.55DE40F8D224D72D.title: "Fish Tank complete"
 	task.56C063A91C4834B3.title: "Understood!"
-	task.574B894B37C52EBB.title: "Any cooking station"
 	task.57B88B56E94E2933.title: "Any White Grape"
 	task.57C1B03844582DB5.title: "Any Building Gadget"
 	task.58766B452BD86651.title: "Any Hoe"
@@ -2411,8 +2391,10 @@
 	task.5F9BEDE31C44BA36.title: "Understood"
 	task.60760AF29A6A1954.title: "Unlock Adventuring Mastery"
 	task.60BC53B1056204F0.title: "Complete Farm And Charm collection"
+	task.62E5A962C8F9D3E3.title: "Invited the Librarian"
 	task.62FF92E353562969.title: "Visit a Summer Biome"
 	task.6311F3FAC9E5755D.title: "Choice Item"
+	task.635264953BC47F21.title: "Any #starcatcher:bobbers"
 	task.6359E72D652B83E1.title: "Choice Item"
 	task.64723DD811BD1C1F.title: "Understood!"
 	task.64A0EB754F93BA1D.title: "Feeding Animals"
@@ -2425,10 +2407,8 @@
 	task.66EF68859A260B35.title: "Invited the Blacksmith villager"
 	task.67FE1BE1B3199D1B.title: "Any Upgrade"
 	task.6918CC5C12ED241A.title: "Collect all Butterflies and Moths"
-	task.691F920167A31AB3.title: "Understood!"
 	task.698D277805B25AE9.title: "Choice Item"
 	task.69F396F4D539C274.title: "Any milk"
-	task.69F7CACD16258B77.title: "Any upgraded fishing rod"
 	task.6A27CD5DC00C628C.title: "Mechanical Crafter Crafts"
 	task.6C184749905BE27F.title: "Any Item Pipe"
 	task.6C4037AEDF0532A8.title: "Understood!"
@@ -2437,6 +2417,7 @@
 	task.6D34DCA139A38534.title: "Any Crystal of Regret"
 	task.6D8A02F5851A7D5A.title: "I won't do that!"
 	task.6E03C1C00F4D8506.title: "Understood"
+	task.6E7DD5066E47714C.title: "Any #starcatcher:hooks"
 	task.6E8880D4D8EB4DF5.title: "Any Gold Armor"
 	task.6EF00A20A9462000.title: "Unknown type: questsadditions:break"
 	task.6F925B01C27987B2.title: "Any Fermentation Barrel juice"
@@ -2446,7 +2427,9 @@
 	task.713FD6544CCC4F5C.title: "Complete the Pantry"
 	task.7162E14466460F42.title: "Unlock Fishing Mastery"
 	task.71C9DCC83451DA09.title: "Understood!"
+	task.73477E20E6E3E67D.title: "Any Tackle Box"
 	task.753DE0AD1C863764.title: "Choice Item"
+	task.758CB1E07F9ABB8B.title: "Invited the Shepherd"
 	task.765B171872302421.title: "Complete all Candlelight Dishes"
 	task.77941199A5AAA562.title: "Invited the Carpenter villager"
 	task.787836F003705C9D.title: "Understood'"

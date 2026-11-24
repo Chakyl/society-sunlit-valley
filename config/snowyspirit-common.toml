@@ -1,19 +1,15 @@
 	[snowy_season.snow_season_start]
-		#Month from which villagers will start placing wreaths, presents and throwing snowballs
 		# Default: 12
 		# Range: 1 ~ 12
 		month = 12
-		#Day from which villagers will start placing wreaths, presents and throwing snowballs
 		# Default: 20
 		# Range: 1 ~ 31
 		day = 20
 
 	[snowy_season.snow_season_end]
-		#Month from which villagers will start removing placed wreaths
 		# Default: 1
 		# Range: 1 ~ 12
 		month = 1
-		#Day from which villagers will start removing placed wreaths
 		# Default: 30
 		# Range: 1 ~ 31
 		day = 30
@@ -45,6 +41,10 @@
 	# Default: 1.25
 	# Range: 0.1 ~ 3.0
 	max_sled_puller_size = 1.25
+	#Chance for an igloo to spawn with a sled outside. Set to 0 to disable
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	igloo_sled_chance = 0.7
 
 		[sled.physics.friction]
 			#Advanced setting. Controls how sleds slide along other blocks, in other words its the inverse of friction. This number affects how the sled speed is multiplied each tick. A value of 1 will make it keep its velocity forever. Increasing these values will effectively increase the sled top speed when on these blocks

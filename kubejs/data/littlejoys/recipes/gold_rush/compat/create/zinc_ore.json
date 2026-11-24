@@ -1,0 +1,44 @@
+{
+  "type": "littlejoys:gold_rush",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    }
+  ],
+  "forge:condition": {
+    "type": "forge:mod_loaded",
+    "modid": "create"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_state",
+        "state": {
+          "Name": "create:zinc_ore"
+        }
+      },
+      {
+        "type": "is_tool",
+        "item": "#littlejoys:can_trigger_goldrush"
+      },
+      {
+        "type": "not",
+        "condition": {
+          "type": "is_tool",
+          "item": "#littlejoys:cannot_trigger_goldrush"
+        }
+      }
+    ]
+  },
+  "lootTable": "society:util/gold_rush_zinc"
+}

@@ -48,3 +48,5 @@ dynamic_menu_items = true
 quality_bonus_stage = "the_quality_of_the_earth"
 #Requires KubeJs. The stage name with the following impact: Items with the tag cozy_cafe:pickles are worth 100% more. Can be added to the player using the command e.g, /kubejs stages add playerName brine_and_punishment
 pickle_bonus_stage = "brine_and_punishment"
+#List of items ignored by dynamic menu item registration.
+not_served = ["minecraft:dried_kelp", "minecraft:beef", "minecraft:porkchop", "minecraft:mutton", "minecraft:chicken", "minecraft:rabbit", "minecraft:tropical_fish", "minecraft:pufferfish", "minecraft:salmon", "minecraft:cod"]

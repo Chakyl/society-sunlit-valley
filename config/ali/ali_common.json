@@ -169,5 +169,44 @@
       "key": "ali:gameplay_loot",
       "icon": "minecraft:compass"
     }
-  ]
+  ],
+  "spawnInfo": {
+    "entities": [],
+    "whitelist": false
+  },
+  "showCharts": true,
+  "defaultBlockLootFunctions": [
+    "minecraft:explosion_decay"
+  ],
+  "ignoredPredicateConditions": [
+    "minecraft:random_chance",
+    "minecraft:random_chance_with_enchanted_bonus",
+    "minecraft:table_bonus",
+    "minecraft:survives_explosion"
+  ],
+  "entityLootTables": {},
+  "tooltipColors": {
+    "branch": "dark_gray",
+    "secondary": "gray",
+    "levels": [
+      "green",
+      "yellow",
+      "light_purple",
+      "blue",
+      "red",
+      "gold"
+    ],
+    "text": "gold",
+    "value": "aqua",
+    "error": "red"
+  },
+  "hideDefaultBlockLoot": true,
+  "showUnboundedGlobalLootModifiers": false,
+  "showEntitiesWithoutLoot": false,
+  "defaultBlockLootConditions": [
+    "minecraft:survives_explosion"
+  ],
+  "disabledEntities": [],
+  "logMoreStatistics": false,
+  "showInGameNames": true
 }

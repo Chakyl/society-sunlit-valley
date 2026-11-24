@@ -21,7 +21,9 @@ ItemEvents.rightClicked("society:geode_buster", e => {
   const geodeBonus = Ingredient.of(`#${geode}_bonus`).itemIds;
   const geodeTreasure = Ingredient.of(`#${geode}_treasure`).itemIds;
   let givenItem = false;
-
+  console.log(`#${geode}_treasure`)
+  console.log(geodeBonus)
+  console.log(geodeTreasure)
   item.count--;
   player.getHeldItem("off_hand").count--;
   let reward = player.level.createEntity("minecraft:item");

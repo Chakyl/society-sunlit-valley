@@ -1,0 +1,10 @@
+{
+	id: "5CCA2625DE6B9112"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ id: "45DE2BA535768479", item: { components: { "minecraft:custom_data": { blueprint_name: "fisher_basic", free_build: 1b, remaining_uses: 1b, visualizeBuild: 0b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.basic_fisher\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.basic_fisher.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+		{ id: "464E7965FE478270", item: { components: { "minecraft:custom_data": { blueprint_name: "fisher_pineconetown", free_build: 1b, remaining_uses: 1b, visualizeBuild: 0b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_fisher\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.pineconetown_fisher.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+		{ id: "21D60C29D88E3DB9", item: { components: { "minecraft:custom_data": { altezza: 0, blueprint_name: "fisher_rural", buildAnyway: 0b, free_build: 1b, lunghezzaX: 0, lunghezzaZ: 0, mirrorX: 0b, mirrorY: 0b, mirrorZ: 0b, nome: "fisher_rural", owner: "worn", owner_name: "Unknown", remaining_uses: 1b, rotateValue: 0s, skipObstructionBlock: 0b, visualizeBuild: 0b, wasHolding: 0b, worn_set: 1b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.rural_fisher\"}", "minecraft:damage": 0, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.rural_fisher.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
+	]
+}

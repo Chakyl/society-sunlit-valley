@@ -135,6 +135,7 @@
 					id: "44E951A44F1CF7F0"
 					item: { components: { "society:npc_id": "society:carpenter" }, count: 1, id: "society:invitation" }
 					match_components: "strict"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -146,6 +147,7 @@
 						id: "society:villager"
 					}
 					id: "77941199A5AAA562"
+					optional_task: true
 					stage: "invited_carpenter"
 					type: "gamestage"
 				}
@@ -481,6 +483,7 @@
 					id: "59E084CB052A33AC"
 					item: { components: { "society:npc_id": "society:banker" }, count: 1, id: "society:invitation" }
 					match_components: "strict"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -492,6 +495,7 @@
 						id: "society:villager"
 					}
 					id: "3289EF10C786A325"
+					optional_task: true
 					stage: "invited_banker"
 					type: "gamestage"
 				}
@@ -549,6 +553,7 @@
 					id: "425CE445701BE19E"
 					item: { components: { "society:npc_id": "society:blacksmith" }, count: 1, id: "society:invitation" }
 					match_components: "strict"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -560,6 +565,7 @@
 						id: "society:villager"
 					}
 					id: "66EF68859A260B35"
+					optional_task: true
 					stage: "invited_blacksmith"
 					type: "gamestage"
 				}

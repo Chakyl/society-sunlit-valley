@@ -1,0 +1,26 @@
+{
+  "type": "littlejoys:gold_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_state",
+        "state": {
+          "Name": "etcetera:nether_bismuth_ore"
+        }
+      },
+      {
+        "type": "is_tool",
+        "item": "#littlejoys:can_trigger_goldrush"
+      },
+      {
+        "type": "not",
+        "condition": {
+          "type": "is_tool",
+          "item": "#littlejoys:cannot_trigger_goldrush"
+        }
+      }
+    ]
+  },
+  "lootTable": "society:util/gold_rush_bismuth"
+}

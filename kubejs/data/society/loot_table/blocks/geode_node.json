@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "society:geode",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:earth_crystal",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:aquamarine",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:amethyst_chunk",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:furniture_box",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

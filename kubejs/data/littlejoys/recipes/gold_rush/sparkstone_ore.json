@@ -1,0 +1,10 @@
+{
+  "type": "littlejoys:gold_rush",
+  "eventCondition": {
+    "type": "is_state",
+    "state": {
+      "Name": "society:sparkstone_ore"
+    }
+  },
+  "lootTable": "society:blocks/sparkstone_ore"
+}

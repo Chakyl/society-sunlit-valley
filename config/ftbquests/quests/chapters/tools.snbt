@@ -63,10 +63,7 @@
 		{
 			dependencies: ["31F6C5811A72396C"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "copycats:copycat_stairs"
-				}
-				id: "ftbquests:missing_item"
+				id: "copycats:copycat_stairs"
 			}
 			id: "23EFDF37F9BCD63B"
 			rewards: [{
@@ -78,8 +75,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "37BEA915F4C1B7B2"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				id: "3FC3ED0587D07BE7"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(copycats:copycat_block)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -131,8 +128,8 @@
 				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
@@ -242,41 +239,6 @@
 		{
 			dependencies: ["31F6C5811A72396C"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "refurbished_furniture:workbench"
-				}
-				id: "ftbquests:missing_item"
-			}
-			id: "12ED0E637AD47FD4"
-			rewards: [{
-				id: "4A144CE04D511BEE"
-				item: {
-					components: {
-						"ftbquests:missing_item": "refurbished_furniture:wrench"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "0F771A1CBBDC9FD5"
-					item: { components: { "ftbquests:missing_item": "refurbished_furniture:workbench" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "1975B4057900DED6"
-					item: { components: { "ftbquests:missing_item": "refurbished_furniture:light_electricity_generator" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["12ED0E637AD47FD4"]
-			icon: {
 				id: "society:tanuki_catalog"
 			}
 			id: "100B4D3BEEE9C433"
@@ -289,13 +251,20 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "3EF5A9EA750FC64D"
-				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7ED0C2D8D5424224"
+					item: { count: 1, id: "society:tanuki_catalog" }
+					type: "item"
+				}
+				{
+					id: "3D62772F719E54B7"
+					item: { count: 1, id: "society:modern_catalog" }
+					type: "item"
+				}
+			]
 			x: 0.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
@@ -353,7 +322,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
@@ -369,10 +338,7 @@
 		{
 			dependencies: ["31F6C5811A72396C"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "simplehats:headphonesblue"
-				}
-				id: "ftbquests:missing_item"
+				id: "supplementaries:speaker_block"
 			}
 			id: "7E94B1934D0257E8"
 			rewards: [{
@@ -406,8 +372,8 @@
 				item: { count: 1, id: "buildinggadgets2:template_manager" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.5d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
@@ -436,6 +402,29 @@
 				}
 			]
 			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			icon: {
+				id: "farmersdelight:rope"
+			}
+			id: "00B0CF6416E08450"
+			rewards: [{
+				count: 8
+				id: "5185A5B386E4D1D7"
+				item: {
+					count: 1
+					id: "supplementaries:bunting_white"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5329408D71167BC9"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(connectiblechains:catenary_items)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.0d
 			y: 2.5d
 		}
 	]

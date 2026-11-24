@@ -560,83 +560,83 @@
         "experience": [
           {
             "condition": "!silk_touch & (coal_ore | copper_ore | alpine_coal_ore)",
-            "expression": "5"
-          },
-          {
-            "condition": "!silk_touch & (iron_ore | lapis_ore | alpine_iron_ore | alpine_lapis_ore | alpine_salt_ore)",
-            "expression": "6"
-          },
-          {
-            "condition": "!silk_touch & (gold_ore | alpine_gold_ore | redstone_ore | alpine_redstone_ore | zinc_ore)",
-            "expression": "7"
-          },
-          {
-            "condition": "!silk_touch & (diamond_ore | emerald_ore | alpine_emerald_ore | alpine_diamond_ore )",
-            "expression": "16"
-          },
-          {
-            "condition": "!silk_touch & (deepslate_coal_ore | deepslate_copper_ore)",
-            "expression": "6"
-          },
-          {
-            "condition": "!silk_touch & (deepslate_iron_ore | deepslate_lapis_ore)",
-            "expression": "8"
-          },
-          {
-            "condition": "!silk_touch & (deepslate_gold_ore | deepslate_redstone_ore | deepslate_zinc_ore)",
             "expression": "10"
           },
           {
-            "condition": "!silk_touch & (deepslate_diamond_ore | deepslate_emerald_ore)",
+            "condition": "!silk_touch & (iron_ore | lapis_ore | alpine_iron_ore | alpine_lapis_ore | alpine_salt_ore)",
+            "expression": "12"
+          },
+          {
+            "condition": "!silk_touch & (gold_ore | alpine_gold_ore | redstone_ore | alpine_redstone_ore | zinc_ore)",
+            "expression": "14"
+          },
+          {
+            "condition": "!silk_touch & (diamond_ore | emerald_ore | alpine_emerald_ore | alpine_diamond_ore )",
+            "expression": "32"
+          },
+          {
+            "condition": "!silk_touch & (deepslate_coal_ore | deepslate_copper_ore)",
+            "expression": "12"
+          },
+          {
+            "condition": "!silk_touch & (deepslate_iron_ore | deepslate_lapis_ore)",
+            "expression": "16"
+          },
+          {
+            "condition": "!silk_touch & (deepslate_gold_ore | deepslate_redstone_ore | deepslate_zinc_ore)",
             "expression": "20"
           },
           {
-            "condition": "!silk_touch & geode_node",
-            "expression": "30"
-          },
-          {
-            "condition": "!silk_touch & magma_geode_node",
-            "expression": "60"
-          },
-          {
-            "condition": "!silk_touch & omni_geode_node",
-            "expression": "90"
-          },
-          {
-            "condition": "!silk_touch & (nether_gold_ore | nether_bismuth_ore | nether_quartz_ore)",
+            "condition": "!silk_touch & (deepslate_diamond_ore | deepslate_emerald_ore)",
             "expression": "40"
           },
           {
-            "condition": "!silk_touch & lead_ore",
+            "condition": "!silk_touch & geode_node",
             "expression": "60"
           },
           {
-            "condition": "!silk_touch & silver_ore",
-            "expression": "80"
-          },
-          {
-            "condition": "!silk_touch & sparkstone_ore",
-            "expression": "100"
-          },
-          {
-            "condition": "!silk_touch & deepslate_lead_ore",
+            "condition": "!silk_touch & magma_geode_node",
             "expression": "120"
           },
           {
-            "condition": "!silk_touch & deepslate_silver_ore",
+            "condition": "!silk_touch & omni_geode_node",
+            "expression": "180"
+          },
+          {
+            "condition": "!silk_touch & (nether_gold_ore | nether_bismuth_ore | nether_quartz_ore)",
+            "expression": "80"
+          },
+          {
+            "condition": "!silk_touch & lead_ore",
+            "expression": "120"
+          },
+          {
+            "condition": "!silk_touch & silver_ore",
             "expression": "160"
           },
           {
-            "condition": "!silk_touch & deepslate_sparkstone_ore",
+            "condition": "!silk_touch & sparkstone_ore",
             "expression": "200"
+          },
+          {
+            "condition": "!silk_touch & deepslate_lead_ore",
+            "expression": "240"
+          },
+          {
+            "condition": "!silk_touch & deepslate_silver_ore",
+            "expression": "320"
+          },
+          {
+            "condition": "!silk_touch & deepslate_sparkstone_ore",
+            "expression": "400"
           },
           {
             "condition": "!silk_touch & iridium_ore",
-            "expression": "200"
+            "expression": "400"
           },
           {
             "condition": "!silk_touch & deepslate_iridium_ore",
-            "expression": "400"
+            "expression": "600"
           }
         ]
       }

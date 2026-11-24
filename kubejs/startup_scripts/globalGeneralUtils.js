@@ -89,3 +89,7 @@ global.getSeasonFromBiome = (level, pos) => {
 global.isLateSeason = (level) => {
   return $SeasonHelper.getSeasonState(level).getSubSeason().toString().includes("LATE");
 }
+
+global.addItemCooldown = (player, item, time) => {
+  if (!player.isFake()) player.addItemCooldown(item, time);
+};

@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ice",
+          "weight": 680
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:frozen_geode",
+          "weight": 134
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:frozen_tear",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:omni_geode",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:sparkstone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              },
+              "add": false
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:pristine_frozen_tear",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:steamy_gadget",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

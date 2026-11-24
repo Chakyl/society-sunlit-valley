@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sandstone",
+          "weight": 750
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:magma_geode",
+          "weight": 135
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:fire_quartz",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:omni_geode",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:sparkstone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 12
+              },
+              "add": false
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:pristine_sandstone_slate",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:prismatic_shard",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:mini_oni_eye",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:plushie_capsule",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

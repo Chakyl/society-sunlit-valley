@@ -1,9 +1,9 @@
 const $FinishChopEvent = Java.loadClass("ht.treechop.api.ChopEvent$FinishChopEvent");
 
 let seasonChances = {
-  spring: 0.005,
-  summer: 0.0025,
-  autumn: 0.01,
+  spring: 0.01,
+  summer: 0.005,
+  autumn: 0.02,
   winter: 0.0025,
 }
 NativeEvents.onEvent($FinishChopEvent, (e) => {
@@ -18,15 +18,16 @@ NativeEvents.onEvent($FinishChopEvent, (e) => {
   if (Math.random() <= (0.005 * mult) && !player.stages.has("wuthering_logs")) {
     block.popItem("society:wuthering_logs");
   }
-  if (Math.random() <= (0.15 * mult) && player.stages.has("foraging_lvl_3")) {
-    block.popItem("meadow:firewood");
-  }
-  if (Math.random() <= (0.33 * mult) && player.stages.has("lumberjack")) {
+  // if (Math.random() <= (0.15 * mult) && player.stages.has("foraging_lvl_3")) {
+  //   block.popItem("meadow:firewood");
+  // }
+  if (Math.random() <= (0.1 * mult) && player.stages.has("foraging_lvl_3")) {
     block.popItem("society:sap");
   }
   if (Math.random() <= (0.05 * mult) && player.stages.has("lumberjack")) {
     block.popItem("society:hardwood");
   }
+  if (!player.stages.has("foraging_lvl_6")) return;
   const season = global.getSeasonFromLevel(level);
   const hasAlias = player.stages.has("alias_moss");
   if (

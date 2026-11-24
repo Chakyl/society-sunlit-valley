@@ -40,8 +40,12 @@ const rawLogs = [
     "cluttered:blue_mushroom_log",
     "cluttered:red_mushroom_log",
     "minecraft:warped_stem",
-    "minecraft:crimson_stem"
-]
+    "minecraft:crimson_stem",
+    'nomansland:pine_log', 
+    'nomansland:maple_log', 
+    'nomansland:walnut_log', 
+    'nomansland:willow_log'
+];
 ServerEvents.tags('item', (e) => {
     e.add("oreganized:stone_types/glance", "oreganized:glance");
     e.add("society:prismatic_shard", "society:prismatic_shard");
