@@ -23,14 +23,7 @@ ItemEvents.entityInteracted((e) => {
       errorString = "society.husbandry.sunlit_crystal.has_animal";
     }
     if (errorString) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          global.animalMessageSettings,
-          80,
-          Text.translatable(errorString).toJson()
-        )
-      );
+      global.renderHusbandryMessage(player, server, Text.translatable(errorString).toJson(), "#FF5555");
       return;
     } else {
       if (!player.isCreative()) item.shrink(1);

@@ -1,0 +1,25 @@
+{
+  "quality_type.quality_food.diamond": "铱",
+
+
+
+  "potion.withProbability": "%s (%s)",
+
+  "quality_food.quality": "品质：",
+  "quality_food.potential": "品质潜力：%s",
+  
+  "quality_type.quality_food.none": "无",
+  "quality_type.quality_food.iron": "铁",
+  "quality_type.quality_food.gold": "金",
+  
+  "config.jade.plugin_quality_food.quality_block": "品质方块",
+  "config.jade.plugin_quality_food.quality_mob": "品质生物",
+  
+  "create.item_attributes.quality_food.quality": "具有“%1$s”品质",
+  "create.item_attributes.quality_food.quality.inverted": "不具有“%1$s”品质",
+  
+  "commands.quality_food.quality.failed.no_quality": "%s 无法应用品质",
+  "commands.quality_food.quality.failed.already_has_quality": "%s 已有品质",
+  "commands.quality_food.quality.failed.invalid_quality": "尝试应用了无效品质",
+  "commands.quality_food.quality.failed.missing_quality": "%s 没有可移除的品质"
+}

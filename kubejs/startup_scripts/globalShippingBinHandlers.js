@@ -204,31 +204,61 @@ global.handleShippingBinDebt = (
     if (value >= totalDebt) {
       newValue = value - totalDebt;
       debtPaid = totalDebt;
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          `{anchor:"TOP_LEFT",background:1,color:"#55FF55",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-          160,
-          Text.translatable(
-            "society.shipping_bin.debt_paid_all",
-            global.formatPrice(debtPaid.toFixed())
-          ).toJson()
-        )
+      global.renderUiPriorityText(
+        player,
+        server,
+        {
+          shippingBin: {
+            type: "text",
+            x: 2,
+            y: 35,
+            text: `${Text.translatable("society.shipping_bin.debt_paid_all", global.formatPrice(debtPaid.toFixed())).toJson()}`,
+            color: "#55FF55",
+            alignX: "left",
+            alignY: "top",
+          },
+          shippingBinShadow: {
+            type: "text",
+            x: 3,
+            z: -1,
+            y: 36,
+            text: `${Text.translatable("society.shipping_bin.debt_paid_all", global.formatPrice(debtPaid.toFixed())).toJson()}`,
+            color: "#000000",
+            alignX: "left",
+            alignY: "top",
+          }
+        },
+        global.priorityElementIds
       );
       global.setDebt(server, playerUUID, 0);
     } else {
       debtPaid = value;
       newValue = 0;
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-          160,
-          Text.translatable(
-            "society.shipping_bin.debt_paid",
-            global.formatPrice(debtPaid.toFixed())
-          ).toJson()
-        )
+      global.renderUiPriorityText(
+        player,
+        server,
+        {
+          shippingBin: {
+            type: "text",
+            x: 2,
+            y: 35,
+            text: `${Text.translatable("society.shipping_bin.debt_paid", global.formatPrice(debtPaid.toFixed())).toJson()}`,
+            color: "#FFFFFF",
+            alignX: "left",
+            alignY: "top",
+          },
+          shippingBinShadow: {
+            type: "text",
+            x: 3,
+            z: -1,
+            y: 36,
+            text: `${Text.translatable("society.shipping_bin.debt_paid", global.formatPrice(debtPaid.toFixed())).toJson()}`,
+            color: "#000000",
+            alignX: "left",
+            alignY: "top",
+          }
+        },
+        global.priorityElementIds
       );
       global.setDebt(server, playerUUID, totalDebt - debtPaid);
     }
@@ -308,17 +338,32 @@ global.processValueOutput = (
         );
         let customName = global.getShippingBinName(block.getEntityData().data, true);
         let finalName = customName ? ` ${customName} ` : "";
-        server.runCommandSilent(
-          global.getEmbersTextAPICommand(
-            player.username,
-            `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-            160,
-            Text.translatable(
-              "society.shipping_bin.goods_sold",
-              finalName,
-              global.formatPrice(value.toFixed()),
-            ).toJson()
-          )
+        
+        global.renderUiPriorityText(
+          player,
+          server,
+          {
+            shippingBin: {
+              type: "text",
+              x: 2,
+              y: 35,
+              text: `${Text.translatable("society.shipping_bin.goods_sold", finalName, global.formatPrice(value.toFixed())).toJson()}`,
+              color: "#ffffff",
+              alignX: "left",
+              alignY: "top",
+            },
+            shippingBinShadow: {
+              type: "text",
+              x: 3,
+              z: -1,
+              y: 36,
+              text: `${Text.translatable("society.shipping_bin.goods_sold", finalName, global.formatPrice(value.toFixed())).toJson()}`,
+              color: "#000000",
+              alignX: "left",
+              alignY: "top",
+            }
+          },
+          global.priorityElementIds
         );
       }
       if (extenalOutput) {
@@ -374,13 +419,31 @@ global.processValueOutput = (
       server.runCommandSilent(
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          `{anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-          160,
-          Text.translatable("society.shipping_bin.full").toJson()
-        )
+      global.renderUiPriorityText(
+        player,
+        server,
+        {
+          shippingBin: {
+            type: "text",
+            x: 2,
+            y: 35,
+            text: `${Text.translatable("society.shipping_bin.full").toJson()}`,
+            color: "#FF5555",
+            alignX: "left",
+            alignY: "top",
+          },
+          shippingBinShadow: {
+            type: "text",
+            x: 3,
+            z: -1,
+            y: 36,
+            text: `${Text.translatable("society.shipping_bin.full").toJson()}`,
+            color: "#000000",
+            alignX: "left",
+            alignY: "top",
+          }
+        },
+        global.priorityElementIds
       );
     }
   }

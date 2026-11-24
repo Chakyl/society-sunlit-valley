@@ -1,7 +1,7 @@
 console.info("[SOCIETY] addToolRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  const toolTypes = ["pickaxe", "shovel", "hoe", "sword", "axe"];
+  const toolTypes = ["pickaxe", "shovel", "hoe", "sword", "axe", "spear"];
   const armorTypes = ["helmet", "chestplate", "leggings", "boots"];
 
   const upgradeTool = (type, modId, armor) => {
@@ -112,9 +112,11 @@ ServerEvents.recipes((e) => {
   };
   toolTypes.forEach((type) => {
     upgradeTool(type, "minecraft");
-    neptuniumUpgrades(type);
-    manasteelUpgrades(type);
-    elementiumUpgrades(type);
+    if (type != "spear") {
+      neptuniumUpgrades(type);
+      manasteelUpgrades(type);
+      elementiumUpgrades(type);
+    }
   });
   armorTypes.forEach((type, index) => {
     upgradeTool(type, "minecraft", true);

@@ -8,9 +8,7 @@ const breakAxe = (item, server, player) => {
     server.runCommandSilent(
       `playsound minecraft:entity.warden.sonic_boom block @a ${player.x} ${player.y} ${player.z}`
     );
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(player.username, `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60}`, 240, Text.translatable("item.society.dragontooth_axe.no_skill_broken").toJson())
-    );
+    player.setStatusMessage(Text.translate('item.society.dragontooth_axe.no_skill_broken').red())
   }
 };
 

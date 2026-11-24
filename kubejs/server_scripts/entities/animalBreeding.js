@@ -26,28 +26,14 @@ ItemEvents.entityInteracted((e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   if (!global.checkEntityTag(target, "society:husbandry_animal") || target.isBaby()) return;
   if (breedingItems.includes(item.id)) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        global.animalMessageSettings,
-        160,
-        Text.translatable("society.husbandry.breeding.need_potion").toJson()
-      )
-    );
+    global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.breeding.need_potion").toJson(), "#FF5555");
     e.cancel();
   }
 
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND" && item === "society:miracle_potion") {
     if (global.checkEntityTag(target, "society:infertile")) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          global.animalMessageSettings,
-          120,
-          Text.translatable("society.husbandry.breeding.infertile").toJson()
-        )
-      );
+      global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.breeding.infertile").toJson(), "#FF5555");
       e.cancel();
     }
     let animalNbt = target.getNbt();
@@ -61,14 +47,7 @@ ItemEvents.entityInteracted((e) => {
       ) {
         item.count--;
         target.persistentData.ageLastBred = day;
-        server.runCommandSilent(
-          global.getEmbersTextAPICommand(
-            player.username,
-            global.animalMessageSettings,
-            160,
-            Text.translatable("society.husbandry.breeding.fail").toJson()
-          )
-        );
+        global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.breeding.fail").toJson(), "#FF5555");
       } else {
         animalNbt.InLove = 2000;
         target.setNbt(animalNbt);
@@ -92,14 +71,7 @@ ItemEvents.entityInteracted((e) => {
       }
     } else if (day > ageLastBred) {
       global.addItemCooldown(player, "society:miracle_potion", 40);
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          global.animalMessageSettings,
-          120,
-          Text.translatable("society.husbandry.breeding.cooldown").toJson()
-        )
-      );
+      global.renderHusbandryMessage(player, server, Text.translatable("society.husbandry.breeding.cooldown").toJson(), "#FF5555");
     }
   }
 });

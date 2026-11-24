@@ -11,26 +11,14 @@ PlayerEvents.tick((e) => {
         server.runCommandSilent(
           `playsound minecraft:ambient.cave block @a ${e.player.x} ${e.player.y} ${e.player.z}`
         );
-        server.runCommandSilent(
-          global.getEmbersTextAPICommand(player.username,
-            `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
-            200,
-            Text.translatable("society.skull_cavern.late").toJson()
-          )
-        );
+        player.setStatusMessage(Text.translatable("society.skull_cavern.late"));
       }
       player.potionEffects.add("minecraft:slowness", 210, 0, true, false);
     }
     // 2 AM
     if (timeModulo >= 20000) {
       if (timeModulo <= 20200) {
-        server.runCommandSilent(
-          global.getEmbersTextAPICommand(player.username,
-            `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
-            200,
-            Text.translatable("society.skull_cavern.concern").toJson()
-          )
-        );
+        player.setStatusMessage(Text.translatable("society.skull_cavern.concern"));
       }
       server.runCommandSilent(
         `playsound minecraft:entity.warden.heartbeat block @a ${e.player.x} ${e.player.y} ${e.player.z}`
@@ -40,14 +28,7 @@ PlayerEvents.tick((e) => {
     if (timeModulo >= 23800) {
       player.persistentData.skullCavernEnterDay = -1;
       global.teleportHome(player, server, player.level);
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,
-          200,
-          Text.translatable("society.skull_cavern.fainted").toJson()
-        )
-      );
+      player.setStatusMessage(Text.translatable("society.skull_cavern.fainted"));
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);
       player.potionEffects.add("minecraft:darkness", 310, 0, true, false);
       if (global.enableDeathDebt && !player.stages.has("debt_caverns")) {
