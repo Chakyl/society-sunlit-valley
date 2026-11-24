@@ -3,8 +3,11 @@
 ### v4.2.2
 ^^^
 ---
+- Added Spear to Guild
 - Fixed Copper tools/armor not being removed
-- Fixed Blackfish quest 
+- Fixed spears not being upgradable
+- Fixed Blackfish quest
+- Removed Ember's Text API due to targeted removal of verison off CurseForge
 - Updated zh_cn translation (Thanks Thirace!)
 
 # 4.2.0

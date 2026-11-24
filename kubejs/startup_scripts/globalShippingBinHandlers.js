@@ -204,7 +204,7 @@ global.handleShippingBinDebt = (
     if (value >= totalDebt) {
       newValue = value - totalDebt;
       debtPaid = totalDebt;
-      global.renderUiPrioirtyText(
+      global.renderUiPriorityText(
         player,
         server,
         {
@@ -234,7 +234,7 @@ global.handleShippingBinDebt = (
     } else {
       debtPaid = value;
       newValue = 0;
-      global.renderUiPrioirtyText(
+      global.renderUiPriorityText(
         player,
         server,
         {
@@ -338,8 +338,8 @@ global.processValueOutput = (
         );
         let customName = global.getShippingBinName(block.getEntityData().data, true);
         let finalName = customName ? ` ${customName} ` : "";
-
-        global.renderUiPrioirtyText(
+        
+        global.renderUiPriorityText(
           player,
           server,
           {
@@ -419,7 +419,7 @@ global.processValueOutput = (
       server.runCommandSilent(
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
-      global.renderUiPrioirtyText(
+      global.renderUiPriorityText(
         player,
         server,
         {
