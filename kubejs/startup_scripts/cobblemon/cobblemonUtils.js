@@ -115,8 +115,8 @@ global.summonRaidPokemon = (server, level, block, type, variant, raidLevel, spaw
       spawnedLevel: spawnedLevel,
       variant: variant
     }
-    if (type === "rayquaza") { 
-      spawnedPokemon.potionEffects.add("minecraft:fire_resistance", 1200, 1, false, false); 
+    if (type === "rayquaza") {
+      spawnedPokemon.potionEffects.add("minecraft:fire_resistance", 1200, 1, false, false);
     }
     spawnedPokemon.potionEffects.add("minecraft:glowing", 1200, 0, false, false);
     spawnedPokemon.potionEffects.add("minecraft:slow_falling", 400, 0, false, false);
@@ -208,16 +208,7 @@ global.handleLeagueFee = (server, player, reason) => {
   } else {
     account.setBalance(balance - amountToDeduct);
   }
-  server.runCommandSilent(
-    global.getEmbersTextAPICommand(
-      player.username,
-      `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-      160,
-      Text.translatable(
-        reason === "murder" ? "sunlit_cobblemon.murder.fee" : "sunlit_cobblemon.loss.fee",
-        global.formatPrice(amountToDeduct.toFixed())
-      ).toJson()
-    ))
+  player.setStatusMessage(Text.translatable(reason === "murder" ? "sunlit_cobblemon.murder.fee" : "sunlit_cobblemon.loss.fee", global.formatPrice(amountToDeduct.toFixed())).red());
 };
 
 const NPCMysteryGifts = {

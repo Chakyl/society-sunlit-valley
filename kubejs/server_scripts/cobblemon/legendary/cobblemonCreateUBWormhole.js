@@ -65,14 +65,7 @@ ItemEvents.rightClicked('sunlit_cobblemon:wormhole_generator', e => {
     }
     if (player.isCrouching()) {
         if (!item.nbt || !item.nbt.dust || item.nbt.dust <= 0) {
-            server.runCommandSilent(
-                global.getEmbersTextAPICommand(
-                    player.username,
-                    `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#A33EA1",offsetY:-80}`,
-                    80,
-                    Text.translatable("sunlit_cobblemon.wormhole_generator.dust").toJson()
-                )
-            );
+            player.setStatusMessage(Text.translatable("sunlit_cobblemon.wormhole_generator.dust").darkPurple());
             global.addItemCooldown(player, item, 100);
             return;
         }
@@ -82,12 +75,7 @@ ItemEvents.rightClicked('sunlit_cobblemon:wormhole_generator', e => {
         let { x, y, z } = global.getFacingPlusOffset(player.facing, player.getOnPos().offset(0, 5, 0), 15)
         let spawnBlock = level.getBlock(new BlockPos(x, y + 10, z));
         if (!spawnBlock.id.equals("minecraft:air")) {
-            global.getEmbersTextAPICommand(
-                player.username,
-                `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#A33EA1",offsetY:-80}`,
-                100,
-                Text.translatable(`sunlit_cobblemon.wormhole_generator.no_room`).toJson()
-            )
+            player.setStatusMessage(Text.translatable("sunlit_cobblemon.wormhole_generator.no_room").darkPurple());
             return;
         }
         let UBSpawnHeight = y + 10;
@@ -112,14 +100,7 @@ ItemEvents.rightClicked('sunlit_cobblemon:wormhole_generator', e => {
             }
         });
     } else {
-        server.runCommandSilent(
-            global.getEmbersTextAPICommand(
-                player.username,
-                `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#A33EA1",offsetY:-80}`,
-                100,
-                Text.translatable(`sunlit_cobblemon.wormhole_generator.hint.${pokemonType}`).toJson()
-            )
-        );
+        player.setStatusMessage(Text.translatable(`sunlit_cobblemon.wormhole_generator.hint.${pokemonType}`).darkPurple());
         server.runCommandSilent(
             `playsound refurbished_furniture:ui.paddle_ball.retro_fail block @a ${player.x} ${player.y} ${player.z}`,
         );

@@ -35,7 +35,9 @@ const formMap = new Map([
     ["pumpkaboo", "average"],
     ["gourgeist", "average"],
     ["toxtricity", "low"],
-    ["lycanroc", "dusk"]
+    ["lycanroc", "dusk"],
+    ["burmy", "plant"],
+    ["wormadam", "plant"]
 ]);
 
 const handleVariant = (form) => form.equals("galarian") ? "galar" : form;

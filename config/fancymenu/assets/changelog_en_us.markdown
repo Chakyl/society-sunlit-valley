@@ -1,14 +1,12 @@
 ^^^
 ## Sunlit Cobblemon
-### 1.1.5-SSV4.2.2
+### 1.1.6-SSV4.2.2
 ^^^
 --- 
-- Updated to Sunlit Valley 4.2.0 - Future Forever update
-- Added backported mons: Snover, Abomasnow, Burmy, Womadam, Mothim, Helioptile, Heliolisk
-- Added Shucked Shuckle and Harmonious Antimatter ranching drops
-- Added Late Winter Shiny Mystery Gifts to Poke Mart at Prismatic Tier
-- Fixed backported Pokemon sounds
-- Fixed Laurel Saplings not working on Craft Station
+- Gourgeist now drops pumpkins relative to how big its pumpkin size is
+- Fixed the Burmy invasion of forests
+- Fixed Poke Radar missing texturews
+- Fixed errors with battles and other situations
 
 ## Sunlit Valley 4.2.0 - Future Forever
 - Added and integrated backport content from MC updates: Copper Age, Mounts of Mayhem, and Wilderness Bound
@@ -34,14 +32,14 @@
 - Updated zh_cn translation (Thanks Thirace!)
 - Fixed several logs not being sellable
 - Fixed save data related crash
-# 4.2.1
+### 4.2.1
 - Added Poplar Saplings to Carpenter
 - Added a bunch of customer skins to Cozy Cafe
 - Fixed Zombie Horse spawning above ground
 - Fixed Lost Bowtie missing lang string
 - Fixed Pouffe recipe conflict
 
-# 4.2.2
+### 4.2.2
 - Added Spear to Guild
 - Fixed Copper tools/armor not being removed
 - Fixed spears not being upgradable

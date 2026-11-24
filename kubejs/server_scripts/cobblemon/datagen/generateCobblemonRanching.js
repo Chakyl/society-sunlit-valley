@@ -8110,10 +8110,47 @@
 //         },
 //         {
 //             pokemon: "gourgeist",
+//             form: "pumpkin-size-small",
+//             forages: [
+//                 {
+//                     item: "minecraft:pumpkin",
+//                     count: 2,
+//                     chance: 1,
+//                     min_hearts: 3
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "gourgeist",
+//             form: "pumpkin-size-average",
 //             forages: [
 //                 {
 //                     item: "minecraft:pumpkin",
 //                     count: 4,
+//                     chance: 1,
+//                     min_hearts: 3
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "gourgeist",
+//             form: "pumpkin-size-large",
+//             forages: [
+//                 {
+//                     item: "minecraft:pumpkin",
+//                     count: 8,
+//                     chance: 1,
+//                     min_hearts: 3
+//                 }
+//             ],
+//         },
+//         {
+//             pokemon: "gourgeist",
+//             form: "pumpkin-size-super",
+//             forages: [
+//                 {
+//                     item: "minecraft:pumpkin",
+//                     count: 16,
 //                     chance: 1,
 //                     min_hearts: 3
 //                 }

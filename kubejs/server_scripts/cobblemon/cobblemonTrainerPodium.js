@@ -64,14 +64,7 @@ BlockEvents.broken("sunlit_cobblemon:trainer_podium", (e) => {
   if (player.isCreative()) {
     global.removeNearbyTrainers(level, block, true);
   } else if (nearbyTrainers.length >= 1) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        global.animalMessageSettings,
-        80,
-        Text.translatable("sunlit_cobblemon.trainer_podium.need_to_defeat_before_moving").toJson()
-      )
-    );
+    player.setStatusMessage(Text.translatable("sunlit_cobblemon.trainer_podium.need_to_defeat_before_moving").red());
     e.cancel();
   }
 
@@ -140,14 +133,7 @@ ItemEvents.entityInteracted((e) => {
     e.cancel();
   }
   if (target.persistentData.gymLeader !== player.getUuid().toString()) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        global.animalMessageSettings,
-        80,
-        Text.translatable("sunlit_cobblemon.trainer_podium.not_your_gym").toJson()
-      )
-    );
+    player.setStatusMessage(Text.translatable("sunlit_cobblemon.trainer_podium.not_your_gym").red());
     e.cancel();
     return;
   }
@@ -155,65 +141,29 @@ ItemEvents.entityInteracted((e) => {
   let upgraded = block.getProperties().get("upgraded").toLowerCase() == "true";
 
   if (!upgraded && levelAverage > 100) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        global.animalMessageSettings,
-        80,
-        Text.translatable("sunlit_cobblemon.trainer_podium.banned_mon").toJson()
-      )
-    );
+    player.setStatusMessage(Text.translatable("sunlit_cobblemon.trainer_podium.banned_mon").red());
     e.cancel();
     return;
   } else if (upgraded && target.persistentData.levelTier !== "elite") {
     global.removeNearbyTrainers(level, block, true);
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        global.animalMessageSettings,
-        80,
-        Text.translatable("sunlit_cobblemon.trainer_podium.trainer_left").toJson()
-      )
-    );
+    player.setStatusMessage(Text.translatable("sunlit_cobblemon.trainer_podium.trainer_left").red());
   }
   let badge = global.getGymBadgeType(player);
   if (badge != null && badge != "none") {
     if (!global.partyIsMonotype(player, badge)) {
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
-          player.username,
-          global.animalMessageSettings,
-          80,
-          Text.translatable("sunlit_cobblemon.trainer_podium.badge_restricts").toJson()
-        )
-      );
+      player.setStatusMessage(Text.translatable("sunlit_cobblemon.trainer_podium.badge_restricts").red());
       e.cancel();
     }
     // TODO: This was meant to be an anticheese for changing gym badges but since the trainer podium caches trainers it doesn't work. Oh well    
     // else if (target.persistentData.badge != badge) {
     //   global.removeNearbyTrainers(level, block, true);
-    //   server.runCommandSilent(
-    //     global.getEmbersTextAPICommand(
-    //       player.username,
-    //       global.animalMessageSettings,
-    //       80,
-    //       Text.translatable("sunlit_cobblemon.trainer_podium.trainer_left").toJson()
-    //     )
-    //   );
     // }
   }
   let currentLevel = global.getPlayerPodiumLevelTier(levelAverage);
   let trainerLevel = Number(target.persistentData.levelTier)
   if (!upgraded && trainerLevel !== currentLevel) {
     let tooHigh = currentLevel < trainerLevel;
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
-        player.username,
-        global.animalMessageSettings,
-        80,
-        Text.translatable(`sunlit_cobblemon.trainer_podium.too_${tooHigh ? "high" : "low"}`, `${trainerLevel + 5}`).toJson()
-      )
-    );
+    player.setStatusMessage(Text.translatable(`sunlit_cobblemon.trainer_podium.too_${tooHigh ? "high" : "low"}`, `${trainerLevel + 5}`).red());
     global.removeNearbyTrainers(level, level.getBlock(target.onPos.above()), true);
     e.cancel();
   }

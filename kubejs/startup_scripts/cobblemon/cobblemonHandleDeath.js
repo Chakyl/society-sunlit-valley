@@ -68,28 +68,11 @@ global.handleCobblemonDefeat = (e) => {
       }
     } else if (losingPlayer && loserName.toString().includes("eon")) {
       global.getEonRewards(winningPlayer, losingPlayer.getOnPos(), loserName.toString());
-      winningPlayer.getServer().runCommandSilent(
-        global.getEmbersTextAPICommand(
-          winningPlayer.username,
-          `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:68,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-          160,
-          "The wild team of Pokémon shared some of their treasure with you!"
-        )
-      );
+      winningPlayer.setStatusMessage("The wild team of Pokémon shared some of their treasure with you!");
     }
     reward = Math.round(reward);
     global.depositIntoPersonalOrCurio(winningPlayer.level, winningPlayer, reward);
-    winningPlayer.getServer().runCommandSilent(
-      global.getEmbersTextAPICommand(
-        winningPlayer.username,
-        `{anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:68,offsetX:6,typewriter:1,align:"TOP_LEFT"}`,
-        160,
-        Text.translatable(
-          "sunlit_cobblemon.win_reward",
-          global.formatPrice(reward),
-        ).toJson()
-      )
-    );
+    winningPlayer.setStatusMessage(Text.translatable("sunlit_cobblemon.win_reward", global.formatPrice(reward)));
   } else if (
     winningPlayer && !winningPlayer.isPlayer() &&
     winningPlayer.type == "rctmod:trainer"
