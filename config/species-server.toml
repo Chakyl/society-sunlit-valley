@@ -1,0 +1,13 @@
+[wickedMask]
+	#If true, a Wicked Mask disguise also plays the sounds of the disguised mob.
+	playDisguiseSounds = false
+	#For testing only: adds example cosmetics to a few vanilla mob disguises.
+	enableCosmeticsDemo = false
+	#If true, the body segments of long multi-part disguises stay on the ground instead of rising with the wearer's view.
+	segmentChainGroundClamp = true
+	#If true, using the Wicked Mask on a body segment of a multi-part mob copies the whole mob instead of only that segment.
+	redirectSegmentToHead = true
+
+[bewereager]
+	#If false, tamed wolves never turn into Bewereagers on full moon nights.
+	tamedWolvesTransform = false

@@ -129,7 +129,7 @@ const getCookingStationMult = (type) => cookingStationMultipliers[type] ?? 1;
 
 const calculateDishValue = (ingredients, cookedCount, type) => {
     if (debug) {
-        console.log("incredients: " + ingredients)
+        console.log("ingredients: " + ingredients)
         ingredients.forEach((ingredient) => {
             console.log((ingredient.includes("#") ? tagFoodValues[ingredient] : foodMap.get(ingredient)))
         })
@@ -156,18 +156,18 @@ const calculatePrice = (cropDefinition) => {
         value -= (4 * (seasons.length - 1))
     }
     if (seasons.includes("summer")) value /= 1.05
-    if (reeseedable) value /= 1.35
-    if (singleHarvest) value *= 1.5;
+    if (reeseedable) value /= 1.25
+    if (singleHarvest) value *= 1.2;
     if (growDays >= 5) {
-        if (singleHarvest) value *= 1.2;
+        if (singleHarvest) value *= 1.1;
         else value *= 1.05;
     }
     if (growDays > 7) {
-        if (singleHarvest) value *= 1.3;
-        else value *= 1.2;
+        if (singleHarvest) value *= 1.1;
+        else value *= 1.05;
     }
-    if (yearTwo) value *= 1.2;
-    if (lootOnly) value *= 1.3;
+    if (yearTwo) value *= 1.1;
+    if (lootOnly) value *= 1.2;
     if (customMult) value *= customMult;
     if (brokenBlock) value = Math.floor(value / 9) * 9;
     return Math.round(value);

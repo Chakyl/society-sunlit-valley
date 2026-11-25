@@ -2672,7 +2672,7 @@ global.fishPondDefinitions = new Map([
                 },
                 {
                     population: 7,
-                    requestedItems: [{ item: "orchard:plumitem", count: 64 }],
+                    requestedItems: [{ item: "orchard:plum", count: 64 }],
                 },
             ],
             additionalRewards: [
@@ -3256,7 +3256,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 7,
                     requestedItems: [
-                        { item: "orchard:plumitem", count: 16 },
+                        { item: "orchard:plum", count: 16 },
                         { item: "vinery:jo_special_mixture", count: 1 },
                     ],
                 },

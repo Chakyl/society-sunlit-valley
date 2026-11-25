@@ -111,6 +111,7 @@ ServerEvents.tags('item', (e) => {
     ].forEach((ingredient) => {
         e.add("society:keg_product", ingredient)
     });
+    e.add('species:fossil_stand', 'species:fossil_stand');
 })
 
 ServerEvents.tags('block', (e) => {

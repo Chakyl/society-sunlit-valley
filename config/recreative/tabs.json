@@ -25,6 +25,7 @@
       "cozycafe:tab",
       "sophisticatedstorage:main",
       "whimsy_deco:tab",
+      "species:species",
       "create:base",
       "longwings:data/longwings",
       "furniture:furniture",
@@ -69,6 +70,7 @@
       "splendid_slimes:tab",
       "bugsnatch:tab",
       "culturaldelights:culturaldelights_tab",
+      "species:species_trinkets",
       "simplemagnets:simplemagnets",
       "selling_bin:selling_bin",
       "bots_lib:dewdrop_tab",
@@ -191,7 +193,9 @@
       "splendid_slimes:tab",
       "bugsnatch:tab",
       "onlyhammersandexcavators:onlyhammersandexcavators",
-      "society:technology"
+      "society:technology",
+      "species:species",
+      "species:species_trinkets"
     ]
   },
   {
@@ -358,17 +362,6 @@
       "#society:pickle",
       "#society:keg_product"
     ],
-    "order": []
-  },
-  {
-    "action": "custom_tab",
-    "tab": [
-      "society:technology"
-    ],
-    "name": "Technology",
-    "icon": "minecraft:redstone",
-    "remove_items": [],
-    "add_items": [],
     "order": []
   },
   {
