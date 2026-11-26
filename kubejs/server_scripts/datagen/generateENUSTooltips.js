@@ -48,6 +48,9 @@ const registerUtil = (key, translation) => {
 const RIGHT_CLICK_TO_READ = registerUtil('tooltip.society.utils.right_click_to_read', '<ltcolor>c=55FF55;Right click to learn this skill!</ltcolor>');
 const PHONE_BLOCK = registerUtil('tooltip.society.utils.phone', '<ltcolor>c=AAAAAA;Right click to call any unlocked villager and access their shop</ltcolor>');
 const ARTIFACT = registerUtil('tooltip.society.utils.artifact', "🪣 §7Artifact");
+const MASTERY = "🏹 §bSkill Mastery Item";
+const MASTERY_INFO = "The Skill Mastery tree is unlocked after reaching level 10 in every skill.";
+
 /**
  * Category Tooltips - These are often bulk additions that often category tooltips e.g Artifact
  */
@@ -157,5 +160,77 @@ const miscTooltips = [
 generateStandardTooltips(miscTooltips)
 generateBulkTooltips(['whimsy_deco:phone', 'whimsy_deco:black_phone', 'whimsy_deco:red_phone', 'whimsy_deco:blue_phone', 'tanukidecor:antique_phone'], [PHONE_BLOCK])
 
+const generateMasteryTooltips = (tooltipArray) => {
+    tooltipArray.forEach((entry) => {
+        let path = getTooltipPath(entry.item);
+        let entryTooltips = entry.tooltips;
+        entryTooltips.push(MASTERY)
+        entryTooltips.forEach((alwaysTip, alwaysIndex) => {
+            if (alwaysTip == MASTERY) {
+                translationKeys[`tooltip.always.${path}.${alwaysIndex}`] = alwaysTip;
+            } else {
+                translationKeys[`tooltip.always.${path}.${alwaysIndex}`] = `<ltcolor>c=${entry.color ? entry.color : "AAAAAA"};${alwaysTip}</ltcolor>`;
+            }
+        })
+        translationKeys[`tooltip.${path}.0`] = MASTERY_INFO;
+
+    })
+}
+const masteryTooltips = [
+    { item: "starcatcher:iceborn_rod", tooltips: ["Infused with the power of a Frozen Hook"] },
+    { item: "starcatcher:boner_rod", tooltips: ["Infused with the power of a Dripstone Hook"] },
+    { item: "starcatcher:azure_crystal_rod", tooltips: ["Infused with the power of a Shiny Hook"] },
+    { item: "starcatcher:sky_rod", tooltips: ["Infused with the power of a Cloudy Bobber"] },
+    { item: "starcatcher:naturalist_rod", tooltips: ["Infused with the power of a Leafy Bobber"] },
+    { item: "starcatcher:lush_glowberry_rod", tooltips: ["Infused with the power of a Glowing Bobber"] },
+    { item: "starcatcher:sharktooth_rod", tooltips: ["Infused with the power of a Heavy Hook"] },
+    { item: "starcatcher:slimed_rod", tooltips: ["Infused with the power of a Slimey Bobber"] },
+    { item: "starcatcher:magmaforged_rod", tooltips: ["Infused with the power of a Stone Hook"] }
+];
+generateMasteryTooltips(masteryTooltips)
+// [
+//     "society:the_quality_of_the_earth",
+//     "society:mystic_syrup",
+//     "cluttered:willow_log",
+//     "cluttered:willow_sapling",
+//     "society:bubble_totem",
+//     "society:treasure_totem",
+//     "society:sparkpod_seed",
+//     "society:sparkpod",
+//     "society:statue_of_cravings",
+// ].forEach((item) => {
+//     getMasteryTooltip(item, "farming")
+// });
+// [
+//     "society:the_spark_also_rises",
+//     "artisan_machines:recycled_core",
+//     "society:moon_statue",
+// ].forEach((item) => {
+//     getMasteryTooltip(item, "mining")
+// });
+// [
+//     "society:the_red_and_the_black",
+//     "domesticationinnovation:drum",
+//     "domesticationinnovation:wayward_lantern",
+//     "domesticationinnovation:collar_tag",
+//     "minecraft:enchanting_table",
+// ].forEach((item) => {
+//     getMasteryTooltip(item, "adventuring")
+// });
+// [
+//     "society:women_who_run_with_the_plushies",
+//     "society:animal_cracker",
+//     "society:sunlit_crystal",
+// ].forEach((item) => {
+//     getMasteryTooltip(item, "husbandry")
+// });
+// [
+//     "society:pond_house_five",
+//     "society:roe_recycler",
+//     "society:net_bobber",
+//     "society:needle_bobber",
+// ].forEach((item) => {
+//     getMasteryTooltip(item, "fishing")
+// })
 JsonIO.write(`kubejs/assets/society_tooltips/lang/en_us.json`, translationKeys);
 

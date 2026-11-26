@@ -1,5 +1,133 @@
 console.info("[SOCIETY] addToolRecipes.js loaded");
 
+let basicArtisanMachineRecipe = (e, type, input, output, hours) => {
+    let inputs = []
+    for (let index = 0; index < input.count; index++) {
+        inputs.push({ item: input.id });
+
+    }
+    e.custom({
+        type: type,
+        rank: 0,
+        required_upgrades: [],
+        chanced_results: [
+            {
+                chance: 1.0,
+                stack: output
+            }
+        ],
+        ingredients: inputs,
+        processing_hours: hours
+    })
+}
+let wineKegRecipe = (e, input) => {
+    let inputs = []
+    for (let index = 0; index < 3; index++) {
+        inputs.push({ item: input.item });
+
+    }
+    e.custom({
+        type: "artisan_machines:wine_keg",
+        rank: 0,
+        required_upgrades: [],
+        chanced_results: [
+            {
+                chance: 1.0,
+                stack: {
+                    identifier: input.wine,
+                    data_components_patch: {
+                        "kaleidoscope_tavern:brew_level": 3
+                    },
+                    count: 1
+                }
+            }
+        ],
+        ingredients: inputs,
+        processing_hours: 144
+    })
+}
+let fishSmokerRecipe = (e, input, output) => {
+    let inputs = [{ item: input }];
+
+    e.custom({
+        type: "artisan_machines:fish_smoker",
+        rank: 0,
+        required_upgrades: [],
+        chanced_results: [
+            {
+                chance: 1.0,
+                stack: {
+                    identifier: output,
+                    count: 1
+                }
+            }
+        ],
+        ingredients: inputs,
+        processing_hours: 4
+    })
+    e.custom({
+        type: "artisan_machines:fish_smoker",
+        rank: 1,
+        required_upgrades: [
+            {
+                item: "artisan_machines:ancient_roe"
+            }
+        ],
+        chanced_results: [
+            {
+                chance: 1.0,
+                stack: {
+                    identifier: output,
+                    count: 2
+                }
+            }
+        ],
+        ingredients: inputs,
+        processing_hours: 4
+    })
+}
+
+let preservesJarRecipe = (e, input) => {
+    let output = [{ chance: 1.0, stack: { identifier: `society:${input.item.path}_preserves`, count: 1 } }];
+    let inputs = []
+    inputs.push({ item: input.item });
+    e.custom({
+        type: "artisan_machines:preserves_jar",
+        rank: 1,
+        required_upgrades: [
+            {
+                item: "artisan_machines:stone_hand"
+            }
+        ],
+        chanced_results: output,
+        ingredients: inputs,
+        processing_hours: 72
+    })
+    inputs.push({ item: input.item });
+    e.custom({
+        type: "artisan_machines:preserves_jar",
+        rank: 0,
+        required_upgrades: [],
+        chanced_results: output,
+        ingredients: inputs,
+        processing_hours: 72
+    })
+}
+const artisanBulkGenerators = (e, crop) => {
+    if (!crop.blocked) {
+        if (crop.products.includes("preserves")) {
+            preservesJarRecipe(e, crop)
+        }
+        if (crop.products.includes("wine") && crop.wine) {
+            wineKegRecipe(e, crop)
+        }
+        if (crop.products.includes("dried")) {
+            basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: `society:dried_${crop.item.path}`, count: 1 }, 144)
+        }
+        // if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(baseCropValue), [])
+        // if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(baseCropValue), [])
+    }
+}
 ServerEvents.recipes((e) => {
     [
         { item: "society:ocean_stone", time: 3 },
@@ -197,5 +325,14 @@ ServerEvents.recipes((e) => {
             ingredients: [{ item: recipe.input }],
             processing_hours: 24
         })
+    });
+
+    global.CROP_DEFINITIONS.forEach((crop) => artisanBulkGenerators(e, crop));
+    global.FORAGE_CROPS.forEach((crop) => artisanBulkGenerators(e, crop));
+    global.MUSHROOMS.forEach((crop) => {
+        basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`, count: 1 }, 144)
+    });
+    global.FISH.forEach((fish) => {
+        fishSmokerRecipe(e, fish.item, `society:smoked_${global.getFishMappedItemName(fish.item)}`)
     });
 });

@@ -39,6 +39,9 @@
     ],
     "starcatcher:obsidian_rod": [
       {
+        "type": "starcatcher:survives_lava"
+      },
+      {
         "type": "starcatcher:extra_golden_chance",
         "weight": 0.01
       },
@@ -48,14 +51,79 @@
         "weight": 0.01
       }
     ],
-    "minecraft:netherite_upgrade_smithing_template": [
+    "starcatcher:iceborn_rod": [
       {
-        "type": "starcatcher:survives_lava"
+        "type": "starcatcher:prevent_frozen"
+      }
+    ],
+    "starcatcher:boner_rod": [
+      {
+        "type": "starcatcher:add_basic_sweetspot",
+        "sweetspot_to_add": {
+          "color_as_int": -2114175,
+          "hitbox_size_in_pixels": 22,
+          "is_flip": false,
+          "moving_rate": 0.0,
+          "reward": 10,
+          "sweetspot_type": "starcatcher:dripstone",
+          "texture_path": "starcatcher:textures/gui/minigame/spots/dripstone.png",
+          "vanishing_rate": 0.0
+        },
+        "translation_override": "tooltip.modifier.starcatcher.dripstone_bobber"
+      }
+    ],
+    "starcatcher:azure_crystal_rod": [
+      {
+        "type": "starcatcher:spawn_treasure_on_hit_x",
+        "hits_to_spawn_treasure": 3
+      }
+    ],
+    "starcatcher:sky_rod": [
+      {
+        "type": "starcatcher:no_gravity"
+      }
+    ],
+    "starcatcher:naturalist_rod": [
+      {
+        "type": "starcatcher:add_leaves_spots"
+      }
+    ],
+    "starcatcher:lush_glowberry_rod": [
+      {
+        "type": "starcatcher:add_basic_sweetspot",
+        "sweetspot_to_add": {
+          "color_as_int": -133793,
+          "hitbox_size_in_pixels": 20,
+          "is_flip": false,
+          "moving_rate": 0.0,
+          "reward": 0,
+          "sweetspot_type": "starcatcher:glowing",
+          "texture_path": "starcatcher:textures/gui/minigame/spots/glowing.png",
+          "vanishing_rate": 0.0
+        },
+        "translation_override": "tooltip.modifier.starcatcher.glowing_bobber"
+      }
+    ],
+    "starcatcher:sharktooth_rod": [
+      {
+        "type": "starcatcher:adjust_moving_sweetspots",
+        "multiplier": 0.75
+      }
+    ],
+    "starcatcher:slimed_rod": [
+      {
+        "type": "starcatcher:bounce_back"
+      }
+    ],
+    "starcatcher:magmaforged_rod": [
+      {
+        "type": "starcatcher:adjust_lure_time",
+        "chance_every_tick_multiplier": 1.0,
+        "max_ticks_multiplier": 1.6,
+        "min_ticks_multiplier": 1.2
       },
       {
-        "type": "starcatcher:extra_golden_chance",
-        "only_for_perfect_catch": true,
-        "weight": 0.1
+        "type": "starcatcher:stop_decay_on_hit"
       }
     ],
     "starcatcher:almighty_worm": [
@@ -77,10 +145,8 @@
     ],
     "starcatcher:cherry_bait": [
       {
-        "type": "starcatcher:adjust_lure_time",
-        "chance_every_tick_multiplier": 1.3,
-        "max_ticks_multiplier": 0.8,
-        "min_ticks_multiplier": 0.7
+        "type": "starcatcher:quality_food_roll",
+        "add_rolls": 3.0
       }
     ],
     "starcatcher:clear_bobber": [
@@ -405,10 +471,8 @@
     ],
     "starcatcher:lush_bait": [
       {
-        "type": "starcatcher:adjust_lure_time",
-        "chance_every_tick_multiplier": 1.3,
-        "max_ticks_multiplier": 0.8,
-        "min_ticks_multiplier": 0.7
+        "type": "starcatcher:add_leaves_spots",
+        "chance_per_tick": 0.01
       }
     ],
     "starcatcher:meteorological_bait": [
@@ -523,8 +587,8 @@
     ],
     "starcatcher:vanilla_hook": [
       {
-        "type": "starcatcher:skip_minigame_if_trigger_found",
-        "translation_override": "tooltip.modifier.starcatcher.skip_minigame_if_vanilla_bobber"
+        "type": "starcatcher:quality_food_roll",
+        "add_rolls": 3.0
       }
     ],
     "starcatcher:weathered_copper_hook": [

@@ -450,7 +450,6 @@ global.BUGS = [
  */
 global.FISH = [
     { item: "starcatcher:blue_herring", value: 16 },
-    { item: "minecraft:pufferfish", value: 16 },
     { item: "starcatcher:driftfin", value: 16 },
     { item: "starcatcher:bluegigi", value: 16 },
     { item: "starcatcher:silverveil_perch", value: 16 },
@@ -470,6 +469,7 @@ global.FISH = [
     { item: "minecraft:tropical_fish", value: 72 },
     { item: "starcatcher:redscaled_tuna", value: 80 },
     { item: "starcatcher:downfall_bream", value: 88 },
+    { item: "minecraft:pufferfish", value: 92 },
     { item: "starcatcher:carpenjoe", value: 96 },
     { item: "unusualfishmod:raw_forkfish", value: 96 },
     { item: "unusualfishmod:raw_frosty_fin", value: 96 },
@@ -499,7 +499,7 @@ global.FISH = [
     { item: "crittersandcompanions:koi_fish", value: 340 },
     { item: "unusualfishmod:raw_hatchetfish", value: 352 },
     { item: "unusualfishmod:raw_spindlefish", value: 368 },
-    { item: "society:neptuna", value: 384 },
+    // { item: "society:neptuna", value: 384 },
     { item: "starcatcher:sandtail", value: 400 },
     { item: "unusualfishmod:raw_eyelash", value: 480 },
     { item: "unusualfishmod:raw_duality_damselfish", value: 448 },

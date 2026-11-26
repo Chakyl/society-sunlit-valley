@@ -1,7 +1,9 @@
 # Don't change this! Version used to track needed updates.
 version = 0
 testIfSpaceEmpty = false
+requireSolidSupport = true
 paintingsHaveCollision = false
+canOnlyBeDestroyedByPlayer = false
 showOtherPlayersPaintings = true
 automaticImageResizing = false
 enableBundledPaintings = true

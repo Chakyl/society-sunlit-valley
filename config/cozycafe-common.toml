@@ -50,7 +50,19 @@ quality_bonus_stage = "the_quality_of_the_earth"
 pickle_bonus_stage = "brine_and_punishment"
 #List of items ignored by dynamic menu item registration.
 not_served = ["minecraft:dried_kelp", "minecraft:beef", "minecraft:porkchop", "minecraft:mutton", "minecraft:chicken", "minecraft:rabbit", "minecraft:tropical_fish", "minecraft:pufferfish", "minecraft:salmon", "minecraft:cod"]
+#Base reputation gained by serving drinks.
+# Default: 2
+# Range: > 0
+drink_reputation_gain = 4
+#Base reputation gained by serving mains.
+# Default: 10
+# Range: > 0
+main_reputation_gain = 10
 #Base reputation gained by serving desserts.
 # Default: 4
 # Range: > 0
-drink_reputation_gain = 4
+dessert_reputation_gain = 4
+#Menu price value per saturation for dynamic menu items. For example, if a menu item has 10 saturation and this config is set to 1.5, 15 will be added to the price
+# Default: 1.5
+# Range: 0.0 ~ 1.7976931348623157E308
+value_per_nutrition = 1.5
