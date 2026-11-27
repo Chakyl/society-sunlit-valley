@@ -86,6 +86,52 @@ let fishSmokerRecipe = (e, input, output) => {
         processing_hours: 4
     })
 }
+let mayoMachineRecipe = (e, input, output) => {
+    let inputs = [{ item: input }];
+    e.custom({
+        type: "artisan_machines:mayonnaise_machine",
+        rank: 0,
+        required_upgrades: [],
+        chanced_results: [
+            {
+                chance: 1.0,
+                stack: {
+                    identifier: output,
+                    count: 1
+                }
+            }
+        ],
+        ingredients: inputs,
+        processing_hours: 3
+    })
+    e.custom({
+        type: "artisan_machines:mayonnaise_machine",
+        rank: 1,
+        required_upgrades: [
+            {
+                item: "artisan_machines:enkephalin"
+            }
+        ],
+        chanced_results: [
+            {
+                chance: 1.0,
+                stack: {
+                    identifier: output,
+                    count: 1
+                }
+            },
+            {
+                chance: 0.05,
+                stack: {
+                    identifier: "society:supreme_mayonnaise",
+                    count: 1
+                }
+            }
+        ],
+        ingredients: inputs,
+        processing_hours: 3
+    })
+}
 
 let preservesJarRecipe = (e, input) => {
     let output = [{ chance: 1.0, stack: { identifier: `society:${input.item.path}_preserves`, count: 1 } }];
@@ -331,6 +377,9 @@ ServerEvents.recipes((e) => {
     global.FORAGE_CROPS.forEach((crop) => artisanBulkGenerators(e, crop));
     global.MUSHROOMS.forEach((crop) => {
         basicArtisanMachineRecipe(e, "artisan_machines:dehydrator", { id: crop.item, count: 5 }, { identifier: `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`, count: 1 }, 144)
+    });
+    global.EGGS.forEach((egg) => {
+        mayoMachineRecipe(e, egg.item, egg.mayo)
     });
     global.FISH.forEach((fish) => {
         fishSmokerRecipe(e, fish.item, `society:smoked_${global.getFishMappedItemName(fish.item)}`)

@@ -31,7 +31,7 @@ const getLootPools = (entry) =>
 
 const blockLootTables = [
     {
-        block: 'society:wooden_crate',
+        block: 'society:wooden_fishing_crate',
         pools: [
             {
                 rolls: [1, 3],
@@ -73,7 +73,7 @@ const blockLootTables = [
         ]
     },
     {
-        block: 'society:mossy_crate',
+        block: 'society:mossy_fishing_crate',
         pools: [
             {
                 rolls: [1, 3],
@@ -126,8 +126,8 @@ const generalLootTables = [
                 rolls: [1, 1],
                 entries:
                     [
-                        { item: "society:furniture_box", weight: 10, count: [1, 2] },
-                        { item: "society:wooden_crate", weight: 6, count: 1 },
+                        { item: "society:furniture_box", weight: 4, count: [1, 2] },
+                        { item: "society:wooden_fishing_crate", weight: 6, count: 1 },
                         { item: 'minecraft:nautilus_shell', weight: 4, count: [1, 2] },
                         { item: "society:aquamarine", weight: 2, count: 1 },
                     ]
@@ -143,9 +143,9 @@ const generalLootTables = [
                 rolls: [1, 1],
                 entries:
                     [
-                        { item: "society:furniture_box", weight: 10, count: [1, 2] },
-                        { item: "society:mossy_crate", weight: 7, count: 1 },
-                        { item: "society:wooden_crate", weight: 3, count: 1 },
+                        { item: "society:furniture_box", weight: 4, count: [1, 2] },
+                        { item: "society:mossy_fishing_crate", weight: 7, count: 1 },
+                        { item: "society:wooden_fishing_crate", weight: 3, count: 1 },
                         { item: 'minecraft:nautilus_shell', weight: 4, count: [1, 2] },
                         { item: "society:aquamarine", weight: 2, count: 1 },
                     ]

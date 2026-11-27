@@ -101,8 +101,6 @@ global.FORAGE_CROPS = [
     { item: "society:crabapple", value: 16, products: [], classifications: ["forage_crop", "fruit", "tree_crop"] },
     { item: "nomansland:pear", value: 16, products: [], classifications: ["forage_crop", "fruit", "tree_crop"] },
 ]
-
-
 global.MUSHROOMS = [
     { item: "minecraft:brown_mushroom", value: 8 },
     { item: "minecraft:red_mushroom", value: 8 },
@@ -121,24 +119,24 @@ global.MISC_FOOD = [
 ]
 global.EGGS = [
     // Eggs
-    { item: "minecraft:egg", value: 4 },
-    { item: "minecraft:brown_egg", value: 4 },
-    { item: "minecraft:blue_egg", value: 4 },
-    { item: "untitledduckmod:duck_egg", value: 8 },
-    { item: "untitledduckmod:goose_egg", value: 16 },
-    // { item: "autumnity:turkey_egg", value: 32 },
-    { item: "minecraft:turtle_egg", value: 64 },
-    { item: "minecraft:sniffer_egg", value: 192 },
-    // { item: "species:petrified_egg", value: 256 },
-    { item: "society:large_egg", value: 32 },
-    { item: "society:large_duck_egg", value: 48 },
-    { item: "society:large_goose_egg", value: 64 },
-    { item: "society:large_turkey_egg", value: 96 },
-    // { item: "species:birt_egg", value: 12 },
-    // { item: "species:wraptor_egg", value: 40 },
+    { item: "minecraft:egg", mayo: "society:mayonnaise", value: 8 },
+    { item: "minecraft:brown_egg",mayo: "society:mayonnaise",  value: 8 },
+    { item: "minecraft:blue_egg",mayo: "society:mayonnaise",  value: 8 },
+    { item: "untitledduckmod:duck_egg", mayo: "society:duck_mayonnaise", value: 12 },
+    { item: "untitledduckmod:goose_egg", mayo: "society:goose_mayonnaise", value: 16 },
+    { item: "wildernature:turkey_egg", mayo: "society:turkey_mayonnaise", value: 32 },
+    { item: "minecraft:turtle_egg", mayo: "society:turtle_mayonnaise", value: 64 },
+    { item: "minecraft:sniffer_egg", mayo: "society:sniffer_mayonnaise", value: 192 },
+    { item: "species:petrified_egg", mayo: "society:petrified_mayonnaise", value: 256 },
+    { item: "society:large_egg", mayo: "society:large_mayonnaise", value: 32 },
+    { item: "society:large_duck_egg", mayo: "society:large_duck_mayonnaise", value: 48 },
+    { item: "society:large_goose_egg", mayo: "society:large_goose_mayonnaise", value: 64 },
+    { item: "society:large_turkey_egg", mayo: "society:large_turkey_mayonnaise", value: 96 },
+    { item: "species:birt_egg", mayo: "society:large_birt_mayonnaise", value: 12 },
+    // { item: "species:wraptor_egg", mayo: "society:wraptor_mayonnaise", value: 40 },
     // { item: "species:springling_egg", value: 128 },
-    { item: "society:penguin_egg", value: 128 },
-    { item: "society:flamingo_egg", value: 256 },
+    { item: "society:penguin_egg", mayo: "society:penguin_mayonnaise", value: 128 },
+    { item: "society:flamingo_egg", mayo: "society:flamingo_mayonnaise", value: 256 },
 ]
 global.MILK = [
     { item: "society:sheep_milk", value: 8 },
@@ -212,6 +210,20 @@ global.MISC_ANIMAL_PRODUCTS = [
     { item: "snuffles:snuffle_fluff", value: 16 },
     { item: "snuffles:frosty_fluff", value: 64 }
 ]
+global.MISC_FORAGING = [
+    { item: "society:sap", value: 4 },
+    { item: "etcetera:rubber", value: 8 },
+    { item: "etcetera:rubber_block", value: 72 },
+    { item: "nomansland:seashells", value: 12 },
+    { item: "society:hardwood", value: 32 },
+    { item: "twigs:opaline_seashell", value: 16 },
+    { item: "twigs:roseate_seashell", value: 20 },
+    { item: "twigs:bronzed_seashell", value: 32 },
+    { item: "twigs:tangerine_seashell", value: 24 },
+    { item: "society:butterfly_amber", value: 64 },
+    { item: "society:caterpillar_eggs", value: 132 },
+    { item: "society:moth_pollen", value: 128 },
+]
 /**
  *  Logs
  * 
@@ -267,6 +279,7 @@ global.LOGS = [
     { item: "cluttered:sycamore_log", value: 8 },
     { item: "cluttered:fluorescent_maple_log", value: 10 },
 ]
+
 /**
  *   Minerals
  * 
@@ -328,6 +341,34 @@ global.MINERALS = [
     { item: "society:star_shards", geodeType: "magma", value: 512 },
     { item: "society:tigerseye", geodeType: "magma", value: 272 },
 ]
+global.MISC_GEOLOGIST = [
+    { item: "society:geode", value: 16 },
+    { item: "society:frozen_geode", value: 32 },
+    { item: "society:magma_geode", value: 48 },
+    { item: "society:omni_geode", value: 128 },
+    { item: "quark:diamond_heart", value: 752 },
+    { item: "quark:red_corundum", value: 32 },
+    { item: "quark:red_corundum_cluster", value: 16 },
+    { item: "quark:orange_corundum", value: 32 },
+    { item: "quark:orange_corundum_cluster", value: 16 },
+    { item: "quark:yellow_corundum", value: 32 },
+    { item: "quark:yellow_corundum_cluster", value: 16 },
+    { item: "quark:green_corundum", value: 32 },
+    { item: "quark:green_corundum_cluster", value: 16 },
+    { item: "quark:blue_corundum", value: 32 },
+    { item: "quark:blue_corundum_cluster", value: 16 },
+    { item: "quark:indigo_corundum", value: 32 },
+    { item: "quark:indigo_corundum_cluster", value: 16 },
+    { item: "quark:violet_corundum", value: 32 },
+    { item: "quark:violet_corundum_cluster", value: 16 },
+    { item: "quark:white_corundum", value: 32 },
+    { item: "quark:white_corundum_cluster", value: 16 },
+    { item: "quark:black_corundum", value: 32 },
+    { item: "quark:black_corundum_cluster", value: 16 },
+    { item: "minecraft:golden_apple", value: 128 },
+];
+
+
 /**
  *   Gems
  * 
@@ -359,28 +400,30 @@ global.GEMS = [
 /**
  *   Metals
  * 
- *  Used for: Item generation, tagging
+ *  Used for: 
  * 
  * Valid Properties:
  * @property {string} item - Item ID
- * @property {"base" | "frozen" | "magma" } geodeType - What type of geode it came from. All will be added to omni geode
- * @property {boolean} disableItemGeneration - Does what it says. Mainly for mineral blocks
- * @property {number} value - Sell value
+ * @property {string} storageBlock - Raw/storage block
+ * @property {string} ingot - Ingot
+ * @property {string} ingotBlock - Smeleted ingot block
+ * @property {number} value - Base Sell value
  * 
  */
 global.METALS = [
-  { item: "minecraft:raw_copper", value: 4 },
-  { item: "minecraft:raw_iron", value: 8 },
-  { item: "minecraft:coal", value: 8 },
-  { item: "minecraft:raw_gold", value: 16 },
-  { item: "create:raw_zinc", value: 8 },
-  { item: "minecraft:redstone", value: 8 },
-  { item: "minecraft:quartz", value: 8 },
-  { item: "oreganized:raw_lead", value: 48 },
-  { item: "society:sparkstone", value: 16 },
-  { item: "oreganized:raw_silver", value: 64 },
-  { item: "minecraft:netherite_scrap", value: 1024 },
-  { item: "plentifulponds:oceanite", value: 2560 },
+    { item: "minecraft:raw_copper", value: 4, storageBlock: "minecraft:raw_copper_block", ingot: "minecraft:copper_ingot", ingotBlock: "minecraft:copper_block" },
+    { item: "minecraft:raw_iron", value: 8, storageBlock: "minecraft:raw_iron_block", ingot: "minecraft:iron_ingot", ingotBlock: "minecraft:iron_block" },
+    { item: "minecraft:coal", value: 6, storageBlock: "minecraft:coal_block" },
+    { item: "minecraft:raw_gold", value: 16, storageBlock: "minecraft:raw_gold_block", ingot: "minecraft:gold_ingot", ingotBlock: "minecraft:gold_block" },
+    { item: "create:raw_zinc", value: 10, storageBlock: "create:raw_zinc_block", ingot: "create:zinc_ingot", ingotBlock: "create:zinc_block" },
+    { item: "minecraft:redstone", value: 12, storageBlock: "minecraft:redstone_block" },
+    { item: "minecraft:quartz", value: 8 },
+    { item: "minecraft:quartz_block", value: 32 },
+    { item: "oreganized:raw_lead", value: 48, storageBlock: "oreganized:raw_lead_block", ingot: "oreganized:lead_ingot", ingotBlock: "oreganized:lead_block" },
+    { item: "society:sparkstone", value: 16 },
+    { item: "oreganized:raw_silver", value: 64, storageBlock: "oreganized:raw_silver_block", ingot: "oreganized:silver_ingot", ingotBlock: "oreganized:silver_block" },
+    { item: "minecraft:netherite_scrap", value: 1024 },
+    { item: "plentifulponds:oceanite", value: 2560 },
 ]
 /**
  *   Artifacts
@@ -433,7 +476,7 @@ global.BUGS = [
     { item: "crittersandcompanions:ladybug", value: 22 },
     { item: "crittersandcompanions:leaf_insect", value: 64 },
     { item: "crittersandcompanions:roly_poly", value: 45 },
-    { item: "crittersandcompanions:snail",  value: 256 },
+    { item: "crittersandcompanions:snail", value: 256 },
     { item: "crittersandcompanions:stag_beetle", value: 200 },
     { item: "crittersandcompanions:stick_bug", value: 120 },
     { item: "crittersandcompanions:weevil", value: 64 },
@@ -541,8 +584,8 @@ global.getSaleData = (value, processors, customProcessor) => {
                 "6": 4.0
             }
         });
-    } 
-    if (customProcessor ) {
+    }
+    if (customProcessor) {
         resolvedProcessors.push(customProcessor)
     }
     return {

@@ -1,87 +1,65 @@
 // ItemEvents.tooltip((tooltip) => {
-
-
-//   // Furniture
-//   tooltip.add("tanukidecor:diy_workbench", Text.translatable("tooltip.society.diy_workbench").gray());
-//   tooltip.add("society:tanuki_catalog", Text.translatable("tooltip.society.tanuki_catalog").gray());
-//   tooltip.add("society:modern_catalog", Text.translatable("tooltip.society.modern_catalog").gray());
-//   tooltip.add("society:fantasy_catalog", Text.translatable("tooltip.society.fantasy_catalog").gray());
-//   global.lootFurniture.forEach((item) => {
-//     tooltip.add(
-//       item,
-//       Text.translatable("tooltip.society.loot_furniture").white()
-//     );
-//     if (!item.includes("tanuki") && !item.includes("whimsy_deco")) {
-//       tooltip.add(
-//         item,
-//         Text.translatable("tooltip.society.furnitures.modern").white()
-//       );
-//     } else {
-//       tooltip.add(
-//         item,
-//         Text.translatable("tooltip.society.furnitures.tanuki").white()
-//       );
-//     }
-//   });
 //   tooltip.add(
 //     /fantasyfurniture/,
 //     Text.translatable("tooltip.society.furnitures.fantasy").white()
 //   );
+//   tooltip.add(
+//     "society:fairy_dust",
+//     Text.translatable("item.society.fairy_dust.description").gray()
+//   );
+//   // Hammers
+//   tooltip.add(
+//     "justhammers:small_core",
+//     Text.translatable("tooltip.society.hammer_core", "3x3x1").gray()
+//   );
+//   tooltip.add(
+//     "justhammers:impact_core",
+//     Text.translatable("tooltip.society.hammer_core", "3x3x3").gray()
+//   );
+//   // Misc
+//   tooltip.add(
+//     [
+//       "botania:agricarnation",
+//       "botania:agricarnation_chibi",
+//       "botania:floating_agricarnation",
+//       "botania:floating_agricarnation_chibi",
+//     ],
+//     Text.translatable("tooltip.society.not_work_on_farmland").darkRed()
+//   );
+//   tooltip.add(
+//     "numismatics_utils:bank_meter",
+//     Text.translatable("tooltip.society.bank_meter").gray()
+//   );
+//   tooltip.add(
+//     "society:fish_radar",
+//     Text.translatable("item.society.fish_rader.description").gray()
+//   );
+//   tooltip.add(
+//     "tradingpost:trading_post",
+//     Text.translatable("tooltip.society.trading_post").gray()
+//   );
+//   tooltip.add(
+//     "society:magic_rope",
+//     Text.translatable("item.society.magic_rope.description").gray()
+//   );
+//   tooltip.add(
+//     "society:magic_rope",
+//     Text.translatable("item.society.magic_rope.description.warn").red()
+//   );
+//   tooltip.add(
+//     "society:magic_tunnel",
+//     Text.translatable("item.society.magic_tunnel.description").gray()
+//   );
+//   tooltip.add(
+//     "society:magic_tunnel",
+//     Text.translatable("item.society.magic_rope.description.warn").red()
+//   );
+//   tooltip.add(
+//     "society_trading:auto_trader",
+//     Text.translatable("item.society_trading.auto_trader.description").gray()
+//   );
 //   // Fertilizers
-//   tooltip.add(
-//     "dew_drop_farmland_growth:weak_fertilizer",
-//     Text.translatable("tooltip.society.weak_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:strong_fertilizer",
-//     Text.translatable("tooltip.society.strong_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:hyper_fertilizer",
-//     Text.translatable("tooltip.society.hyper_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:hydrating_fertilizer",
-//     Text.translatable("tooltip.society.hydrating_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
-//     Text.translatable("tooltip.society.deluxe_hydrating_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:bountiful_fertilizer",
-//     Text.translatable("tooltip.society.bountiful_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:bountiful_fertilizer",
-//     Text.translatable("tooltip.society.bountiful_fertilizer.warn").red()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:low_quality_fertilizer",
-//     Text.translatable("tooltip.society.low_quality_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:high_quality_fertilizer",
-//     Text.translatable("tooltip.society.high_quality_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:pristine_quality_fertilizer",
-//     Text.translatable("tooltip.society.pristine_quality_fertilizer").green()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:garden_pot",
-//     Text.translatable("item.society.garden_pot.description").gray()
-//   );
-//   tooltip.add(
-//     "dew_drop_farmland_growth:garden_pot",
-//     Text.translatable("item.society.garden_pot.description.tip").green()
-//   );
 
-
-//   tooltip.add(
-//     "minecraft:fishing_rod",
-//     Text.translatable("tooltip.society.fishing_rod").gray()
-//   );
 //   tooltip.add(
 //     "etcetera:handbell",
 //     Text.translatable("tooltip.society.handbell").gray()
@@ -146,31 +124,7 @@
 //     ],
 //     Text.translatable("tooltip.society.skull_cavern_ore").gold()
 //   );
-//   tooltip.add(
-//     [
-//       "society:bait_maker",
-//       "society:aging_cask",
-//       "society:ancient_cask",
-//       "society:charging_rod",
-//       "society:crystalarium",
-//       "society:deluxe_worm_farm",
-//       "society:dehydrator",
-//       "society:espresso_machine",
-//       "society:fish_pond",
-//       "society:fish_smoker",
-//       "society:loom",
-//       "society:mayonnaise_machine",
-//       "society:preserves_jar",
-//       "society:seed_maker",
-//       "society:tapper",
-//       "society:recycling_machine",
-//       "society:cheese_press",
-//       "society:wine_keg",
-//       "society:oil_maker",
-//       "society:mushroom_log",
-//     ],
-//     Text.translatable("tooltip.society.artisan_machine").white()
-//   );
+  
 //   tooltip.add(
 //     [
 //       "minecraft:milk_bucket",
@@ -399,31 +353,45 @@
 //   });
 //   tooltip.add(
 //     [
-//       "sunrisegardening:greenhouse_glass",
-//       "sunrisegardening:greenhouse_glass_pane",
-//       "sunrisegardening:greenhouse_glass_stairs",
-//       "sunrisegardening:greenhouse_glass_slab",
+//       "moreminecarts:chiseled_organic_glass",
+//       "moreminecarts:chiseled_organic_glass_pane",
+//       "moreminecarts:greenhouse_glass_stairs",
+//       "moreminecarts:greenhouse_glass_slab",
 //     ],
 //     Text.translatable("tooltip.society.greenhouse_glass").gray()
 //   );
 //   tooltip.add(
 //     [
-//       "sunrisegardening:greenhouse_glass",
-//       "sunrisegardening:greenhouse_glass_pane",
-//       "sunrisegardening:greenhouse_glass_stairs",
-//       "sunrisegardening:greenhouse_glass_slab",
+//       "moreminecarts:chiseled_organic_glass",
+//       "moreminecarts:chiseled_organic_glass_pane",
+//       "moreminecarts:greenhouse_glass_stairs",
+//       "moreminecarts:greenhouse_glass_slab",
 //     ],
 //     Text.translatable("tooltip.society.greenhouse_glass.range").green()
 //   );
 
 //   tooltip.add(
+//     "vinery:apple_tree_sapling",
+//     Text.translatable("tooltip.society.fruit_bearing_season")
+//   );
+//   tooltip.add(
+//     "vinery:apple_tree_sapling",
+//     Text.of(" ").gold().append(Text.translatable("desc.sereneseasons.autumn"))
+//   );
+
+//   tooltip.add(
+//     "vinery:dark_cherry_sapling",
+//     Text.translatable("tooltip.society.fruit_bearing_season")
+//   );
+//   tooltip.add(
+//     "vinery:dark_cherry_sapling",
+//     Text.of(" ").green().append(Text.translatable("desc.sereneseasons.spring"))
+//   );
+//   tooltip.add(
 //     "society:plushie_capsule",
 //     Text.translatable("tooltip.society.right_click_open").gray()
 //   );
-//   tooltip.add(
-//     "society:furniture_box",
-//     Text.translatable("tooltip.society.right_click_open").gray()
-//   );
+
 //   tooltip.add(
 //     "furniture:bin",
 //     Text.translatable("tooltip.society.trash_bin").red()
@@ -440,14 +408,7 @@
 //     "society:bouquet_bag",
 //     Text.translatable("tooltip.society.bouquet_bag").green()
 //   );
-//   tooltip.add(
-//     "furniture:blueprints",
-//     Text.translatable("tooltip.society.blueprints").gray()
-//   );
-//   tooltip.add(
-//     'via_romana:charting_map',
-//     Text.translatable("tooltip.society.charting_map").gray()
-//   );
+
 //   tooltip.add(
 //     "society:bouquet_bag",
 //     Text.translatable("tooltip.society.right_click_open").gray()
@@ -473,6 +434,10 @@
 //     Text.translatable("tooltip.society.item_pipe").gray()
 //   );
 //   tooltip.add(
+//     "moreminecarts:chunk_loader",
+//     Text.translatable("tooltip.society.chunk_loader").red()
+//   );
+//   tooltip.add(
 //     "vintagedelight:evaporator",
 //     Text.translatable("tooltip.society.evaporator").gray()
 //   );
@@ -481,23 +446,11 @@
 //     Text.translatable("tooltip.society.rich_soil").gray()
 //   );
 
-//   const craftingMaterials = [
-//     "society:fire_quartz",
-//     "society:earth_crystal",
-//     "society:oak_resin",
-//     "society:pine_tar",
-//     "society:aquamarine",
-//     "society:jade",
-//     "society:river_jelly",
-//     "society:nether_jelly",
-//     "society:ocean_jelly",
-//   ];
-//   craftingMaterials.forEach((item) => {
-//     tooltip.add(
-//       item,
-//       Text.translatable("tooltip.society.item_type.crafting_material").gray()
-//     );
-//   });
+
+//   tooltip.add(
+//     "unusualfishmod:ripper_tooth",
+//     Text.translatable("tooltip.society.ripper_tooth").green()
+//   );
 //   // Prize Machine
 //   tooltip.add(
 //     [
@@ -513,148 +466,7 @@
 //   );
 //   Item.of("farm_and_charm:barley", "{quality_food:{quality:3}}");
 
-//   const geodes = [
-//     "society:geode",
-//     "society:frozen_geode",
-//     "society:magma_geode",
-//     "society:omni_geode",
-//   ];
-//   geodes.forEach((geode) => {
-//     tooltip.add(
-//       geode,
-//       Text.translatable("item.society.geode.description").gray()
-//     );
-//   });
 
-
-//   // Magnifying
-
-//   tooltip.add(
-//     "trials:ominous_bottle",
-//     Text.translatable("effect.minecraft.bad_omen")
-//       .blue()
-//       .append(Text.of(" (10:00)"))
-//   );
-//   tooltip.add(
-//     "society:overflow_token",
-//     Text.translatable(
-//       "item.society.overflow_token.description",
-//       Text.translatable("tooltip.society.coins", "1,006,632,960")
-//     ).gray()
-//   );
-//   // Sprinklers
-//   const generateSprinklerTooltip = (tooltip, tier, radius) => {
-//     const tooltipRadius = 1 + radius * 2;
-//     tooltip.add(
-//       `dew_drop_farmland_growth:${tier}_sprinkler`,
-//       Text.translatable("tooltip.society.sprinkler").gray()
-//     );
-//     tooltip.add(
-//       `dew_drop_farmland_growth:${tier}_sprinkler`,
-//       Text.translatable(
-//         "tooltip.society.area",
-//         `${tooltipRadius}x${tooltipRadius}`
-//       ).green()
-//     );
-//   };
-//   generateSprinklerTooltip(tooltip, "iron", 1);
-//   generateSprinklerTooltip(tooltip, "gold", 2);
-//   generateSprinklerTooltip(tooltip, "diamond", 3);
-//   generateSprinklerTooltip(tooltip, "netherite", 4);
-//   tooltip.add(
-//     "society:yard_work_yearly",
-//     Text.translatable(
-//       "tooltip.society.skill_book.description",
-//       global.translatableWithFallback(
-//         "society_skills.farming.category.title",
-//         "Farming"
-//       )
-//     ).green()
-//   );
-//   tooltip.add(
-//     "society:husbandry_hourly",
-//     Text.translatable(
-//       "tooltip.society.skill_book.description",
-//       global.translatableWithFallback(
-//         "society_skills.husbandry.category.title",
-//         "Husbandry"
-//       )
-//     ).green()
-//   );
-//   tooltip.add(
-//     "society:mining_monthly",
-//     Text.translatable(
-//       "tooltip.society.skill_book.description",
-//       global.translatableWithFallback(
-//         "society_skills.mining.category.title",
-//         "Mining"
-//       )
-//     ).green()
-//   );
-//   tooltip.add(
-//     "society:combat_quarterly",
-//     Text.translatable(
-//       "tooltip.society.skill_book.description",
-//       global.translatableWithFallback(
-//         "society_skills.adventuring.category.title",
-//         "Adventuring"
-//       )
-//     ).green()
-//   );
-//   tooltip.add(
-//     "society:wet_weekly",
-//     Text.translatable(
-//       "tooltip.society.skill_book.description",
-//       global.translatableWithFallback(
-//         "society_skills.fishing.category.title",
-//         "Fishing"
-//       )
-//     ).green()
-//   );
-//   tooltip.add(
-//     "society:book_of_stars",
-//     Text.translatable("item.society.book_of_stars.description").green()
-//   );
-//   tooltip.add(
-//     [
-//       "society:starcardi",
-//       "society:star_coquito",
-//       "society:good_catawba",
-//       "society:nutty_basil",
-//       "society:forks_of_blue",
-//       "society:ancient_cider",
-//       "society:ancient_vespertine",
-//       "society:dewy_star",
-//     ],
-//     Text.translatable("tooltip.society.wine_rack_incompatible").red()
-//   );
-//   tooltip.add(
-//     [
-//       "fantasyfurniture:nordic/bed_single",
-//       "fantasyfurniture:nordic/bed_double",
-//       "fantasyfurniture:dunmer/bed_single",
-//       "fantasyfurniture:dunmer/bed_double",
-//       "fantasyfurniture:venthyr/bed_single",
-//       "fantasyfurniture:venthyr/bed_double",
-//       "fantasyfurniture:bone/skeleton/bed_single",
-//       "fantasyfurniture:bone/skeleton/bed_double",
-//       "fantasyfurniture:bone/wither/bed_single",
-//       "fantasyfurniture:bone/wither/bed_double",
-//       "fantasyfurniture:royal/bed_single",
-//       "fantasyfurniture:royal/bed_double",
-//       "fantasyfurniture:necrolord/bed_single",
-//       "fantasyfurniture:necrolord/bed_double",
-//     ],
-//     Text.translatable("tooltip.society.magic_mirror_incompatible").red()
-//   );
-//   tooltip.add(
-//     "gag:escape_rope",
-//     Text.translatable("tooltip.society.escape_rope_hold").red()
-//   );
-//   tooltip.add(
-//     "society:face_note",
-//     Text.translatable("tooltip.society.face_note").green()
-//   );
 //   // Refined
 //   tooltip.add(
 //     "refinedstorage:4k_storage_block",
@@ -664,120 +476,4 @@
 //     "refinedstorage:64k_storage_block",
 //     Text.translatable("tooltip.society.storage_block", "64,000").green()
 //   );
-//   tooltip.add(
-//     global.removedItems,
-//     Text.translatable("tooltip.society.removed_items").red()
-//   );
-//   tooltip.add(
-//     "society:dry_totem",
-//     Text.translatable("item.society.dry_totem.description").gray()
-//   );
-//   tooltip.add(
-//     "society:thunder_totem",
-//     Text.translatable("item.society.thunder_totem.description").gray()
-//   );
-//   tooltip.add(
-//     "society:rain_totem",
-//     Text.translatable("item.society.rain_totem.description").gray()
-//   );
 
-//   // Mastery
-//   tooltip.add(
-//     "society:treasure_totem",
-//     Text.translatable("item.society.treasure_totem.description").gray()
-//   );
-//   tooltip.add(
-//     "society:bubble_totem",
-//     Text.translatable("item.society.bubble_totem.description").gray()
-//   );
-//   tooltip.add(
-//     "society:needle_bobber",
-//     Text.translatable("item.society.needle_bobber.description").gray()
-//   );
-//   tooltip.add(
-//     "society:net_bobber",
-//     Text.translatable("item.society.net_bobber.description").gray()
-//   );
-//   tooltip.add(
-//     "domesticationinnovation:collar_tag",
-//     Text.translatable("item.society.collar_tag.description").gray()
-//   );
-//   tooltip.add(
-//     "domesticationinnovation:drum",
-//     Text.translatable("item.society.drum.description").gray()
-//   );
-//   tooltip.add(
-//     "domesticationinnovation:wayward_lantern",
-//     Text.translatable("item.society.wayward_lantern.description").gray()
-//   );
-//   tooltip.add(
-//     "society:animal_cracker",
-//     Text.translatable("item.society.animal_cracker.description").gray()
-//   );
-//   tooltip.add(
-//     "society:sunlit_crystal",
-//     Text.translatable("item.society.sunlit_crystal.description").gray()
-//   );
-//   tooltip.add(
-//     "society:plushie_wand",
-//     Text.translatable("item.society.plushie_wand.description").gray()
-//   );
-//   const getMasteryTooltip = (id, mastery) => {
-//     tooltip.addAdvanced(id, (item, advanced, text) => {
-//       if (tooltip.shift) {
-//         text.add(Text.translatable("tooltip.society.general_mastery.description").aqua());
-//       } else {
-//         text.add([
-//           Text.translatable("tooltip.society.general_mastery.required").append(" "),
-//           Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-//         ]);
-//       }
-//     });
-//   }
-
-
-//   [
-//     "society:the_quality_of_the_earth",
-//     "society:mystic_syrup",
-//     "cluttered:willow_log",
-//     "cluttered:willow_sapling",
-//     "society:bubble_totem",
-//     "society:treasure_totem",
-//     "society:sparkpod_seed",
-//     "society:sparkpod",
-//     "society:statue_of_cravings",
-//   ].forEach((item) => {
-//     getMasteryTooltip(item, "farming")
-//   });
-//   [
-//     "society:the_spark_also_rises",
-//     "artisan_machines:recycled_core",
-//     "society:moon_statue",
-//   ].forEach((item) => {
-//     getMasteryTooltip(item, "mining")
-//   });
-//   [
-//     "society:the_red_and_the_black",
-//     "domesticationinnovation:drum",
-//     "domesticationinnovation:wayward_lantern",
-//     "domesticationinnovation:collar_tag",
-//     "minecraft:enchanting_table",
-//   ].forEach((item) => {
-//     getMasteryTooltip(item, "adventuring")
-//   });
-//   [
-//     "society:women_who_run_with_the_plushies",
-//     "society:animal_cracker",
-//     "society:sunlit_crystal",
-//   ].forEach((item) => {
-//     getMasteryTooltip(item, "husbandry")
-//   });
-//   [
-//     "society:pond_house_five",
-//     "society:roe_recycler",
-//     "society:net_bobber",
-//     "society:needle_bobber",
-//   ].forEach((item) => {
-//     getMasteryTooltip(item, "fishing")
-//   })
-// });

@@ -256,8 +256,11 @@
 			rewards: [{
 				id: "175F4915C9565C3B"
 				item: {
+					components: {
+						"ftbquests:missing_item": "society:neptuna_bait"
+					}
 					count: 1
-					id: "society:neptuna_bait"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

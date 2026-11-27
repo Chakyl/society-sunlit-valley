@@ -9,7 +9,7 @@ ServerEvents.recipes((e) => {
   //   o: "atmospheric:orange",
   //   m: "farm_and_charm:minced_beef",
   // });
-  e.smelting("society:rubber", "society:sap").xp(0.35);
+  e.smelting("etcetera:rubber", "society:sap").xp(0.35);
   e.smelting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
   e.blasting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
   e.smelting("quark:charcoal_block", "meadow:fire_log").xp(4.0);

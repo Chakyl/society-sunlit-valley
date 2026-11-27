@@ -166,7 +166,6 @@ StartupEvents.registry("item", (e) => {
   //   },
   // });
   e.create("society:sap").texture("society:item/sap");
-  e.create("society:rubber").texture("society:item/rubber");
   e.create("society:pine_tar").texture("society:item/pine_tar");
   e.create("society:oak_resin").texture("society:item/oak_resin");
   e.create("society:maple_syrup").texture("society:item/maple_syrup");

@@ -190,6 +190,7 @@ let calculateWineValue = (cropValue) => 3 * (cropValue * 3);
 let calculatePreservesValue = (cropValue) => (2 * (cropValue * 2)) + 64;
 let calculatePickleValue = (cropValue) => cropValue * 3;
 let calculateDriedValue = (cropValue) => (5 * (cropValue * 2)) + 128;
+let calculateMayoValue = (eggValue) => (2 * eggValue) + 32;
 let calculatePristineValue = (baseValue) => (baseValue * 6) + 48;
 let calculateSmokeFishedValue = (baseValue) => (baseValue * 4);
 
@@ -231,23 +232,26 @@ ServerEvents.generateData('after_mods', (e) => {
         }
     })
     global.FORAGE_CROPS.forEach((crop) => {
-        if (!crop.blocked) {
-            data.values[crop.item] = global.getSaleData(crop.value, [])
-            foodMap.set(crop.item, crop.value);
-            if (crop.storageBlock) data.values[crop.storageBlock] = global.getSaleData(crop.value * 9, [])
-            if (crop.brokenBlock) data.values[crop.brokenBlock] = global.getSaleData(Math.round(crop.value / 9), [])
-            if (crop.products.includes("preserves")) data.values[`society:${crop.item.path}_preserves`] = global.getSaleData(calculatePreservesValue(crop.value), [])
-            if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(crop.value), ["wine"])
-            if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(crop.value), [])
-            if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`] = global.getSaleData(calculateDriedValue(crop.value), [])
-        }
+        data.values[crop.item] = global.getSaleData(crop.value, [])
+        foodMap.set(crop.item, crop.value);
+        if (crop.storageBlock) data.values[crop.storageBlock] = global.getSaleData(crop.value * 9, [])
+        if (crop.brokenBlock) data.values[crop.brokenBlock] = global.getSaleData(Math.round(crop.value / 9), [])
+        if (crop.products.includes("preserves")) data.values[`society:${crop.item.path}_preserves`] = global.getSaleData(calculatePreservesValue(crop.value), [])
+        if (crop.products.includes("wine") && crop.wine) data.values[crop.wine] = global.getSaleData(calculateWineValue(crop.value), ["wine"])
+        if (crop.products.includes("pickle")) data.values[crop.pickle ? crop.pickle : `society:pickled_${crop.item.path}`] = global.getSaleData(calculatePickleValue(crop.value), [])
+        if (crop.products.includes("dried")) data.values[crop.dried ? crop.dried : `society:dried_${crop.item == "nomansland:shelf_mushroom" ? "saddle_mushroom" : crop.item.path}`] = global.getSaleData(calculateDriedValue(crop.value), [])
     })
     global.MUSHROOMS.forEach((crop) => {
-        if (!crop.blocked) {
-            data.values[crop.item] = global.getSaleData(crop.value, [])
-            data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(crop.value), [])
-            foodMap.set(crop.item, crop.value);
-        }
+        data.values[crop.item] = global.getSaleData(crop.value, [])
+        data.values[crop.dried ? crop.dried : `society:dried_${crop.item.path}`] = global.getSaleData(calculateDriedValue(crop.value), [])
+        foodMap.set(crop.item, crop.value);
+    })
+    global.EGGS.forEach((egg) => {
+        data.values[egg.item] = global.getSaleData(egg.value, [])
+        if (egg.mayo) data.values[egg.mayo] = global.getSaleData(calculateMayoValue(egg.value), [])
+    })
+    global.MISC_FORAGING.forEach((forage) => {
+        data.values[forage.item] = global.getSaleData(forage.value, [])
     })
     global.LOGS.forEach((log) => {
         data.values[log.item] = global.getSaleData(log.value, [])
@@ -263,6 +267,12 @@ ServerEvents.generateData('after_mods', (e) => {
         if (mineral.storageBlock) data.values[mineral.storageBlock] = global.getSaleData(mineral.value * 9, [])
         data.values[`society:pristine_${mineral.item.path}`] = global.getSaleData(calculatePristineValue(mineral.value), [])
     })
+    global.METALS.forEach((rawMetal) => {
+        data.values[rawMetal.item] = global.getSaleData(rawMetal.value, [])
+        if (rawMetal.storageBlock) data.values[rawMetal.storageBlock] = global.getSaleData(rawMetal.value * 9, [])
+        if (rawMetal.ingot) data.values[rawMetal.ingot] = global.getSaleData(Math.floor(rawMetal.value * 1.5), [])
+        if (rawMetal.ingotBlock) data.values[rawMetal.ingotBlock] = global.getSaleData(Math.floor(rawMetal.value * 1.5) * 9, [])
+    })
     global.ARTIFACTS.forEach((mineral) => {
         data.values[mineral.item] = global.getSaleData(mineral.value, [])
     })
@@ -274,7 +284,6 @@ ServerEvents.generateData('after_mods', (e) => {
         "type": "society:bugsnatch_processor",
         "bugs": bugObj
     })
-    console.log(data.values["bugsnatch:bug"].toString())
     // Roe: roundPrice(Math.floor(fish.value / 3) + 16),
     // Aged Roe: roundPrice((Math.floor(fish.value / 3) + 16) * 15)
     global.FISH.forEach((fish) => {

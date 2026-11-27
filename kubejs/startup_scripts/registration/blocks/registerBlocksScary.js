@@ -589,7 +589,7 @@ StartupEvents.registry("block", (e) => {
         .parentModel("society:block/kubejs/fantasy_catalog")
         .displayName("♡ §eFantasy Catalog");
     const createFishingCrate = (type) => {
-        e.create(`society:${type}_crate`)
+        e.create(`society:${type}_fishing_crate`)
             .soundType("wood")
             .tagBlock("minecraft:mineable/axe")
             .texture(`society:block/fishing_crates/${type}`)

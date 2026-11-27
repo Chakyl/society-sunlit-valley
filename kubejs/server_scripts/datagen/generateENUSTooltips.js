@@ -1,4 +1,3 @@
-
 let translationKeys = {
     "00.translator.warning": "--------------------------------------------------------------------------------------------------------",
     "01.translator.warning": "                                                                                                        ",
@@ -28,6 +27,15 @@ const generateStandardTooltips = (tooltipArray) => {
         })
     })
 }
+const generateTaggedTooltip = (tooltipArray, additionalAlwaysTooltip) => {
+    tooltipArray.forEach((entry) => {
+        let path = getTooltipPath(entry.item);
+        entry.tooltips.forEach((alwaysTip, alwaysIndex) => {
+            translationKeys[`tooltip.always.${path}.${alwaysIndex}`] = alwaysTip;
+        })
+        if (additionalAlwaysTooltip) translationKeys[`tooltip.always.${path}.${entry.tooltips.length}`] = additionalAlwaysTooltip;
+    })
+}
 const generateColorWrappedTooltip = (tooltipArray, hexColor, additionalAlwaysTooltip) => {
     tooltipArray.forEach((entry) => {
         let path = getTooltipPath(entry.item);
@@ -46,10 +54,14 @@ const registerUtil = (key, translation) => {
 };
 
 const RIGHT_CLICK_TO_READ = registerUtil('tooltip.society.utils.right_click_to_read', '<ltcolor>c=55FF55;Right click to learn this skill!</ltcolor>');
+const RIGHT_CLICK_TO_OPEN = registerUtil('tooltip.society.utils.right_click_to_open', '<ltcolor>c=55FF55;Right click to open!</ltcolor>');
 const PHONE_BLOCK = registerUtil('tooltip.society.utils.phone', '<ltcolor>c=AAAAAA;Right click to call any unlocked villager and access their shop</ltcolor>');
+const GEODE = registerUtil("tooltip.society.geode.description", "Something's inside! A Blacksmith can help break it open.");
 const ARTIFACT = registerUtil('tooltip.society.utils.artifact', "🪣 §7Artifact");
-const MASTERY = "🏹 §bSkill Mastery Item";
-const MASTERY_INFO = "The Skill Mastery tree is unlocked after reaching level 10 in every skill.";
+const ARTISAN_MACHINE = registerUtil("tooltip.society.artisan_machine", "✉ §6Artisan Machine");
+
+const MASTERY = registerUtil("tooltip.society.mastery", "🏹 §bSkill Mastery Item");
+const MASTERY_INFO = registerUtil("tooltip.society.mastery.description", "The Skill Mastery tree is unlocked after reaching level 10 in every skill.");
 
 /**
  * Category Tooltips - These are often bulk additions that often category tooltips e.g Artifact
@@ -141,12 +153,45 @@ const upgradeTooltips = [
     { item: "artisan_machines:recycled_core", tooltips: [`Use on a ${wrapUpgradeKeyword("Recycling Machine")} to double most outputs.`] }
 ];
 generateColorWrappedTooltip(upgradeTooltips, upgradeTooltipHex)
+const artisanMachines = [
+    { item: "artisan_machines:aging_cask", tooltips: ["Turns any wine or cheese Vintage level"] },
+    { item: "artisan_machines:ancient_cask", tooltips: ["Improves the quality of any wine or cheese."] },
+    { item: "artisan_machines:bait_maker", tooltips: ["Turns any fish into 3 targeted bait"] },
+    { item: "artisan_machines:charging_rod", tooltips: ["Makes batteries from lightning storms. Doesn't protect area"] },
+    { item: "artisan_machines:cheese_press", tooltips: ["Turns any milk into cheese"] },
+    { item: "artisan_machines:crystalarium", tooltips: ["Duplicates any mineral or gem placed inside"] },
+    { item: "artisan_machines:dehydrator", tooltips: ["Dehydrates 5 fruit or mushrooms"] },
+    { item: "artisan_machines:deluxe_worm_farm", tooltips: ["Upgrades 4 Crab Trap Bait at a time"] },
+    { item: "artisan_machines:espresso_machine", tooltips: ["Turns Ground Coffee into Espresso and steams milk"] },
+    { item: "artisan_machines:loom", tooltips: ["Processes 5 fibers into artisan items"] },
+    { item: "artisan_machines:mayonnaise_machine", tooltips: ["Turns eggs into mayonnaise"] },
+    { item: "artisan_machines:preserves_jar", tooltips: ["Turns 2 of the same crop into a preserve"] },
+    { item: "artisan_machines:recycling_machine", tooltips: ["Turns junk into usable resources"] },
+    { item: "artisan_machines:oil_maker", tooltips: ["Creates various types of oils"] },
+    { item: "artisan_machines:mushroom_log", tooltips: ["Grows mushroom based off of nearby trees and large mushrooms."] },
+    { item: "artisan_machines:seed_maker", tooltips: ["Turns 3 of the same crop into seeds"] },
+    { item: "artisan_machines:tapper", tooltips: ["Place on tree to tap for resources"] },
+    { item: "artisan_machines:fish_smoker", tooltips: ["Smokes a fish, making it tastier and more expensive"] },
+    { item: "artisan_machines:wine_keg", tooltips: ["Turns 3 of the same crop into wine"] },
+]
+generateTaggedTooltip(artisanMachines, ARTISAN_MACHINE)
+/** 
+ * Openables
+ */
+const openableTooltips = [
+    { item: "society:furniture_box", tooltips: ["Contains a random rare furniture item"] },
+];
+generateTaggedTooltip(openableTooltips, RIGHT_CLICK_TO_OPEN)
 /**
  * Misc
  */
 const miscTooltips = [
     { item: "simplerecall:recall_potion", tooltips: ["Teleports you to your spawn location."] },
     { item: "numismatics_utils:bank_meter", tooltips: ["Shows balance in Bank Terminal when worn in curio slot."] },
+    { item: "society:hardwood", tooltips: ["Dropped by brittle stumps found in the woods."] },
+    { item: "society:blueprints", tooltips: ["Allows you to purchase farm and villager buildings from Ace anywhere"] },
+    { item: "society:face_note", tooltips: ["Shows the friendship all the villagers have for you."] },
+    { item: "via_romana:charting_map", tooltips: ["Allows you to link signs on a path together for teleportation"] },
     { item: "society:fairy_dust", tooltips: ["Use on an Artisan Machine to progress it by 1 day."] },
     { item: "society:magic_rope", tooltips: ["Teleports you down a level in the Skull Cavern."] },
     { item: "society:magic_tunnel", tooltips: ["Teleports you to the nearest cave in the direction of the block you've clicked in the Skull Cavern."] },
@@ -156,9 +201,20 @@ const miscTooltips = [
     { item: "society:river_jelly", tooltips: ["Fished up from River biomes."] },
     { item: "society:ocean_jelly", tooltips: ["Fished up from Ocean & Beach biomes."] },
     { item: "society:lava_jelly", tooltips: ["Fished up from lava pools."] },
+    { item: "society:wooden_fishing_crate", tooltips: ["A box of loot lost at sea...", "Place and break to open"] },
+    { item: "society:mossy_fishing_crate", tooltips: ["A box of loot lost at sea and covered in moss...", "Place and break to open"] },
+    { item: "tanukidecor:diy_workbench", tooltips: ["Crafts any Catalog furniure item with Cobblestone, Logs, Clay Balls, and Iron Ingots"] },
+    { item: "society:tanuki_catalog", tooltips: ["Allows you to purchase furniture from the ♤ §aTanuki collection"] },
+    { item: "society:modern_catalog", tooltips: ["Allows you to purchase furniture from the ♧ §fModern collection"] },
+    { item: "society:fantasy_catalog", tooltips: ["Allows you to purchase furniture from the ♡ §eFantasy collection"] },
+    { item: "society:rain_totem", tooltips: ["Right click to summon drops of water that fall from the sky (rain)"] },
+    { item: "society:dry_totem", tooltips: ["Right click to summon clear skies by sucking up all the rain"] },
+    { item: "society:thunder_totem", tooltips: ["Right click to summon a thunderstorm from its anger"] },
 ];
+
 generateStandardTooltips(miscTooltips)
 generateBulkTooltips(['whimsy_deco:phone', 'whimsy_deco:black_phone', 'whimsy_deco:red_phone', 'whimsy_deco:blue_phone', 'tanukidecor:antique_phone'], [PHONE_BLOCK])
+generateBulkTooltips(["society:geode", "society:frozen_geode", "society:magma_geode", "society:omni_geode"], [GEODE])
 
 const generateMasteryTooltips = (tooltipArray) => {
     tooltipArray.forEach((entry) => {

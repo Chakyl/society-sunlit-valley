@@ -251,7 +251,7 @@ global.fishPondDefinitions = new Map([
             additionalRewards: [
                 {
                     minPopulation: 2,
-                    item: "society:rubber",
+                    item: "etcetera:rubber",
                     count: 4,
                     chance: 0.74,
                 },
@@ -2841,7 +2841,7 @@ global.fishPondDefinitions = new Map([
                 {
                     population: 5,
                     requestedItems: [
-                        { item: "society:rubber", count: 16 },
+                        { item: "etcetera:rubber", count: 16 },
                         { item: "beautify:crimson_blinds", count: 32 },
                         { item: "society:bowl_of_soul", count: 8 },
                     ],

@@ -20,7 +20,7 @@
       ],
       "loot_tables": [
         {
-          "loot_table": "minecraft:gameplay/fishing/common_fishing"
+          "loot_table": "minecraft:gameplay/fishing/uncommon_fishing"
         }
       ]
     },
@@ -56,88 +56,7 @@
       ],
       "loot_tables": [
         {
-          "loot_table": "society:gameplay/fishing/uncommon_fishing"
-        }
-      ]
-    },
-    "starcatcher:aurora": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:iceborn_skin_smithing_template"
-          }
-        }
-      ]
-    },
-    "starcatcher:azure_crystalback_minnow": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:azure_crystal_skin_smithing_template"
-          }
-        }
-      ]
-    },
-    "starcatcher:boreal": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:clear_smithing_template"
-          }
-        }
-      ]
-    },
-    "starcatcher:cerberay": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:king_smithing_template"
-          }
-        }
-      ]
-    },
-    "starcatcher:cloudfin": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:sky_skin_smithing_template"
-          }
-        }
-      ]
-    },
-    "starcatcher:joel": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:sharktooth_skin_smithing_template"
-          }
-        }
-      ]
-    },
-    "starcatcher:lush_pike": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:lush_glowberry_skin_smithing_template"
-          }
-        }
-      ]
-    },
-    "starcatcher:vesani": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:colorful_smithing_template"
-          }
-        }
-      ]
-    },
-    "starcatcher:willish": {
-      "stacks": [
-        {
-          "stack": {
-            "identifier": "starcatcher:kimbe_smithing_template"
-          }
+          "loot_table":  "society:gameplay/fishing/common_fishing"
         }
       ]
     }
